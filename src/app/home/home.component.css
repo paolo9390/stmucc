@@ -1,0 +1,101 @@
+/* Container holding the image and the text */
+
+.cards>mat-card {
+    margin: 1em;
+}
+
+.cards mat-card-title {
+    font-size: xx-large;
+}
+
+.cards mat-card-actions {
+    bottom: 0;
+    right: 0;
+    float: right;
+    /* position: absolute;
+    margin: 0.2em; */
+}
+
+.chip {
+    font-size: x-large;
+}
+
+.chip>mat-icon {
+    vertical-align: middle;
+}
+
+mat-list-item h4 {
+    font-size: x-large !important;
+}
+
+.panel {
+    padding-bottom: 0px;
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.container>img {
+    margin-bottom: 0px;
+    /* width: 100%; */
+    height: 100%;
+}
+
+
+/* Bottom left text */
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+/* Top left text */
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+
+/* Top right text */
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+
+/* Bottom right text */
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+
+/* Centered text */
+
+.centered {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-size: large;
+}
+
+.help-card mat-card-title, .help-card p, .help-card h4, .help-card mat-icon {
+    color: white !important;
+}

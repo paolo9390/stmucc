@@ -1,0 +1,172 @@
+
+
+.container {
+    height: auto !important;
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100%;
+    height: 100%;
+}
+
+.content-outlet {
+    height: 100%;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    /* margin-bottom: auto; */
+    /* min-height: 80vh; */
+}
+
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer {
+    bottom: 0;
+    position: relative;
+    height: 100%;
+    /* min-height: 110px; */
+    /* padding: 10px 0; */
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+    border-top: 1px solid;
+    color: #e3e3e3;
+    /* margin-top: 50px; */
+    /* display: inline-block !important; */
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.footer>div {
+    text-align: center;
+}
+
+.social-toolbar {
+    background-color: #EBEBEB;
+    /* box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12); */
+}
+.social-toolbar mat-toolbar {
+    background-color: #EBEBEB;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    height: 40px;
+    width: 960px;
+}
+
+.social-toolbar button {
+    box-shadow: 10px 0px 0px 0px transparent;
+    background: transparent;
+}
+
+.navbar {
+    background-color: transparent;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    height: 2em;
+}
+
+.navbar>button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-banner {
+    background: white;
+}
+
+.logo {
+    width: 10em;
+}
+
+.clickable {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.app-spacer {
+    flex: 1 1 auto;
+}
+
+.config-spacer {
+    flex: 1 1 auto;
+}
+
+.material-icons.md-18 {
+    font-size: 18px !important;
+    height: 18px !important;
+    width: 18px !important;
+}
+
+.material-icons.md-24 {
+    font-size: 24px !important;
+    height: 24px !important;
+    width: 24px !important;
+}
+
+.material-icons.md-36 {
+    font-size: 36px !important;
+    height: 36px !important;
+    width: 36px !important;
+}
+
+.material-icons.md-48 {
+    font-size: 48px !important;
+    height: 48px !important;
+    width: 48px !important;
+}
+
+.material-icons.icon-darkgrey {
+    color: #333;
+}
+
+.loader-hidden {
+    visibility: hidden;
+}
+
+.loader-overlay {
+    position: fixed;
+    z-index: 1999;
+    height: 8em;
+    width: 6.2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.spinner {
+    margin: 0 auto;
+}
+
+.spinner-container {
+    margin: 0 auto;
+    background-color: #eeeeee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px
+}
+
+.slogan {
+    font-weight: 100;
+    vertical-align: middle;
+}
+
+
+/* mat-card {
+    margin: 8px;
+    padding-bottom: 0px;
+} */
+button {
+    font-size: large;
+}
+
+.charity-footer {
+    margin-top: 0.5em;
+}

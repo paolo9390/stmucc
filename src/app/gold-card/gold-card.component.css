@@ -1,0 +1,19 @@
+mat-grid-list{
+    margin: 1em;
+}
+
+mat-grid-tile {
+    background: lightblue;
+  }
+
+button {
+    font-size: large;
+}
+
+.apply {
+    padding-top: 2em;
+}
+
+.apply button {
+    margin-right: 1em;
+}

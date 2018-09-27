@@ -1,0 +1,36 @@
+
+<section fxLayout="column" fxLayoutAlign="space-around center" layout-wrap>
+        <div class="container" fxFlex="100">
+            <img mat-card-image [src]="panelImg" alt="Donate">
+    
+            <div class="centered mat-typography">
+                <p fxHide.lt-sm>Give today to save someone's life by paying their medication prescriptions or contribute to their critical surgery.</p>
+                <button mat-raised-button color="warn">DONATE NOW</button>
+            </div>
+        </div>
+</section>
+
+<section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card [ngClass]="{'help-card': panel.help, 'background-accent': panel.help}" *ngFor="let panel of panels" fxFlex="30">
+        <mat-card-header>
+            <mat-card-title class="fill-primary">{{panel.title}}</mat-card-title>
+        </mat-card-header>
+        <img *ngIf="panel.img" mat-card-image [src]="panel.img">
+
+        <mat-card-content>
+            <p>{{panel.text}}</p>
+            <mat-list *ngIf="panel.help">
+                <mat-list-item *ngFor="let help of panel.help">
+                    <mat-icon mat-list-icon>{{help.icon}}</mat-icon>
+                    <h4 mat-line>{{help.value}}</h4>
+                    <p mat-line> {{help.name}} </p>
+                </mat-list-item>
+            </mat-list>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button [routerLink]="panel.url" *ngIf="!panel.help" mat-raised-button color="accent">{{panel.button}}</button>
+            <button [routerLink]="panel.url" *ngIf="panel.help" mat-raised-button>{{panel.button}}</button>
+        </mat-card-actions>
+    </mat-card>
+</section>

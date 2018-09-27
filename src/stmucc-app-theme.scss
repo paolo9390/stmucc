@@ -1,0 +1,110 @@
+@import '~@angular/material/theming';
+@import url('https://fonts.googleapis.com/css?family=Roboto|Yanone+Kaffeesatz');
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config( $font-family: 'Yanone Kaffeesatz, sans-serif',
+$headline: mat-typography-level(32px, 48px, 700),
+$body-1: mat-typography-level(16px, 24px, 500));
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+// @include mat-base-typography($custom-typography);
+// Override typography for a specific Angular Material components.
+// @include mat-checkbox-typography($custom-typography);
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+@include mat-core($custom-typography);
+//custom palette
+$dark-palette: ( 50: #e1e5ed,
+100: #b3bfd1,
+200: #8194b3,
+300: #4e6994,
+400: #28487d,
+500: #022866,
+600: #02245e,
+700: #011e53,
+800: #011849,
+900: #010f38,
+A100: #6e84ff,
+A200: #3b59ff,
+A400: #082dff,
+A700: #0024ee,
+contrast: ( 50: $black-87-opacity, 100: $black-87-opacity, 200: $black-87-opacity, 300: $black-87-opacity, 400: $black-87-opacity, 500: white, 600: white, 700: $white-87-opacity, 800: $white-87-opacity, 900: $white-87-opacity, A100: $black-87-opacity, A200: white, A400: white, A700: white, ));
+// Define the default theme (same as the example above).
+$stmucc-app-primary: mat-palette($mat-indigo,
+700,
+900);
+$stmucc-app-accent: mat-palette($mat-deep-purple);
+$stmucc-app-warn: mat-palette($mat-deep-orange);
+$stmucc-app-theme: mat-light-theme($stmucc-app-primary,
+$stmucc-app-accent,
+$stmucc-app-warn);
+// Include the default theme styles.
+@include angular-material-theme($stmucc-app-theme);
+// Define an alternate dark theme.
+$management-primary: mat-palette($mat-amber,
+600,
+500,
+900);
+$management-accent: mat-palette($dark-palette,
+400,
+300,
+500);
+$management-warn: mat-palette($mat-deep-orange);
+$management-theme: mat-light-theme($management-primary,
+$management-accent,
+$management-warn);
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.stmucc-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.stmucc-management-theme {
+    @include angular-material-theme($management-theme);
+}
+
+.alternate-theme {
+    $alternate-primary: mat-palette($mat-lime);
+    $alternate-accent: mat-palette($mat-yellow, 400);
+    $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
+    @include angular-material-theme($alternate-theme);
+}
+
+// Define the default theme (same as the example above).
+$light-app-primary: mat-palette($mat-grey);
+$light-app-accent: mat-palette($mat-grey,
+50);
+$light-app-warn: mat-palette($mat-lime);
+$light-app-theme: mat-light-theme($light-app-primary,
+$light-app-accent,
+$light-app-warn);
+// Include the default theme styles.
+.stmucc-light-theme {
+    @include angular-material-theme($light-app-theme);
+}
+
+.background-primary {
+    background-color: mat-color($stmucc-app-primary);
+}
+
+.background-accent {
+    background-color: mat-color($stmucc-app-accent);
+}
+
+.background-warn {
+    background-color: mat-color($stmucc-app-warn);
+}
+
+.fill-primary {
+    color: mat-color($stmucc-app-primary);
+}
+
+.fill-accent {
+    color: mat-color($stmucc-app-accent);
+}
+
+.fill-warn {
+    color: mat-color($stmucc-app-warn);
+}

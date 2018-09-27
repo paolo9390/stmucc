@@ -1,0 +1,30 @@
+
+<section class="mat-typography">
+  <h1 class="fill-warn">St Mark Gold Card</h1>
+
+  <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between stretch" fxLayoutWrap>
+      <div fxFlex="55">
+        <h1>{{title}}</h1>
+        <p>{{headline}}</p>
+        <mat-list role="list">
+            <span mat-line>{{subheadline}}</span>
+            <mat-list-item *ngFor="let perk of perklist">
+              <mat-icon mat-list-icon>{{perk.icon}}</mat-icon>
+              <p mat-line>{{perk.text}}</p>
+            </mat-list-item>
+        </mat-list>
+      </div>
+      <div fxFlex="45">
+
+        <img width="100%" mat-card-image [src]="img">
+      </div>
+  </div>
+
+  <div class="apply">
+    <button mat-raised-button color="accent">Sign Up</button>
+    <button mat-button color="accent">Terms & Conditions</button>
+  </div>
+
+
+</section>
+  
