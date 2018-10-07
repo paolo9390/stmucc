@@ -13,7 +13,7 @@ export const routes: Routes = [
   { path: 'support', data: { breadcrumbs: "Support"},
     children: [
       { path: '', component: SupportComponent},
-      { path: 'gold-card', component: GoldCardComponent},
+      { path: 'donation', component: GoldCardComponent},
     ]
   }
 //   { path: '**', component: NotfoundComponent }
