@@ -8,7 +8,7 @@ import { Observable, Subscription } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   panelImg: string;
   pans: object;
 
