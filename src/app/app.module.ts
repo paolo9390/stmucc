@@ -16,6 +16,7 @@ import { PartnerListComponent } from './partner/partner-list/partner-list.compon
 import { SupportComponent } from './support/support.component';
 import { GoldCardComponent } from './gold-card/gold-card.component';
 import { ShopComponent } from './shop/shop.component';
+import { PanelService } from './services/panel.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { ShopComponent } from './shop/shop.component';
     PartnerListComponent,
     SupportComponent,
     GoldCardComponent,
-    ShopComponent
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,7 @@ import { ShopComponent } from './shop/shop.component';
     ReactiveFormsModule
 
   ],
-  providers: [BreadcrumbService],
+  providers: [BreadcrumbService, PanelService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

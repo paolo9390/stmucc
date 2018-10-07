@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { PanelService } from '../services/panel.service';
+import { Panel } from '../models/panel.model';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,14 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   panelImg: string;
-  
-  panels: object;
+  pans: object;
 
-  constructor() {
+  panels: Observable<Panel[]>
+  _panels: Panel[];
+  panelsSubscription: Subscription;
+
+  constructor(private panelService: PanelService) {
 
     this.panelImg = '/assets/img/heal.jpeg'
 
-    this.panels = [      
+    this.pans = [      
       {
         title: "Appeals",
         img: "/assets/img/appeals.jpg",
@@ -70,7 +76,15 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+    this.panelService.getPanels().subscribe(panels => {
+      this._panels = panels;
+    })
+  }
+
+  ngOnDestroy() {
+    if (this.panelsSubscription){
+      this.panelsSubscription.unsubscribe();
+    }
   }
 
 }
