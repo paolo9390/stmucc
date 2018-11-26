@@ -1,0 +1,78 @@
+<section fxLayoutAlign="space-around center">
+
+  <mat-card class="donation-card">
+    <h1 class="mat-title">
+      <mat-icon>person_pin</mat-icon>Your Details
+    </h1>
+    <form class="donation-form">
+
+      <div fxLayoutAlign="space-around center">
+
+        <mat-form-field fxFlex="48%">
+          <mat-icon matSuffix>person_outline</mat-icon>
+          <input matInput placeholder="First Name">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="48%">
+          <mat-icon matSuffix>person_outline</mat-icon>
+          <input matInput placeholder="Last Name">
+        </mat-form-field>
+
+      </div>
+
+
+      <div fxLayoutAlign="space-around center">
+        <mat-form-field fxFlex="48%">
+          <mat-icon matSuffix>email</mat-icon>
+          <input matInput type="email" placeholder="Enter your email">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="48%">
+          <input matInput type="number" placeholder="Phone Number">
+          <mat-icon matSuffix>phone</mat-icon>
+          <mat-hint>Include area code</mat-hint>
+        </mat-form-field>
+
+      </div>
+
+
+      <div fxLayoutAlign="space-around center">
+
+        <mat-form-field fxFlex="48%">
+          <mat-icon matSuffix>home</mat-icon>
+          <input matInput placeholder="Address">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="48%">
+          <mat-icon matSuffix>home</mat-icon>
+          <input matInput placeholder="Address 2">
+        </mat-form-field>
+
+      </div>
+
+      <div fxLayoutAlign="space-around center">
+
+        <mat-form-field fxFlex="32%">
+          <mat-icon matSuffix>location_city</mat-icon>
+          <input matInput placeholder="City">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="32%">
+          <mat-icon matSuffix>location_city</mat-icon>
+          <input matInput placeholder="Country">
+        </mat-form-field>
+
+        <mat-form-field fxFlex="32%">
+          <mat-icon matSuffix>location_city</mat-icon>
+          <input matInput #postalCode maxlength="8" placeholder="Postal Code">
+          <mat-hint align="end">{{postalCode.value.length}} / 8</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color="primary">Submit</button>
+
+    </form>
+
+  </mat-card>
+
+</section>

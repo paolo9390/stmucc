@@ -92,6 +92,11 @@ mat-list-item h4 {
     transform: translate(-50%, -50%);
 }
 
+.slogan {
+    font-size: xx-large;
+    width: 100%;
+}
+
 button {
     font-size: large;
 }

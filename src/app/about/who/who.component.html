@@ -1,0 +1,45 @@
+<div class="mat-typography">
+
+  <section>
+    <div>
+      <h1 class="title fill-primary">WHO WE ARE</h1>
+    </div>
+  </section>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-primary">
+      <img mat-card-image [src]="whoweare">
+      <mat-card-header class="mat-title">
+          St Mark Universal Copts Care is a UK based charity, founded by members of the Anglo-Coptic community in 2013, with the objective of providing effective healthcare support to deprived Coptic communities in Egypt and Sudan; where access to healthcare for all is extremely difficult.
+      </mat-card-header>
+    </mat-card>
+  </section>
+
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="100%">
+      <!-- <img mat-card-image [src]="whoweare"> -->
+
+      <mat-card-content>
+        <p>{{panel.text}}</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+      </mat-card-actions>
+
+    </mat-card>
+  </section>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="38%" fxFlex.lt-sm="100%" class="stuff-accent">
+      <mat-card-header class="mat-title">
+        To see our work in action, browse our projects.
+        You can also watch this video for an introduction to St Mark Universal Copts Care. 
+      </mat-card-header>
+    </mat-card>
+
+    <iframe fxFlex="60%" src="https://www.youtube.com/embed/Z4f777t8dZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+  </section>
+
+</div>

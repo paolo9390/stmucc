@@ -28,17 +28,12 @@
     bottom: 0;
     position: relative;
     height: 100%;
-    /* min-height: 110px; */
-    /* padding: 10px 0; */
     width: 100%;
     text-align: center;
     font-size: 12px;
     font-weight: 900;
     border-top: 1px solid;
     color: #e3e3e3;
-    /* margin-top: 50px; */
-    /* display: inline-block !important; */
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .footer>div {
@@ -47,8 +42,8 @@
 
 .social-toolbar {
     background-color: #EBEBEB;
-    /* box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12); */
 }
+
 .social-toolbar mat-toolbar {
     background-color: #EBEBEB;
     margin-left: 0;
@@ -158,15 +153,15 @@
     vertical-align: middle;
 }
 
-
-/* mat-card {
-    margin: 8px;
-    padding-bottom: 0px;
-} */
 button {
     font-size: large;
 }
 
 .charity-footer {
     margin-top: 0.5em;
+}
+
+.donate-icon {
+    vertical-align: text-top;
+    margin-left: 0.1em;
 }

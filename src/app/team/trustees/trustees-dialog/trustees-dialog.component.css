@@ -1,0 +1,12 @@
+.trustee-title {
+  font-size: 60px;
+  border-bottom: 1px solid;
+  line-height: 1em;
+  letter-spacing: .1em;
+  text-align: center;
+}
+
+.contact-button {
+  font-size: large;
+  margin-bottom: 0.5em;
+}

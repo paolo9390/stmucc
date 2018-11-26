@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PaypalService } from '../services/paypal.service';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-gold-card',
@@ -12,7 +14,7 @@ export class GoldCardComponent implements OnInit {
   subheadline: string;
   img: any;
 
-  constructor() {
+  constructor(private paypalService: PaypalService, private router: Router) {
     this.img = '/assets/img/shop/perks.png';
     this.title = "Save Money Save Lives";
     this.headline = "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for a patient in the Middle East's prescription medication.";
@@ -39,6 +41,16 @@ export class GoldCardComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  pay(){
+    this.paypalService.pay().subscribe(res => {
+      console.log(res);
+      window.location.href = res.redirectUrl;
+      // this.router.navigate(['/externalRedirect', { externalUrl: res.redirectUrl }], {
+      //   skipLocationChange: true,
+      // });
+    });
   }
 
 }

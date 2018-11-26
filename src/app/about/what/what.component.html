@@ -1,0 +1,52 @@
+<div class="mat-typography">
+
+  <section>
+    <div>
+      <h1 class="title fill-primary">WHAT WE DO</h1>
+    </div>
+  </section>
+
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <iframe fxFlex="60%" src="https://www.youtube.com/embed/YcgSiF3-Dtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    <mat-card fxFlex="38%" fxFlex.lt-sm="100%" class="stuff-primary">
+      <mat-card-header class="mat-title">
+        Our focus is primarily on healthcare projects and we run a wide range of initiatives, both overseas and in
+        the
+        UK.
+      </mat-card-header>
+    </mat-card>
+
+  </section>
+
+
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%">
+      <img mat-card-image [src]="heartbeat">
+
+      <mat-card-content class="fill-accent">
+        <p>{{panel.text}}</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+      </mat-card-actions>
+
+    </mat-card>
+  </section>
+
+
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+      <mat-card fxFlex="100%" fxFlex.lt-sm="100%" class="stuff-accent">
+        <mat-card-header class="mat-title">
+          As you can see, we cover a lot of ground. And, with the help of corporate donations and continued support
+          from the public at home and overseas, we will develop our vital work further to do the right thing for many more
+          people in need.
+        </mat-card-header>
+      </mat-card>
+  
+    </section>
+
+</div>

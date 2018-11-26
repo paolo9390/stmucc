@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
 import { DomSanitizer } from '@angular/platform-browser';
-import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { MatIconRegistry } from '@angular/material/icon';
+import { BreadcrumbService } from './shared/breadcrumb/breadcrumb.service';
 
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { RouterModule, Routes, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -18,20 +19,21 @@ export class AppComponent {
   logo: string;
   logowhite: string;
   banner = {
-    slogan: "the charity for all charities"
+    slogan: "The charity for all charities"
   };
   footerDetails: object;
 
   constructor (
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry,
-    private route: ActivatedRoute,
-    private location: Location,
+    private breadcrumbService: BreadcrumbService,
     private router: Router
 
     ){
       this.logo = '/assets/img/stmucc.png';
       this.logowhite = '/assets/img/stmuccwhite.png';
+
+      this.addBreadcrumbFriendlyNames();
 
       this.footerDetails = [
         {
@@ -109,6 +111,14 @@ export class AppComponent {
     console.log(this.router.url);
 
   }
+
+  addBreadcrumbFriendlyNames(){
+    this.breadcrumbService.addFriendlyNameForRoute('/about/what-we-do', 'What We Do');
+    this.breadcrumbService.addFriendlyNameForRoute('/about/why-we-do-it', 'Why We Do It');
+    this.breadcrumbService.addFriendlyNameForRoute('/about/who-we-are', 'Who We Are');
+    this.breadcrumbService.addFriendlyNameForRoute('/about/transforming', 'Transforming Lives');
+  }
+
   getStyle(){
     if (this.router.url === '/home'){
       return 'transparent';

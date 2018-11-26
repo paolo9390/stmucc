@@ -1,0 +1,43 @@
+<div class="mat-typography">
+
+  <section>
+    <div>
+      <h1 class="title fill-primary">WHY WE DO IT</h1>
+    </div>
+  </section>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-accent">
+      <mat-card-header class="mat-title">
+        In a perfect world... a world where people of all countries have access to that most basic of human rights, healthcare, there would be no need for charities such as ours.
+      </mat-card-header>
+    </mat-card>
+  </section>
+
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="45%" fxFlex.lt-sm="100%">
+      <!-- <img mat-card-image [src]="heartbeat"> -->
+
+      <mat-card-content class="fill-accent">
+        <p>{{panel.text}}</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+      </mat-card-actions>
+
+    </mat-card>
+  </section>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="38%" fxFlex.lt-sm="100%" class="stuff-primary">
+      <mat-card-header class="mat-title">
+          Watch this video to see what motivates our founders and volunteers to undertake the work we do.
+      </mat-card-header>
+    </mat-card>
+
+    <iframe fxFlex="60%" src="https://www.youtube.com/embed/f9SXAOavKqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+  </section>
+
+</div>

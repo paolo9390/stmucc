@@ -1,0 +1,27 @@
+<section>
+  <div class="mat-typography">
+    <h1 class="trustees-title fill-primary">OUR TRUSTEES</h1>
+  </div>
+</section>
+
+
+<section layout-wrap class="cards trustee-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+  <mat-card *ngFor="let trustee of _trustees" fxFlex="45" (click)="viewMore(trustee)">
+
+    <mat-card-header>
+      <img class="trustee-header-image"  mat-card-avatar [src]="trustee.img">
+      <mat-card-title class="fill-accent">{{trustee.name}}</mat-card-title>
+      <mat-card-subtitle class="fill-accent trustee-alias">{{trustee.alias}}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image [src]="trustee.img">
+    <mat-card-content>
+      <p>
+        {{trustee.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">{{truste.name}}</button>
+    </mat-card-actions> -->
+
+  </mat-card>
+</section>

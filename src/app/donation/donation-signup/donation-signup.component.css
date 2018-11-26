@@ -1,0 +1,12 @@
+.donation-card {
+  width: 80%;
+}
+
+.donation-form {
+    width: 100%;
+}
+  
+button {
+  margin-top: 0.5em;
+  float: right;
+}

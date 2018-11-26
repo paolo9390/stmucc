@@ -46,23 +46,20 @@ $stmucc-app-warn);
 // Include the default theme styles.
 @include angular-material-theme($stmucc-app-theme);
 // Define an alternate dark theme.
-$management-primary: mat-palette($mat-amber,
+$secondary-primary: mat-palette($mat-amber,
 600,
 500,
 900);
-$management-accent: mat-palette($dark-palette,
-400,
-300,
-500);
-$management-warn: mat-palette($mat-deep-orange);
-$management-theme: mat-light-theme($management-primary,
-$management-accent,
-$management-warn);
+$secondary-accent: mat-palette($mat-gray, 500);
+$secondary-warn: mat-palette($mat-deep-orange);
+$secondary-theme: mat-light-theme($secondary-primary,
+$secondary-accent,
+$secondary-warn);
 // Include the alternative theme styles inside of a block with a CSS class. You can make this
 // CSS class whatever you want. In this example, any component inside of an element with
 // `.stmucc-dark-theme` will be affected by this alternate dark theme instead of the default theme.
-.stmucc-management-theme {
-    @include angular-material-theme($management-theme);
+.stmucc-secondary-theme {
+    @include angular-material-theme($secondary-theme);
 }
 
 .alternate-theme {
@@ -107,4 +104,23 @@ $light-app-warn);
 
 .fill-warn {
     color: mat-color($stmucc-app-warn);
+}
+
+.stuff-primary {
+    background-color: mat-color($stmucc-app-primary);
+    color: aliceblue !important;
+}
+
+.stuff-accent {
+    background-color: mat-color($stmucc-app-accent);
+    color: aliceblue !important;
+}
+
+.stuff-warn {
+    background-color: mat-color($stmucc-app-warn);
+    color: aliceblue !important;
+}
+
+.background-secondary-accent {
+    background-color: mat-color($secondary-accent)
 }

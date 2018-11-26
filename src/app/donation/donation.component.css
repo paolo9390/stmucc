@@ -1,0 +1,98 @@
+.donation-title {
+    font-size: 70px;
+    border-bottom: 1px solid ;
+    line-height: 1em;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.amount-section {
+    margin-top: 1em;
+}
+
+.amount-card {
+    margin-bottom: 1em;
+}
+
+.amount-card>h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.amount-card>h2 {
+    font-size: 58px;
+}
+
+.amount-card>p {
+    margin: 0;
+    font-size: 20px;
+    padding-top: 0.5em;
+}
+
+.amount-card mat-card-actions {
+    bottom: 0;
+    right: 0;
+    float: right;
+    /* position: absolute;
+    margin: 0.2em; */
+}
+
+.amount-div {
+    width: 100%;
+}
+
+.description-card {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.amount-div>button {
+    font-size: x-large;
+    margin: 0.3em;
+}
+
+.amount-toggle>mat-button-toggle {
+    font-size: xx-large;
+}
+
+.amount-field {
+    width: 80%;
+}
+
+.selectedAmount {
+    background: primary;
+}
+
+mat-divider {
+    background: aliceblue;
+    max-width: 70%;
+    margin-left: 1em;
+}
+
+.mat-form-field-label {
+    color: aliceblue !important;
+}
+
+.mat-form-field-underline {
+    background: aliceblue !important;
+}
+
+::ng-deep .amount-section .mat-form-field-label {
+    color: #f0f8ff8c !important;
+}
+  
+::ng-deep .amount-section .mat-focused .mat-form-field-label {
+    color: aliceblue !important;
+}
+
+::ng-deep .amount-section .mat-form-field-underline .mat-form-field-ripple {
+    background: #f0f8ff8c !important;
+}
+
+::ng-deep .amount-section .mat-form-field-underline {
+    background: aliceblue !important;
+}
+
+::ng-deep .mat-input-element:disabled {
+    color: aliceblue;
+}
