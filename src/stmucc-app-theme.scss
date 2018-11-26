@@ -46,7 +46,7 @@ $stmucc-app-warn);
 // Include the default theme styles.
 @include angular-material-theme($stmucc-app-theme);
 // Define an alternate dark theme.
-$secondary-primary: mat-palette($mat-amber,
+$secondary-primary: mat-palette($mat-pink,
 600,
 500,
 900);
@@ -63,7 +63,7 @@ $secondary-warn);
 }
 
 .alternate-theme {
-    $alternate-primary: mat-palette($mat-lime);
+    $alternate-primary: mat-palette($mat-lime, 400);
     $alternate-accent: mat-palette($mat-yellow, 400);
     $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
     @include angular-material-theme($alternate-theme);
@@ -123,4 +123,9 @@ $light-app-warn);
 
 .background-secondary-accent {
     background-color: mat-color($secondary-accent)
+}
+
+.stuff-secondary-primary {
+    background-color: mat-color($secondary-primary);
+    color: aliceblue !important;
 }

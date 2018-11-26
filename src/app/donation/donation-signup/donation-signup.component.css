@@ -1,5 +1,15 @@
 .donation-card {
-  width: 80%;
+  width: 90%;
+}
+
+.donation-card > h1 {
+  font-size: xx-large;
+}
+
+.donation-card > h1 > mat-icon {
+  font-size: xx-large;
+  vertical-align: sub;
+  margin-right: 0.5em;
 }
 
 .donation-form {

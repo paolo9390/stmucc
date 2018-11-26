@@ -58,6 +58,8 @@ export class DonationComponent implements OnInit {
   donationAmount: number = 10;
 
 
+  heartbeat: string = '/assets/img/about/donate_heart.jpg';
+
   constructor() { 
     this.panelImg = '/assets/img/heal.jpeg';
   }

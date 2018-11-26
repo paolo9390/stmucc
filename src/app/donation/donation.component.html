@@ -47,6 +47,10 @@
 
   </mat-card>
 
+  <div *ngIf="isSubmitted" fxFlex="40%">
+      <img class="thanks-div" mat-card-image [src]="heartbeat">
+  </div>
+
   <div fxFlex="48%" *ngIf="!isSubmitted">
     <div class="amount-div" fxLayout.lt-sm="column" layout-wrap>
       <button [ngClass]="{'stuff-accent': selectedAmount === donation}" (click)="onAmountSelect(donation)"
@@ -66,12 +70,13 @@
 
 
 <section *ngIf="!isSubmitted" fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="stuff-primary">
-      <mat-card-header class="mat-title">
-          Like to save a life every day?  (Click here) to become a regular supporter of our work.  Save lives now and in the future, and ensure that those you help have a future too... a future free from sickness and deprivation.
-      </mat-card-header>
-    </mat-card>
-  </section>
+  <mat-card fxFlex="100%" class="stuff-primary">
+    <mat-card-header class="mat-title">
+      Like to save a life every day? (Click here) to become a regular supporter of our work. Save lives now and in the
+      future, and ensure that those you help have a future too... a future free from sickness and deprivation.
+    </mat-card-header>
+  </mat-card>
+</section>
 
 <section *ngIf="isSubmitted">
   <donation-signup [donationAmount]="donationAmount"></donation-signup>
