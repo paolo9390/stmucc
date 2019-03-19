@@ -27,7 +27,7 @@ export class AppComponent {
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry,
     private breadcrumbService: BreadcrumbService,
-    private router: Router
+    public router: Router
 
     ){
       this.logo = '/assets/img/stmucc.png';
