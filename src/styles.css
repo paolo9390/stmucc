@@ -72,3 +72,8 @@ breadcrumb>ul>li::after {
 .larger-text {
     font-size: larger;
 }
+
+
+.mat-menu-content {
+    padding: 0 !important;
+}
