@@ -1,0 +1,34 @@
+<div class="mat-typography">
+    
+  <app-title [title]="title"></app-title>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-accent">
+      <mat-card-header class="mat-title">
+          If becoming a volunteer is something for you, then read on to learn more about the many opportunities available.  Remember, any voluntary work you undertake will have a real and positive impact on the lives of many people.  
+      </mat-card-header>
+    </mat-card>
+  </section>
+
+
+  <section layout-wrap class="cards-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="32%" fxFlex.lt-md="100%">
+
+      <mat-card-header>
+        <mat-card-title class="fill-primary">{{panel.title}}</mat-card-title>
+      </mat-card-header>
+
+      <img *ngIf="panel.img" mat-card-image [src]="panel.img">
+
+      <mat-card-content>
+        <p>{{panel.text}}</p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button [routerLink]="panel.url" mat-raised-button color="accent">{{panel.button}}</button>
+      </mat-card-actions>
+
+    </mat-card>
+  </section>
+
+</div>

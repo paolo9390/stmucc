@@ -1,0 +1,19 @@
+<div class="mat-typography">
+
+  <app-title [title]="title"></app-title>
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%">
+      <img mat-card-image [src]="uk">
+
+      <mat-card-title class="fill-primary">
+          <p>{{panel.title}}</p>
+        </mat-card-title>
+
+      <mat-card-content class="fill-accent">
+        <p>{{panel.text}}</p>
+      </mat-card-content>
+
+    </mat-card>
+  </section>
+</div>

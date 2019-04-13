@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./why.component.css']
 })
 export class WhyComponent implements OnInit {
+
+  title: string = 'WHY WE DO IT';
   
   whatwedo: string = '/assets/img/about/whatwedo.jpg';
   heartbeat: string = '/assets/img/about/donate_heart.jpg';

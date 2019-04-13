@@ -12,6 +12,7 @@ import { TrusteesDialogComponent } from './trustees-dialog/trustees-dialog.compo
 })
 export class TrusteesComponent implements OnInit {
 
+  title: string = 'OUR TRUSTEES';
   trustees: Observable<Trustee[]>
   _trustees: Trustee[];
   trusteesSubscription : Subscription;

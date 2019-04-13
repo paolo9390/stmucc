@@ -5,26 +5,35 @@ import { HomeComponent } from './home/home.component';
 import { SupportComponent } from './support/support.component';
 import { GoldCardComponent } from './gold-card/gold-card.component';
 import { ShopComponent } from './shop/shop.component';
-import { DonationComponent } from './donation/donation.component';
+import { GetInvolvedComponent } from './support/getinvolved/getinvolved.component';
+import { CorporateComponent } from './support/corporate/corporate.component';
 import { SummaryComponent } from './about/summary/summary.component';
 import { WhatComponent } from './about/what/what.component';
 import { WhyComponent } from './about/why/why.component';
 import { WhoComponent } from './about/who/who.component';
 import { SuccessComponent } from './gold-card/success/success.component';
+import { VolunteerComponent } from './volunteer/volunteer.component';
+import { UKComponent } from './volunteer/uk/uk.component';
+import { OverseasComponent } from './volunteer/overseas/overseas.component';
+import { TestimonialComponent } from './volunteer/testimonial/testimonial.component';
 import { TeamComponent } from './team/team.component';
 import { TrusteesComponent } from './team/trustees/trustees.component';
 import { AboutComponent } from './about/about.component';
+import { DonationComponent } from './donation/donation.component';
+import { ProjectListComponent } from './projects/project-list.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
+  { path: 'projects', component: ProjectListComponent },
   { path: 'support', data: { breadcrumbs: "Support" },
     children: [
       { path: '', component: SupportComponent },
-      { path: 'donations', component: DonationComponent },
+      { path: 'getinvolved', component: GetInvolvedComponent },
       { path: 'gold-card', component: GoldCardComponent },
-      { path: 'success', component: SuccessComponent },
+      { path: 'donations', component: DonationComponent },
+      { path: 'corporate', component: CorporateComponent },
     ]
   },
   { path: 'about',
@@ -40,6 +49,14 @@ export const routes: Routes = [
         { path: 'trustees', component: TrusteesComponent }
         ]
       }
+    ]
+  },
+  { path: 'volunteer',
+    children: [
+      { path: '', component: VolunteerComponent },
+      { path: 'uk', component: UKComponent },
+      { path: 'overseas', component: OverseasComponent },
+      { path: 'experiences', component: TestimonialComponent }
     ]
   }
 //   { path: '**', component: NotfoundComponent }

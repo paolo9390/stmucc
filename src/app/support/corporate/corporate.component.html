@@ -1,0 +1,36 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+      <mat-card fxFlex="100%" class="stuff-primary">
+        <img mat-card-image [src]="corporate">
+        <mat-card-header class="mat-title">
+            Whether in Egypt or the UK, we would welcome more businesses to become corporate partners with us, to help deliver on our goals.
+        </mat-card-header>
+      </mat-card>
+    </section>
+  
+  
+    <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+      <mat-card *ngFor="let panel of panels" fxFlex="100%">
+  
+        <mat-card-content>
+          <p>{{panel.text}}</p>
+        </mat-card-content>
+  
+        <mat-card-actions>
+        </mat-card-actions>
+  
+      </mat-card>
+    </section>
+  
+    <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+      <mat-card fxFlex="100%" class="stuff-accent">
+        <mat-card-header class="mat-title">
+            If you would like to find out more about collaborating with us as a corporate sponsor, please do get in touch
+        </mat-card-header>
+      </mat-card>
+  
+    </section>
+</div>

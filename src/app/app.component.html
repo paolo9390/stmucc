@@ -58,20 +58,20 @@
                         <button mat-menu-item routerLink="/about/team/trustees">Meet the team</button>
                     </mat-menu>
 
-                      <button mat-button color="primary" fxHide.lt-md>OUR PROJECTS</button>
+                      <button mat-button color="primary" fxHide.lt-md routerLink="/projects">OUR PROJECTS</button>
 
                       <button mat-button color="primary" [matMenuTriggerFor]="fundraise" fxHide.lt-sm>FUNDRAISE<mat-icon>arrow_drop_down</mat-icon></button>
                       <mat-menu #fundraise="matMenu">
-                          <button mat-menu-item>Get Involved</button>
-                          <button mat-menu-item>Corporate Support</button>
-                          <button mat-menu-item>The Gold Card</button>
+                          <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
+                          <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
+                          <button mat-menu-item routerLink="/support/gold-card">The Gold Card</button>
                       </mat-menu>
 
                       <button mat-button color="primary" [matMenuTriggerFor]="volunteer">VOLUNTEER<mat-icon>arrow_drop_down</mat-icon></button>
                       <mat-menu #volunteer="matMenu">
-                          <button mat-menu-item>UK</button>
-                          <button mat-menu-item>Overseas</button>
-                          <button mat-menu-item>Our Experiences</button>
+                          <button mat-menu-item routerLink="/volunteer/uk">UK</button>
+                          <button mat-menu-item routerLink="/volunteer/overseas">Overseas</button>
+                          <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
                       </mat-menu>
 
                       <button mat-button color="primary">PARTNERS</button>

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   
+  title: string = 'ABOUT US';
   panels: any[] = [
     {
       title: "Who We Are",

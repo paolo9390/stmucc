@@ -1,0 +1,41 @@
+<div class="mat-typography">
+
+  <app-title [title]="title"></app-title>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-primary">
+      <img mat-card-image [src]="christmasmission">
+      <mat-card-header class="mat-title">
+          The experiences of volunteers are many and varied but one theme percolates through all their recollections, and that is a true sense of fulfilment...
+      </mat-card-header>
+    </mat-card>
+  </section>
+
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%">
+      <img mat-card-image [src]="heartbeat">
+
+      <mat-card-content class="fill-accent">
+        <p>{{panel.text}}</p>
+      </mat-card-content>
+
+      <mat-card-subtitle class="fill-primary">
+          <p>{{panel.title}}</p>
+        </mat-card-subtitle>
+
+    </mat-card>
+  </section>
+
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="38%" fxFlex.lt-sm="100%" class="stuff-primary">
+      <mat-card-header class="mat-title">
+          Watch this powerful video to see what inspires our volunteers
+      </mat-card-header>
+    </mat-card>
+
+    <iframe fxFlex="60%" src="https://www.youtube.com/embed/Z4f777t8dZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+  </section>
+</div>

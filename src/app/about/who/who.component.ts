@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WhoComponent implements OnInit {
   
   whoweare: string = '/assets/img/about/whoweare.jpg';
+  title: string = 'WHO WE ARE';
 
   panels: any[] = [
     {

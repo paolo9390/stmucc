@@ -1,18 +1,14 @@
-<div>
+<div class="mat-typography">
   <button (click)="onNoClick()" class="close-button" mat-icon-button color="primary">
     <mat-icon>close</mat-icon>
   </button>
 
-  <section>
-    <div class="mat-typography">
-      <h1 class="trustee-title fill-primary">{{data.trustee.name | uppercase}}</h1>
-    </div>
-  </section>
+  <app-title [title]="data.trustee.name | uppercase"></app-title>
 
   <mat-dialog-content>
     
       <section layout-wrap fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
-          <div class="mat-typography" fxFlex="40%">
+          <div fxFlex="40%">
             <p style="font-size: x-large">
               <!-- {{data.trustee.description}} -->
               Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing

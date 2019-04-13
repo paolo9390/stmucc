@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./donation.component.css']
 })
 export class DonationComponent implements OnInit {
+
+  title: string = 'YOUR DONATION';
   panelImg: string;
   selectedAmount: any;
 

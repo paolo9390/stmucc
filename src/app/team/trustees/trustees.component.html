@@ -1,9 +1,6 @@
-<section>
-  <div class="mat-typography">
-    <h1 class="trustees-title fill-primary">OUR TRUSTEES</h1>
-  </div>
-</section>
+<div class="mat-typography">
 
+  <app-title [title]="title"></app-title>
 
 <section layout-wrap class="cards trustee-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
   <mat-card *ngFor="let trustee of _trustees" fxFlex="45" (click)="viewMore(trustee)">
@@ -25,3 +22,5 @@
 
   </mat-card>
 </section>
+
+</div>

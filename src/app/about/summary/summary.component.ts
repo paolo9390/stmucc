@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SummaryComponent implements OnInit {
 
+  title: string = 'TRANSFORMING LIVES AROUND THE WORLD';
   transform: string = '/assets/img/about/donate_heart.jpg';
 
   panels: any[] = [

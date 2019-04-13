@@ -1,0 +1,38 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+      <mat-card fxFlex="100%" class="stuff-primary">
+        <img mat-card-image [src]="getinvolved">
+        <mat-card-header class="mat-title">
+            We are grateful for all the support that we receive, because every donation, however small, enables us to do the right thing in support of those without a voice.
+        </mat-card-header>
+      </mat-card>
+    </section>
+  
+  
+    <section layout-wrap class="cards-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+      <mat-card *ngFor="let panel of panels" fxFlex="100%">
+  
+        <mat-card-content>
+          <p>{{panel.text}}</p>
+        </mat-card-content>
+  
+        <mat-card-actions>
+        </mat-card-actions>
+  
+      </mat-card>
+    </section>
+  
+    <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+      <mat-card fxFlex="38%" fxFlex.lt-sm="100%" class="stuff-accent">
+        <mat-card-header class="mat-title">
+            We appreciate whatever individuals or businesses are able to do in support of our vital work, and we’re always looking for new initiatives and opportunities.
+        </mat-card-header>
+      </mat-card>
+  
+      <iframe fxFlex="60%" src="https://www.youtube.com/embed/Z4f777t8dZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    </section>
+</div>
