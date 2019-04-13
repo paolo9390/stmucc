@@ -17,9 +17,9 @@
 
 
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%">
+    <mat-card (click)="viewMore(project)" *ngFor="let project of projects" fxFlex="30%" fxFlex.lt-md="45%">
       <mat-card-title class="fill-accent">
-        <p>{{panel.title}}</p>
+        <p>{{project.title}}</p>
       </mat-card-title>
       <img mat-card-image [src]="fundraise">
     </mat-card>

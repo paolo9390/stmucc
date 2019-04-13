@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as globals from './globals.service';
-import { Panel } from '../models/panel.model';
+import { Panel } from '../_models/panel.model';
 import { Observable } from 'rxjs';
 
 @Injectable()

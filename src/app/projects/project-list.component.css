@@ -12,4 +12,5 @@
 
 .cards>mat-card {
     margin: 1em;
+    cursor: pointer;
 }

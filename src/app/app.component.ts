@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
-import { BreadcrumbService } from './shared/breadcrumb/breadcrumb.service';
+import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
 
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';

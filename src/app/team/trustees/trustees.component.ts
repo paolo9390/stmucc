@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamService } from '../../services/team.service';
-import { Trustee } from '../../models/team.model';
+import { TeamService } from '../../_services/team.service';
+import { Trustee } from '../../_models/team.model';
 import { Observable, Subscription } from 'rxjs';
 import { MatDialog } from '@angular/material';
 import { TrusteesDialogComponent } from './trustees-dialog/trustees-dialog.component';

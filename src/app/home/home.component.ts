@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { PanelService } from '../services/panel.service';
-import { Panel } from '../models/panel.model';
+import { PanelService } from '../_services/panel.service';
+import { Panel } from '../_models/panel.model';
 import { Observable, Subscription } from 'rxjs';
 
 @Component({
