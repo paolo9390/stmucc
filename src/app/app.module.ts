@@ -17,14 +17,11 @@ import { SupportModule } from './support/support.module';
 import { DonationModule } from './donation/donation.module';
 import { GoldCardComponent } from './gold-card/gold-card.component';
 import { ShopComponent } from './shop/shop.component';
-import { VolunteerComponent } from './volunteer/volunteer.component';
-import { UKComponent } from './volunteer/uk/uk.component';
-import { OverseasComponent } from './volunteer/overseas/overseas.component';
-import { TestimonialComponent } from './volunteer/testimonial/testimonial.component';
+import { VolunteerModule } from './volunteer/volunteer.module';
 import { AboutModule } from './about/about.module';
 import { TeamModule } from './team/team.module';
 import { SuccessComponent } from './gold-card/success/success.component';
-import { ProjectModule } from './projects/project.module';
+import { ProjectModule } from './project/project.module';
 import { PanelService } from './_services/panel.service';
 import { TeamService } from './_services/team.service';
 import { PaypalService } from './_services/paypal.service';
@@ -39,10 +36,6 @@ import { TitleModule } from './_shared/title/title.module';
     PartnerListComponent,
     GoldCardComponent,
     ShopComponent,
-    VolunteerComponent,
-    UKComponent,
-    OverseasComponent,
-    TestimonialComponent,
     SuccessComponent
   ],
   imports: [
@@ -58,6 +51,7 @@ import { TitleModule } from './_shared/title/title.module';
     RoutingModule,
     HttpModule,
     JsonpModule,
+    VolunteerModule,
     HttpClientModule,
     MaterialModule,
     FlexLayoutModule,

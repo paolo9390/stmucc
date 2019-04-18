@@ -1,11 +1,11 @@
 <div class="mat-typography">
-    
+
   <app-title [title]="title"></app-title>
 
   <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="stuff-accent">
+    <mat-card fxFlex="100%" class="stuff-warn">
       <mat-card-header class="mat-title">
-          If becoming a volunteer is something for you, then read on to learn more about the many opportunities available.  Remember, any voluntary work you undertake will have a real and positive impact on the lives of many people.  
+          If becoming a volunteer is something for you, then read on to learn more about the many opportunities available.  Remember, any voluntary work you undertake will have a real and positive impact on the lives of many people.
       </mat-card-header>
     </mat-card>
   </section>
@@ -25,7 +25,7 @@
       </mat-card-content>
 
       <mat-card-actions>
-        <button [routerLink]="panel.url" mat-raised-button color="accent">{{panel.button}}</button>
+        <button [routerLink]="panel.url" mat-raised-button color="warn">{{panel.button}}</button>
       </mat-card-actions>
 
     </mat-card>

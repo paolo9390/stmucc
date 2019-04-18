@@ -20,7 +20,7 @@ import { TeamComponent } from './team/team.component';
 import { TrusteesComponent } from './team/trustees/trustees.component';
 import { AboutComponent } from './about/about.component';
 import { DonationComponent } from './donation/donation.component';
-import { ProjectListComponent } from './projects/project-list.component';
+import { ProjectListComponent } from './project/project-list/project-list.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -43,7 +43,7 @@ export const routes: Routes = [
       { path: 'what-we-do', component: WhatComponent },
       { path: 'why-we-do-it', component: WhyComponent },
       { path: 'who-we-are', component: WhoComponent },
-      { path: 'team', 
+      { path: 'team',
       children: [
         { path: '', component: TeamComponent },
         { path: 'trustees', component: TrusteesComponent }
@@ -60,7 +60,7 @@ export const routes: Routes = [
     ]
   }
 //   { path: '**', component: NotfoundComponent }
-  
+
 ];
 
 

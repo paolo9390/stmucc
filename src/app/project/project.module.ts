@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectListComponent } from './project-list.component';
+import { ProjectListComponent } from './project-list/project-list.component';
+import { ProjectComponent } from './project.component';
 import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
 import { TitleModule } from '../_shared/title/title.module';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-// add single project component to show it per page
 
 @NgModule({
   declarations: [
+    ProjectComponent,
     ProjectListComponent,
     ProjectDialogComponent
   ],
@@ -23,7 +24,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   entryComponents: [ProjectDialogComponent],
   exports: [
-    ProjectListComponent
+    ProjectComponent
   ]
 })
 export class ProjectModule { }
