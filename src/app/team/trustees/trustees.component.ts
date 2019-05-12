@@ -20,7 +20,7 @@ export class TrusteesComponent implements OnInit {
   constructor(private teamService: TeamService, public dialog: MatDialog) { }
 
   ngOnInit() {
-    this.teamService.getTrustees().subscribe(trustees => {
+    this.teamService.getTrusteesLocally().subscribe(trustees => {
       this._trustees = trustees;
     })
   }

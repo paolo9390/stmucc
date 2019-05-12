@@ -13,4 +13,9 @@ export class TeamService {
     var trustees =  this.http.get<Trustee[]>(`${globals.BASE_URL}/team/trustees`);
     return trustees;
   }
+
+  getTrusteesLocally(): Observable<Trustee[]> {
+    var trustees = this.http.get<Trustee[]>(`${globals.LOCAL_URL}/trustees.json`);
+    return trustees;
+  }
 }

@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit, OnDestroy {
    }
 
   ngOnInit() {
-    this.panelService.getPanels().subscribe(panels => {
+    this.panelService.getPanelsLocally().subscribe(panels => {
       this._panels = panels;
     })
   }
