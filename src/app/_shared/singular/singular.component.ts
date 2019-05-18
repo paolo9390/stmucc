@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./singular.component.css']
 })
 export class SingularComponent implements OnInit {
+  title: string = '';
 
   constructor() { }
 

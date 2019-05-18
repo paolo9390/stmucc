@@ -1,13 +1,10 @@
 <div class="mat-typography">
 
-  <app-title [title]="project.title"></app-title>
+  <app-title [title]="title"></app-title>
 
   <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
     <mat-card fxFlex="100%" class="stuff-accent">
-      <img *ngIf="fundraise" mat-card-image [src]="fundraise">
-
       <mat-card-header class="mat-title">
-        {{project.description}}
       </mat-card-header>
     </mat-card>
   </section>
