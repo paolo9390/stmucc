@@ -53,6 +53,15 @@
 
               <div class="toolbar">
                   <mat-toolbar fxLayout.gt-md="row" fxLayoutAlign="center center" class="navbar" layout-fill>
+                    <!-- menu for responsive devices -->
+                    <button mat-icon-button color="primary" [matMenuTriggerFor]="mobile" fxHide.gt-sm><mat-icon>menu</mat-icon></button>
+                    <mat-menu #mobile="matMenu">
+                        <button mat-menu-item routerLink="/projects">OUR PROJECTS</button>
+                        <button mat-menu-item disabled>PARTNERS</button>
+                        <button mat-menu-item disabled>CONNECT</button>
+                    </mat-menu>
+    
+                    <!-- other menu -->
                     <button mat-button color="primary" [matMenuTriggerFor]="aboutus">ABOUT US<mat-icon>arrow_drop_down</mat-icon></button>
                     <mat-menu #aboutus="matMenu">
                         <button mat-menu-item routerLink="/about/who-we-are">Who we are</button>
@@ -79,14 +88,6 @@
                     <button mat-button fxHide.lt-sm color="primary" disabled>PARTNERS</button>
 
                     <button mat-button fxHide.lt-sm color="primary" disabled>CONNECT</button>
-
-                    <!-- rest of menu for mobiles -->
-                    <button mat-icon-button color="primary" [matMenuTriggerFor]="mobile" fxHide.gt-sm><mat-icon>menu</mat-icon></button>
-                    <mat-menu #mobile="matMenu">
-                        <button mat-menu-item routerLink="/projects">OUR PROJECTS</button>
-                        <button mat-menu-item disabled>PARTNERS</button>
-                        <button mat-menu-item disabled>CONNECT</button>
-                    </mat-menu>
 
                   </mat-toolbar>
               </div>
