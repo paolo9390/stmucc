@@ -13,9 +13,6 @@ export class ProjectListComponent implements OnInit {
 
   title: string = 'OUR PROJECTS';
 
-  whatwedo: string = '/assets/img/about/whatwedo.jpg';
-  fundraise: string = '/assets/img/projects/fundraise-icon.png';
-
   projects: Project[];
 
   constructor(public dialog: MatDialog, private projectService: ProjectService) { }
@@ -23,7 +20,7 @@ export class ProjectListComponent implements OnInit {
   ngOnInit() {
     this.projectService.getProjectsLocally().subscribe(projects => {
       this.projects = projects;
-    })
+    });
   }
 
   viewMore(project): void {

@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { PanelService } from '../_services/panel.service';
+import { AppService } from '../_services/app.service';
 import { Panel } from '../_models/panel.model';
 import { Observable, Subscription } from 'rxjs';
 import { ProjectService } from '../_services/project.service';
@@ -22,10 +22,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   phoenixProject: Project;
 
-  constructor(private panelService: PanelService, private projectService: ProjectService) {}
+  constructor(private AppService: AppService, private projectService: ProjectService) {}
 
   ngOnInit() {
-    this.panelService.getPanelsLocally().subscribe(panels => {
+    this.AppService.getHomePanelsLocally().subscribe(panels => {
       this._panels = panels;
     });
 

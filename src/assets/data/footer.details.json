@@ -1,0 +1,56 @@
+[
+    {
+      "name": "Media",
+      "link": "./",
+      "sublist": [
+        {
+        "name": "Photos",
+        "link": "./"
+        },
+        {
+          "name": "Videos",
+          "link": "./"
+        },
+        {
+          "name": "Newsletters",
+          "link": "./"
+        }
+      ]
+    },
+    {
+      "name": "Help Us",
+      "link": "./",
+      "sublist": [
+        {
+        "name": "Donate",
+        "link": "./"
+        },
+        {
+          "name": "Volunteer",
+          "link": "./"
+        },
+        {
+          "name": "Youth Mission",
+          "link": "./"
+        }
+      ]
+    },
+    {
+      "name": "StMUCC",
+      "link": "./",
+      "sublist": [
+        {
+        "name": "Community",
+        "link": "./"
+        },
+        {
+          "name": "Careers",
+          "link": "./"
+        },
+        {
+          "name": "JustGiving",
+          "link": "./"
+        }
+      ]
+    }
+]

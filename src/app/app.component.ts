@@ -7,6 +7,8 @@ import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
+import { Footer } from './_models/footer.model';
+import { AppService } from './_services/app.service';
 
 @Component({
   selector: 'app-root',
@@ -16,85 +18,27 @@ import { Router } from '@angular/router';
 export class AppComponent {
   blue = "blue";
   title = 'stmucc';
-  logo: string;
-  logowhite: string;
+  logo: string = '/assets/img/stmucc.png';;
+  logowhite: string = '/assets/img/stmuccwhite.png';;
   banner = {
     slogan: "The charity for all charities"
   };
-  footerDetails: object;
+  footerDetails: Footer[];
 
   constructor (
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry,
     private breadcrumbService: BreadcrumbService,
+    private appService: AppService,
     public router: Router
-
     ){
-      this.logo = '/assets/img/stmucc.png';
-      this.logowhite = '/assets/img/stmuccwhite.png';
-
-      this.addBreadcrumbFriendlyNames();
-
-      this.footerDetails = [
-        {
-          name: 'Media',
-          link: './',
-          sublist: [
-            {
-            name: 'Photos',
-            link: './'
-            },
-            {
-              name: 'Videos',
-              link: './'
-            },
-            {
-              name: 'Newsletters',
-              link: './'
-            }
-          ]
-        },
-        {
-          name: 'Help Us',
-          link: './',
-          sublist: [
-            {
-            name: 'Donate',
-            link: './'
-            },
-            {
-              name: 'Volunteer',
-              link: './'
-            },
-            {
-              name: 'Youth Mission',
-              link: './'
-            }
-          ]
-        },
-        {
-          name: 'StMUCC',
-          link: './',
-          sublist: [
-            {
-            name: 'Community',
-            link: './'
-            },
-            {
-              name: 'Careers',
-              link: './'
-            },
-            {
-              name: 'JustGiving',
-              link: './'
-            }
-          ]
-        },
-      ];
-
   }
 
   ngOnInit() {
+    this.appService.getFooterLocally().subscribe(footerDetails => {
+      this.footerDetails = footerDetails;
+    });
+
     this.iconRegistry.addSvgIconInNamespace('img', 'twitter',
     this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/twitter.svg'));
 
@@ -106,10 +50,7 @@ export class AppComponent {
 
     this.iconRegistry.addSvgIconInNamespace('img', 'linkedin',
     this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/linkedin.svg'));
-
-
-    console.log(this.router.url);
-
+    this.addBreadcrumbFriendlyNames();
   }
 
   addBreadcrumbFriendlyNames(){
@@ -117,6 +58,7 @@ export class AppComponent {
     this.breadcrumbService.addFriendlyNameForRoute('/about/why-we-do-it', 'Why We Do It');
     this.breadcrumbService.addFriendlyNameForRoute('/about/who-we-are', 'Who We Are');
     this.breadcrumbService.addFriendlyNameForRoute('/about/transforming', 'Transforming Lives');
+    this.breadcrumbService.addFriendlyNameForRoute('/support/getinvolved', 'Get Involved');
   }
 
   getStyle(){

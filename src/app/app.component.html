@@ -93,7 +93,7 @@
               </div>
 
               <router-outlet></router-outlet>
-              <app-partner-list></app-partner-list>
+              <app-partner-list *ngIf="router.url === '/home'"></app-partner-list>
           </div>
       </section>
       
