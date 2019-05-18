@@ -6,7 +6,7 @@
     "text": "Find out about volunteering, fundraising or taking part in an event",
     "img": "/assets/img/appeals.jpg",
     "button": "Find out more",
-    "url": "/appeals",
+    "url": "/support",
     "standard": true
   },
   {
@@ -46,7 +46,7 @@
     "img": "/assets/img/phoenix.jpg",
     "text": "Read the latest news about our support",
     "button": "Read more",
-    "url": "/news",
+    "url": "/projects",
     "standard": true
   }, {
     "items": [],
