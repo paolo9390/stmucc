@@ -15,7 +15,7 @@ import { PartnerComponent } from './partner/partner.component';
 import { PartnerListComponent } from './partner/partner-list/partner-list.component';
 import { SupportModule } from './support/support.module';
 import { DonationModule } from './donation/donation.module';
-import { GoldCardComponent } from './gold-card/gold-card.component';
+import { GoldCardModule } from './gold-card/gold-card.module';
 import { ShopComponent } from './shop/shop.component';
 import { VolunteerModule } from './volunteer/volunteer.module';
 import { AboutModule } from './about/about.module';
@@ -23,6 +23,7 @@ import { TeamModule } from './team/team.module';
 import { SuccessComponent } from './gold-card/success/success.component';
 import { ProjectModule } from './project/project.module';
 import { PaypalService } from './_services/paypal.service';
+import { AppService } from './_services/app.service';
 import { TitleModule } from './_shared/title/title.module';
 
 
@@ -32,7 +33,6 @@ import { TitleModule } from './_shared/title/title.module';
     BreadcrumbComponent,
     PartnerComponent,
     PartnerListComponent,
-    GoldCardComponent,
     ShopComponent,
     SuccessComponent
   ],
@@ -43,6 +43,7 @@ import { TitleModule } from './_shared/title/title.module';
     TeamModule,
     HomeModule,
     ProjectModule,
+    GoldCardModule,
     TitleModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -57,7 +58,7 @@ import { TitleModule } from './_shared/title/title.module';
     ReactiveFormsModule
 
   ],
-  providers: [BreadcrumbService, PaypalService],
+  providers: [BreadcrumbService, PaypalService, AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

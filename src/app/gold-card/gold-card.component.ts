@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PaypalService } from '../_services/paypal.service';
 import { Router } from "@angular/router";
+import { GoldCardService } from '../_services/goldcard.service';
+import { MatDialog } from '@angular/material';
+import { TermsDialogComponent } from './terms-dialog/terms-dialog.component';
 
 @Component({
   selector: 'app-gold-card',
@@ -9,14 +12,20 @@ import { Router } from "@angular/router";
 })
 export class GoldCardComponent implements OnInit {
   perklist: object;
-  title: string;
+  title: string = 'Gold Card';
+  heading: string;
   headline: string;
   subheadline: string;
   img: any;
+  terms: any[];
 
-  constructor(private paypalService: PaypalService, private router: Router) {
+  constructor(private paypalService: PaypalService, 
+    private goldcardService: GoldCardService, 
+    public dialog: MatDialog,
+    private router: Router) {
+
     this.img = '/assets/img/shop/perks.png';
-    this.title = "Save Money Save Lives";
+    this.heading = "Save Money Save Lives";
     this.headline = "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for a patient in the Middle East's prescription medication.";
     this.subheadline = "When you join St Mark Gold Card, you will have access to exclusive perks throught our Partner Perkbox and more:";
     
@@ -41,15 +50,30 @@ export class GoldCardComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.goldcardService.getTsCsLocally().subscribe(terms => {
+      this.terms = terms;
+    })
   }
 
   pay(){
     this.paypalService.pay().subscribe(res => {
-      console.log(res);
       window.location.href = res.redirectUrl;
       // this.router.navigate(['/externalRedirect', { externalUrl: res.redirectUrl }], {
       //   skipLocationChange: true,
       // });
+    });
+  }
+
+  viewTerms(): void {
+    const dialogRef = this.dialog.open(TermsDialogComponent, {
+      width: '80%',
+      data: {
+        title: 'Terms & Conditions',
+        terms: this.terms
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
     });
   }
 

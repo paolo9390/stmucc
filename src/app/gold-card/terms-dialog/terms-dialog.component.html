@@ -1,0 +1,20 @@
+<div class="mat-typography">
+  <button (click)="onNoClick()" class="close-button" mat-icon-button color="primary">
+    <mat-icon>close</mat-icon>
+  </button>
+
+  <app-title [title]="data.title | uppercase"></app-title>
+
+  <mat-dialog-content>
+      <section layout-wrap fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+          <div fxFlex>
+            <p style="font-size: x-large" *ngFor="let term of data?.terms">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+                {{term.text}}
+            </p>
+          </div>
+        </section>
+
+  </mat-dialog-content>
+  
+</div>

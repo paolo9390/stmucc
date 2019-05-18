@@ -3,9 +3,6 @@ import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
-
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { Footer } from './_models/footer.model';
 import { AppService } from './_services/app.service';

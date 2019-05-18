@@ -57,7 +57,7 @@ $secondary-accent,
 $secondary-warn);
 // Include the alternative theme styles inside of a block with a CSS class. You can make this
 // CSS class whatever you want. In this example, any component inside of an element with
-// `.stmucc-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+// `.stmucc-secondary-theme` will be affected by this alternate dark theme instead of the default theme.
 .stmucc-secondary-theme {
     @include angular-material-theme($secondary-theme);
 }

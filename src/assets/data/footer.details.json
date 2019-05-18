@@ -12,26 +12,26 @@
           "link": "./"
         },
         {
-          "name": "Newsletters",
+          "name": "Annual Reports",
           "link": "./"
         }
       ]
     },
     {
       "name": "Help Us",
-      "link": "./",
+      "link": "./about/why-we-do-it",
       "sublist": [
         {
         "name": "Donate",
-        "link": "./"
+        "link": "./support/donations"
         },
         {
           "name": "Volunteer",
-          "link": "./"
+          "link": "./volunteer"
         },
         {
           "name": "Youth Mission",
-          "link": "./"
+          "link": "./about/what-we-do"
         }
       ]
     },

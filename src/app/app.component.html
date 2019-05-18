@@ -44,9 +44,11 @@
                       <h1 class="slogan fill-primary">"{{banner.slogan}}"</h1>
                   </section>
 
-                  <button routerLink="/support/donations" mat-raised-button color="warn">Donate
-                      <mat-icon class="donate-icon">favorite_border</mat-icon>
-                    </button>
+                  <div class="stmucc-secondary-theme">
+                        <button routerLink="/support/donations" mat-raised-button color="primary">Donate
+                            <mat-icon class="donate-icon">favorite_border</mat-icon>
+                        </button>
+                  </div>
               </div>
 
               <div class="toolbar">
@@ -105,9 +107,9 @@
                   
               <img class="logo" [src]="logowhite">
                   <mat-nav-list class="mat-typography" *ngFor="let detail of footerDetails">
-                      <a matLine href="{{detail.link}}">{{detail.name}}</a>
+                      <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
                       <mat-list-item *ngFor="let list of detail.sublist">
-                          <a matLine href="{{list.link}}">{{list.name}}</a>
+                          <a matLine [routerLink]="list.link">{{list.name}}</a>
                       </mat-list-item>
                   </mat-nav-list>
               </div>

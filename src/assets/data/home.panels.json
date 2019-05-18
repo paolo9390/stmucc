@@ -23,11 +23,11 @@
   {
     "items": [{
       "name": "Operations",
-      "value": "1231",
+      "value": "1,804",
       "icon": "local_hospital"
     }, {
       "name": "Prescriptions",
-      "value": "409312",
+      "value": "58,719",
       "icon": "local_pharmacy"
     }],
     "_id": 3,

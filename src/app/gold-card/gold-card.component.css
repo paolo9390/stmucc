@@ -4,16 +4,21 @@ mat-grid-list{
 
 mat-grid-tile {
     background: lightblue;
-  }
+}
+
+.end-section {
+    margin-top: 1em;
+}
 
 button {
     font-size: large;
 }
 
-.apply {
-    padding-top: 2em;
+.div-img {
+    margin-top: 2em;
 }
 
 .apply button {
-    margin-right: 1em;
+    margin: 0.2em;
+    font-size: x-large;
 }

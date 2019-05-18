@@ -3,14 +3,14 @@
   <app-title [title]="title"></app-title>
   
   <section *ngIf="!isSubmitted" fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="fill-accent">
+    <mat-card fxFlex="98%" class="stuff-accent">
       <mat-card-header class="mat-title">
         Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many
         life-saving/life-changing initiatives.
       </mat-card-header>
     </mat-card>
 
-    <mat-card fxFlex="100%" class="fill-accent">
+    <mat-card fxFlex="98%" class="fill-accent">
       <mat-card-header class="mat-title">
         100% of the donations you give to St Mark Universal Copts Care go directly to funding our programmes and vital
         work. Unlike some charitable organisations, we do not use donations for administration costs or other
@@ -23,7 +23,7 @@
   <section class="amount-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch"
     layout-wrap>
 
-    <mat-card fxFlex="48%" class="amount-card stuff-accent">
+    <mat-card fxFlex="48%" class="amount-card stuff-secondary-primary">
       <h1 class="mat-display-1">SINGLE DONATION OF</h1>
 
       <div *ngIf="!isOther">
@@ -69,7 +69,7 @@
 
 
   <section *ngIf="!isSubmitted" fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="stuff-primary">
+    <mat-card fxFlex="98%" class="stuff-primary">
       <mat-card-header class="mat-title">
         Like to save a life every day? (Click here) to become a regular supporter of our work. Save lives now and in
         the

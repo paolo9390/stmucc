@@ -1,31 +1,42 @@
-
 <section class="mat-typography">
-  
-  <app-title title="St Mark Gold Card"></app-title>
+
+  <app-title [title]="title | uppercase"></app-title>
 
   <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between stretch" fxLayoutWrap>
-      <div fxFlex="55">
-        <h1>{{title}}</h1>
-        <p>{{headline}}</p>
-        <mat-list role="list">
-            <span mat-line>{{subheadline}}</span>
-            <mat-list-item *ngFor="let perk of perklist">
-              <mat-icon mat-list-icon>{{perk.icon}}</mat-icon>
-              <p mat-line>{{perk.text}}</p>
-            </mat-list-item>
-        </mat-list>
-      </div>
-      <div fxFlex="45">
+    <div fxFlex="55">
+      <mat-card>
+        <mat-card-header class="mat-title fill-accent">
+            <h1>{{heading}}</h1>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{headline}}</p>
+            <mat-list role="list">
+              <span mat-line>{{subheadline}}</span>
+              <mat-list-item *ngFor="let perk of perklist">
+                <mat-icon mat-list-icon>{{perk.icon}}</mat-icon>
+                <p mat-line>{{perk.text}}</p>
+              </mat-list-item>
+            </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
 
-        <img width="100%" mat-card-image [src]="img">
-      </div>
+    <div fxFlex="45" class="div-img">
+      <img width="100%" mat-card-image [src]="img">
+    </div>
   </div>
 
-  <div class="apply">
-    <button (click)="pay()" mat-raised-button color="accent">Sign Up</button>
-    <button mat-button color="accent">Terms & Conditions</button>
-  </div>
-
+  <section fxLayoutAlign="space-around stretch" class="end-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-primary">
+      <mat-card-header class="mat-title">
+          100% of your monthly subscription will fund the monthly prescription of medication for one patient, as part of our healthcare projects in Egypt and beyond.
+      </mat-card-header>
+      
+      <div class="apply" fxLayoutAlign="center center">
+        <button mat-button color="warn" (click)="viewTerms()">Terms & Conditions</button>
+        <button (click)="pay()" mat-flat-button color="warn">Sign Up</button>
+      </div>
+    </mat-card>
+  </section>
 
 </section>
-  

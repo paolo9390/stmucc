@@ -17,7 +17,7 @@ export class AppService {
   }
 
   getHomePanelsLocally(): Observable<Panel[]> {
-    var panels = this.http.get<Panel[]>(`${globals.LOCAL_URL}/panels.json`);
+    var panels = this.http.get<Panel[]>(`${globals.LOCAL_URL}/home.panels.json`);
     return panels;
   }
 
