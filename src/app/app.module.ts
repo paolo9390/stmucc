@@ -22,8 +22,6 @@ import { AboutModule } from './about/about.module';
 import { TeamModule } from './team/team.module';
 import { SuccessComponent } from './gold-card/success/success.component';
 import { ProjectModule } from './project/project.module';
-import { PanelService } from './_services/panel.service';
-import { TeamService } from './_services/team.service';
 import { PaypalService } from './_services/paypal.service';
 import { TitleModule } from './_shared/title/title.module';
 
@@ -59,7 +57,7 @@ import { TitleModule } from './_shared/title/title.module';
     ReactiveFormsModule
 
   ],
-  providers: [BreadcrumbService, PanelService, TeamService, PaypalService],
+  providers: [BreadcrumbService, PaypalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

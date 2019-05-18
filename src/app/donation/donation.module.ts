@@ -7,6 +7,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DonationService } from '../_services/donation.service';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FlexLayoutModule,
     TitleModule
   ],
+  providers: [DonationService],
   exports: [
     DonationComponent
   ]

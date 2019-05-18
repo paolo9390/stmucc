@@ -7,6 +7,7 @@ import { TitleModule } from '../_shared/title/title.module';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TeamService } from '../_services/team.service';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     TitleModule
   ],
   entryComponents: [TrusteesDialogComponent],
+  providers: [TeamService],
   exports: [
     TeamComponent
   ]

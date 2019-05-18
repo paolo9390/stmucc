@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DonationService } from '../_services/donation.service';
+import { RegularDonation, DonationPanel } from '../_models/donation.model';
 
 @Component({
   selector: 'app-donation',
@@ -11,49 +13,9 @@ export class DonationComponent implements OnInit {
   panelImg: string;
   selectedAmount: any;
 
-  panels: any[] = [
-    {
-      title: "",
-      text: "Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many life-saving/life-changing initiatives."
-    },
-    {
-      title: "",
-      text: "100% of the donations you give to St Mark Universal Copts Care go directly to funding our programmes and vital work.  Unlike some charitable organisations, we do not use donations for administration costs or other overheads.  What you donate gets to where it’s needed, and every pound makes an impact."
-    }
-  ]
+  panels: DonationPanel[];
 
-  fixedDonations: any[] = [
-    {
-      value: 10,
-      amount: "£10",
-      description: "covers one month's prescription cost for a diabetic patient"
-    },
-    {
-      value: 25,
-      amount: "£25",
-      description: "covers one month's prescription cost for a heart disease patient"
-    },
-    {
-      value: 50,
-      amount: "£50",
-      description: "covers one month's prescription cost for a kidney failure patient"
-    },
-    {
-      value: 100,
-      amount: "£100",
-      description: "covers one surgery's cost"
-    },
-    {
-      value: 500,
-      amount: "£500",
-      description: "will buy an electric hospital bed"
-    },
-    {
-      value: 0,
-      amount: "Other",
-      description: "Other amount"
-    }
-  ];
+  fixedDonations: RegularDonation[];
   
   isOther: boolean = false;
   isSubmitted: boolean = false;
@@ -62,12 +24,19 @@ export class DonationComponent implements OnInit {
 
   heartbeat: string = '/assets/img/about/donate_heart.jpg';
 
-  constructor() { 
+  constructor(private donationService: DonationService) { 
     this.panelImg = '/assets/img/heal.jpeg';
   }
 
   ngOnInit() {
-    this.selectedAmount = this.fixedDonations[0];
+    this.donationService.getDonationsPanelsLocally().subscribe(panels => {
+      this.panels = panels;
+    });
+
+    this.donationService.getRegularDonationsLocally().subscribe(regularDonations => {
+      this.fixedDonations = regularDonations;
+      this.selectedAmount = regularDonations[0];
+    });
   }
 
   onAmountSelect(donation){

@@ -16,7 +16,6 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
 import { UKComponent } from './volunteer/uk/uk.component';
 import { OverseasComponent } from './volunteer/overseas/overseas.component';
 import { TestimonialComponent } from './volunteer/testimonial/testimonial.component';
-import { TeamComponent } from './team/team.component';
 import { TrusteesComponent } from './team/trustees/trustees.component';
 import { AboutComponent } from './about/about.component';
 import { DonationComponent } from './donation/donation.component';
@@ -45,7 +44,7 @@ export const routes: Routes = [
       { path: 'who-we-are', component: WhoComponent },
       { path: 'team',
       children: [
-        { path: '', component: TeamComponent },
+        { path: '', redirectTo: 'trustees', pathMatch: 'full' },
         { path: 'trustees', component: TrusteesComponent }
         ]
       }
