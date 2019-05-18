@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VolunteerService } from 'src/app/_services/volunteer.service';
+import { TitleText } from 'src/app/_models/default.model';
 
 @Component({
   selector: 'app-overseas',
@@ -10,23 +12,14 @@ export class OverseasComponent implements OnInit {
   overseas: string = '/assets/img/volunteer/overseas.jpg';
   title: string = 'Volunteer Overseas';
 
-  panels: any[] = [
-    {
-      title: "",
-      text: "Our Christmas mission offers a chance for volunteers to witness our work on the ground in Egypt, learn more about our vital projects and what they do to transform the lives of thousands of people, and also to bring some Christmas cheer to orphans in some of the most deprived districts of Cairo."
-    },
-    {
-      title: "",
-      text: "On our summer trip we encourage volunteers to spend time supporting underprivileged Egyptian children by organising games and activities in their communities, and helping to teach English, as one way of improving their life chances."
-    },
-    {
-      title: "",
-      text: "Volunteering overseas can be a life-changing experience for the volunteer too. There is great camaraderie on our projects and an opportunity to make new friends, with a common bond of helping others."
-    }
-  ]
-  constructor() { }
+  panels: TitleText[];
+
+  constructor(private volunteerService: VolunteerService) { }
 
   ngOnInit() {
+    this.volunteerService.getOverseasPanelsLocally().subscribe(panels => {
+      this.panels = panels;
+    });
   }
 
 }

@@ -12,17 +12,17 @@ export class SupportService {
   constructor(private http: HttpClient) { }
 
   getSupportPanelsLocally(): Observable<SupportPanel[]> {
-    var supportPanels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/supportpanels.json`);
+    var supportPanels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/support.panels.json`);
     return supportPanels;
   }
 
   getCorporatePanelsLocally(): Observable<TitleText[]> {
-    var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/corporatepanels.json`);
+    var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/corporate.panels.json`);
     return panels;
   }
 
   getGetInvolvedPanelsLocally(): Observable<TitleText[]> {
-    var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/getinvolvedpanels.json`);
+    var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/getinvolved.panels.json`);
     return panels;
   }
 }

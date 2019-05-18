@@ -17,7 +17,7 @@ export class DonationService {
   }
 
   getDonationsPanelsLocally(): Observable<DonationPanel[]> {
-    var donationPanels = this.http.get<DonationPanel[]>(`${globals.LOCAL_URL}/donationspanels.json`);
+    var donationPanels = this.http.get<DonationPanel[]>(`${globals.LOCAL_URL}/donations.panels.json`);
     return donationPanels;
   }
 }
