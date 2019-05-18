@@ -3,18 +3,10 @@
   padding-bottom: 1em;
 }
 
-.cards>mat-card {
-  margin: 1em;
+.cards-section>mat-card {
+  margin-bottom: 1em;
 }
 
-.cards mat-card-title {
+.cards-section mat-card-title {
   font-size: xx-large;
-}
-
-.cards mat-card-actions {
-  bottom: 0;
-  right: 0;
-  float: right;
-  /* position: absolute;
-  margin: 0.2em; */
 }

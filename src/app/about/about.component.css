@@ -6,12 +6,12 @@
     text-align: center;
 }
 
-.main-section > mat-card {
-    margin: 0.5em;
+.main-section> mat-card {
+    margin-bottom: 0.5em;
 }
 
 .cards>mat-card {
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 .cards mat-card-title {

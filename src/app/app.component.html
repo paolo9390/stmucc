@@ -60,25 +60,33 @@
                         <button mat-menu-item routerLink="/about/team/trustees">Meet the team</button>
                     </mat-menu>
 
-                      <button mat-button color="primary" fxHide.lt-md routerLink="/projects">OUR PROJECTS</button>
+                    <button mat-button color="primary" fxHide.lt-sm routerLink="/projects">OUR PROJECTS</button>
 
-                      <button mat-button color="primary" [matMenuTriggerFor]="fundraise">FUNDRAISE<mat-icon>arrow_drop_down</mat-icon></button>
-                      <mat-menu #fundraise="matMenu">
-                          <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
-                          <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
-                          <button mat-menu-item routerLink="/support/gold-card">The Gold Card</button>
-                      </mat-menu>
+                    <button mat-button color="primary" [matMenuTriggerFor]="fundraise">FUNDRAISE<mat-icon>arrow_drop_down</mat-icon></button>
+                    <mat-menu #fundraise="matMenu">
+                        <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
+                        <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
+                        <button mat-menu-item routerLink="/support/gold-card">The Gold Card</button>
+                    </mat-menu>
 
-                      <button mat-button color="primary" [matMenuTriggerFor]="volunteer">VOLUNTEER<mat-icon>arrow_drop_down</mat-icon></button>
-                      <mat-menu #volunteer="matMenu">
-                          <button mat-menu-item routerLink="/volunteer/uk">UK</button>
-                          <button mat-menu-item routerLink="/volunteer/overseas">Overseas</button>
-                          <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
-                      </mat-menu>
+                    <button mat-button color="primary" [matMenuTriggerFor]="volunteer">VOLUNTEER<mat-icon>arrow_drop_down</mat-icon></button>
+                    <mat-menu #volunteer="matMenu">
+                        <button mat-menu-item routerLink="/volunteer/uk">UK</button>
+                        <button mat-menu-item routerLink="/volunteer/overseas">Overseas</button>
+                        <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
+                    </mat-menu>
 
-                      <button mat-button fxHide.lt-md color="primary">PARTNERS</button>
+                    <button mat-button fxHide.lt-sm color="primary" disabled>PARTNERS</button>
 
-                      <button mat-button color="primary" fxHide.lt-sm>CONNECT</button>
+                    <button mat-button fxHide.lt-sm color="primary" disabled>CONNECT</button>
+
+                    <!-- rest of menu for mobiles -->
+                    <button mat-button color="primary" [matMenuTriggerFor]="mobile" fxHide.gt-sm><mat-icon>menu</mat-icon></button>
+                    <mat-menu #mobile="matMenu">
+                        <button mat-menu-item routerLink="/projects">OUR PROJECTS</button>
+                        <button mat-menu-item disabled>PARTNERS</button>
+                        <button mat-menu-item disabled>CONNECT</button>
+                    </mat-menu>
 
                   </mat-toolbar>
               </div>
@@ -105,7 +113,7 @@
           <section class="inner">
               <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutWrap>
                   
-              <img class="logo" [src]="logowhite">
+              <img class="logo" [src]="logowhite" fxHide.lt-md>
                   <mat-nav-list class="mat-typography" *ngFor="let detail of footerDetails">
                       <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
                       <mat-list-item *ngFor="let list of detail.sublist">

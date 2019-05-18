@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TitleComponent } from './title.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -8,7 +9,8 @@ import { TitleComponent } from './title.component';
     TitleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FlexLayoutModule
   ],
   exports: [
     TitleComponent
