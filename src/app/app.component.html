@@ -60,7 +60,7 @@
 
                       <button mat-button color="primary" fxHide.lt-md routerLink="/projects">OUR PROJECTS</button>
 
-                      <button mat-button color="primary" [matMenuTriggerFor]="fundraise" fxHide.lt-sm>FUNDRAISE<mat-icon>arrow_drop_down</mat-icon></button>
+                      <button mat-button color="primary" [matMenuTriggerFor]="fundraise">FUNDRAISE<mat-icon>arrow_drop_down</mat-icon></button>
                       <mat-menu #fundraise="matMenu">
                           <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
                           <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
@@ -74,7 +74,7 @@
                           <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
                       </mat-menu>
 
-                      <button mat-button color="primary">PARTNERS</button>
+                      <button mat-button fxHide.lt-md color="primary">PARTNERS</button>
 
                       <button mat-button color="primary" fxHide.lt-sm>CONNECT</button>
 

@@ -6,8 +6,8 @@
     text-align: center;
 }
 
-.main-section {
-    padding: 1em;
+.main-section > mat-card {
+    margin: 0.5em;
 }
 
 .cards>mat-card {

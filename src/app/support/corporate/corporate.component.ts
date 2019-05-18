@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TitleText } from 'src/app/_models/default.model';
+import { TitleTextPanel } from 'src/app/_models/default.model';
 import { SupportService } from 'src/app/_services/support.service';
 
 @Component({
@@ -12,7 +12,7 @@ export class CorporateComponent implements OnInit {
   title: string = "Corporate Support";
   corporate: string = '/assets/img/support/corporate.jpg';
 
-  panels: TitleText[];
+  panels: TitleTextPanel[];
 
   constructor(private supportService: SupportService) { }
 

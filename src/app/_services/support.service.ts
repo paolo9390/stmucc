@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import * as globals from './globals.service';
 import { SupportPanel } from '../_models/support.model';
 import { Observable } from 'rxjs';
-import { TitleText } from '../_models/default.model';
+import { TitleTextPanel } from '../_models/default.model';
 
 @Injectable()
 export class SupportService {
@@ -16,12 +16,12 @@ export class SupportService {
     return supportPanels;
   }
 
-  getCorporatePanelsLocally(): Observable<TitleText[]> {
+  getCorporatePanelsLocally(): Observable<TitleTextPanel[]> {
     var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/corporate.panels.json`);
     return panels;
   }
 
-  getGetInvolvedPanelsLocally(): Observable<TitleText[]> {
+  getGetInvolvedPanelsLocally(): Observable<TitleTextPanel[]> {
     var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/getinvolved.panels.json`);
     return panels;
   }

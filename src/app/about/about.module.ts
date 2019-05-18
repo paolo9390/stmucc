@@ -9,6 +9,7 @@ import { TitleModule } from '../_shared/title/title.module';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AboutService } from '../_services/about.service';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     TitleModule
   ],
+  providers: [AboutService],
   exports: [
     AboutComponent
   ]

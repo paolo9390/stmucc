@@ -5,6 +5,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PanelService } from '../_services/panel.service';
+import { ProjectService } from '../_services/project.service';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { PanelService } from '../_services/panel.service';
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [PanelService],
+  providers: [PanelService, ProjectService],
   exports: [
     HomeComponent
   ]

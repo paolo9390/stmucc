@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PanelService } from '../_services/panel.service';
 import { Panel } from '../_models/panel.model';
 import { Observable, Subscription } from 'rxjs';
+import { ProjectService } from '../_services/project.service';
+import { Project } from '../_models/project.model';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,7 @@ import { Observable, Subscription } from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  panelImg: string;
+  panelImg: string = '/assets/img/heal.jpeg';
   panels: Observable<Panel[]>
   _panels: Panel[];
   panelsSubscription: Subscription;
@@ -18,21 +20,24 @@ export class HomeComponent implements OnInit, OnDestroy {
   subslogan: string = 'Doing the right thing is the right thing to do.';
   buttonslogan: string = 'Find out more';
 
-  phoenixProject: any = {
-    title: 'The Phoenix Project',
-    description: 'Working with Warrington Disability Partnership, we are refurbishing mobility equipment and independent living aids for people with chronic health conditions in Egypt, together with those living in Syrian refugee camps and a centre for children with disabilities in Thailand. Wheelchairs, walking frames, hoists, medical beds and chairs, and specialist mattresses are among the items donated. The ongoing programme is also generating employment in the local Warrington area by recycling and refurbishing equipment that would otherwise have been destined for UK landfill sites.'
-  };
+  phoenixProject: Project;
 
-  constructor(private panelService: PanelService) {
-
-    this.panelImg = '/assets/img/heal.jpeg'
-
-   }
+  constructor(private panelService: PanelService, private projectService: ProjectService) {}
 
   ngOnInit() {
     this.panelService.getPanelsLocally().subscribe(panels => {
       this._panels = panels;
-    })
+    });
+
+    this.projectService.getProjectsLocally().subscribe(projects => {
+      if (projects) {
+        projects.forEach(project => {
+          if (project.title === 'The Phoenix Project') {
+            this.phoenixProject = project;
+          }
+        });
+      }
+    });
   }
 
   ngOnDestroy() {

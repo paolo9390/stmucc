@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as globals from './globals.service';
 import { Observable } from 'rxjs';
-import { TitleText } from '../_models/default.model';
+import { TitleTextPanel, DefaultPanel } from '../_models/default.model';
 import { VolunteerPanel } from '../_models/volunteer.model';
 
 @Injectable()
@@ -14,18 +14,19 @@ export class VolunteerService {
     var panels = this.http.get<VolunteerPanel[]>(`${globals.LOCAL_URL}/volunteer.panels.json`);
     return panels;
   }
-  getUKPanelsLocally(): Observable<TitleText[]> {
-    var panels = this.http.get<TitleText[]>(`${globals.LOCAL_URL}/uk.panels.json`);
+  
+  getUKPanelsLocally(): Observable<DefaultPanel[]> {
+    var panels = this.http.get<DefaultPanel[]>(`${globals.LOCAL_URL}/uk.panels.json`);
     return panels;
   }
 
-  getOverseasPanelsLocally(): Observable<TitleText[]> {
-    var panels = this.http.get<TitleText[]>(`${globals.LOCAL_URL}/overseas.panels.json`);
+  getOverseasPanelsLocally(): Observable<TitleTextPanel[]> {
+    var panels = this.http.get<TitleTextPanel[]>(`${globals.LOCAL_URL}/overseas.panels.json`);
     return panels;
   }
 
-  getTestimonialPanelsLocally(): Observable<TitleText[]> {
-    var panels = this.http.get<TitleText[]>(`${globals.LOCAL_URL}/testimonial.panels.json`);
+  getTestimonialPanelsLocally(): Observable<DefaultPanel[]> {
+    var panels = this.http.get<DefaultPanel[]>(`${globals.LOCAL_URL}/testimonial.panels.json`);
     return panels;
   }
 }

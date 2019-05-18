@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SupportService } from 'src/app/_services/support.service';
-import { TitleText } from 'src/app/_models/default.model';
+import { TitleTextPanel } from 'src/app/_models/default.model';
 
 @Component({
   selector: 'app-getinvolved',
@@ -12,7 +12,7 @@ export class GetInvolvedComponent implements OnInit {
   title: string = "Get involved with fundraising";
   getinvolved: string = '/assets/img/support/getinvolved.jpg';
 
-  panels: TitleText[];
+  panels: TitleTextPanel[];
 
   constructor(private supportService: SupportService) { }
 

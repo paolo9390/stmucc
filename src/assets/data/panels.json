@@ -8,7 +8,8 @@
     "button": "Find out more",
     "url": "/appeals",
     "standard": true
-}, {
+  },
+  {
     "items": [],
     "_id": 2,
     "title": "Gold Card",
@@ -18,15 +19,16 @@
     "button": "Apply for a card",
     "url": "/support/gold-card",
     "standard": true
-}, {
+  },
+  {
     "items": [{
-        "name": "Operations",
-        "value": "1231",
-        "icon": "local_hospital"
+      "name": "Operations",
+      "value": "1231",
+      "icon": "local_hospital"
     }, {
-        "name": "Prescriptions",
-        "value": "409312",
-        "icon": "local_pharmacy"
+      "name": "Prescriptions",
+      "value": "409312",
+      "icon": "local_pharmacy"
     }],
     "_id": 3,
     "title": "Our progress",
@@ -35,7 +37,8 @@
     "button": "Donate",
     "url": "/support/donations",
     "standard": false
-}, {
+  },
+  {
     "items": [],
     "_id": 4,
     "title": "News",
@@ -45,7 +48,7 @@
     "button": "Read more",
     "url": "/news",
     "standard": true
-}, {
+  }, {
     "items": [],
     "_id": 5,
     "title": "Get Involved",
@@ -55,7 +58,7 @@
     "button": "Get involved",
     "url": "/support/getinvolved",
     "standard": true
-}, {
+  }, {
     "items": [],
     "_id": 6,
     "title": "Mission trips",
@@ -65,4 +68,5 @@
     "button": "Get on a trip",
     "url": "/volunteer/overseas",
     "standard": true
-}]
+  }
+]
