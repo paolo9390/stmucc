@@ -70,8 +70,10 @@ export class AppComponent {
     this.breadcrumbService.addFriendlyNameForRoute('/about/what-we-do', 'What We Do');
     this.breadcrumbService.addFriendlyNameForRoute('/about/why-we-do-it', 'Why We Do It');
     this.breadcrumbService.addFriendlyNameForRoute('/about/who-we-are', 'Who We Are');
+    this.breadcrumbService.addFriendlyNameForRoute('/about/annual-reports', 'Annual Reports');
     this.breadcrumbService.addFriendlyNameForRoute('/about/transforming', 'Transforming Lives');
     this.breadcrumbService.addFriendlyNameForRoute('/support/getinvolved', 'Get Involved');
+    this.breadcrumbService.addFriendlyNameForRoute('/connect', 'Contact Us');
   }
 
   getStyle(){

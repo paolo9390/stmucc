@@ -21,14 +21,15 @@ import { AboutComponent } from './about/about.component';
 import { DonationComponent } from './donation/donation.component';
 import { ConnectComponent } from './connect/connect.component';
 import { ProjectListComponent } from './project/project-list/project-list.component';
+import { ReportComponent } from './about/report/report.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'projects', component: ProjectListComponent },
-  { path: 'connect', component: ConnectComponent, data: { breadcrumbs: "Contact Us" }},
-  { path: 'support', data: { breadcrumbs: "Support" },
+  { path: 'connect', component: ConnectComponent},
+  { path: 'support',
     children: [
       { path: '', component: SupportComponent },
       { path: 'getinvolved', component: GetInvolvedComponent },
@@ -44,6 +45,7 @@ export const routes: Routes = [
       { path: 'what-we-do', component: WhatComponent },
       { path: 'why-we-do-it', component: WhyComponent },
       { path: 'who-we-are', component: WhoComponent },
+      { path: 'annual-reports', component: ReportComponent},
       { path: 'team',
       children: [
         { path: '', redirectTo: 'trustees', pathMatch: 'full' },

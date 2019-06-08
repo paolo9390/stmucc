@@ -10,6 +10,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutService } from '../_services/about.service';
+import { ReportComponent } from './report/report.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AboutService } from '../_services/about.service';
     SummaryComponent,
     WhatComponent,
     WhoComponent,
-    WhyComponent
+    WhyComponent,
+    ReportComponent
 
   ],
   imports: [

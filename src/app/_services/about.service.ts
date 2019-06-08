@@ -29,4 +29,9 @@ export class AboutService {
     var panels = this.http.get<TitleTextPanel[]>(`${globals.LOCAL_URL}/why.panels.json`);
     return panels;
   }
+
+  getAnnualReportsLocally(): Observable<DefaultPanel[]> {
+    var panels = this.http.get<DefaultPanel[]>(`${globals.LOCAL_URL}/reports.panels.json`);
+    return panels;
+  }
 }
