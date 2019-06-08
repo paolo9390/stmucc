@@ -47,6 +47,22 @@ export class AppComponent {
 
     this.iconRegistry.addSvgIconInNamespace('img', 'linkedin',
     this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/linkedin.svg'));
+
+    this.iconRegistry.addSvgIconInNamespace('img', 'youtube',
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/youtube.svg'));
+
+    this.iconRegistry.addSvgIconInNamespace('img', 'twitter-color',
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/twitter-color.svg'));
+
+    this.iconRegistry.addSvgIconInNamespace('img', 'facebook-color',
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/facebook-color.svg'));
+
+    this.iconRegistry.addSvgIconInNamespace('img', 'instagram-color',
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/instagram-color.svg'));
+
+    this.iconRegistry.addSvgIconInNamespace('img', 'youtube-color',
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/youtube-color.svg'));
+
     this.addBreadcrumbFriendlyNames();
   }
 

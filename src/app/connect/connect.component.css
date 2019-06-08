@@ -1,0 +1,16 @@
+
+.cards>mat-card {
+    margin: 0.5em;
+}
+
+mat-card-content {
+    font-size: larger;
+}
+
+.mat-subheader {
+    font-size: larger !important;
+}
+
+.mat-line {
+    font-size: large !important;
+}

@@ -19,6 +19,7 @@ import { GoldCardModule } from './gold-card/gold-card.module';
 import { ShopComponent } from './shop/shop.component';
 import { VolunteerModule } from './volunteer/volunteer.module';
 import { AboutModule } from './about/about.module';
+import { ConnectModule } from './connect/connect.module';
 import { TeamModule } from './team/team.module';
 import { SuccessComponent } from './gold-card/success/success.component';
 import { ProjectModule } from './project/project.module';
@@ -39,6 +40,7 @@ import { TitleModule } from './_shared/title/title.module';
   imports: [
     AboutModule,
     DonationModule,
+    ConnectModule,
     SupportModule,
     TeamModule,
     HomeModule,

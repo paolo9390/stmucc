@@ -19,6 +19,7 @@ import { TestimonialComponent } from './volunteer/testimonial/testimonial.compon
 import { TrusteesComponent } from './team/trustees/trustees.component';
 import { AboutComponent } from './about/about.component';
 import { DonationComponent } from './donation/donation.component';
+import { ConnectComponent } from './connect/connect.component';
 import { ProjectListComponent } from './project/project-list/project-list.component';
 
 export const routes: Routes = [
@@ -26,6 +27,7 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'projects', component: ProjectListComponent },
+  { path: 'connect', component: ConnectComponent, data: { breadcrumbs: "Contact Us" }},
   { path: 'support', data: { breadcrumbs: "Support" },
     children: [
       { path: '', component: SupportComponent },

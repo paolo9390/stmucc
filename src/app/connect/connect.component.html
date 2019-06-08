@@ -1,0 +1,82 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-accent">
+      <img mat-card-image [src]="connect">
+      <mat-card-header class="mat-title">
+          <p>We welcome your comments and feedback. Our Support Team will look forward to answering any of your questions.</p>
+      </mat-card-header>
+    </mat-card>
+  </section>
+  
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="start stretch">
+      
+    <mat-card fxFlex="48%" fxFlex.lt-md="100%">
+        <mat-card-title class="fill-primary mat-title">
+          <mat-icon>phone</mat-icon> Phone Us
+        </mat-card-title>
+        <mat-card-content class="mat-title">
+            <p>Need to speak with us?</p>
+            <p>Please call our Main Switchboard on +44 (0)161 652 5600.</p>
+            <p>St Mark Support team look forward to answering all your questions, hearing your feedback and helping you supporting our cause.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card fxFlex="48%" fxFlex.lt-md="100%">
+          <mat-card-title class="fill-primary mat-title">
+            <mat-icon>local_post_office</mat-icon> Write to Us
+          </mat-card-title>
+          <mat-card-content class="mat-title">
+            <p>For general enquiries email us on <strong> info@stmucc.org</strong></p>
+              <p>Write to Us:</p>
+              <div fxLayout="column">
+                <span>St Mark Universal Copts Care</span>
+                <span>Convent of Mercy</span>
+                <span>66 Grange Avenue </span>
+                <span>Oldham</span>
+                <span>OL8 4EL</span>
+              </div>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card fxFlex="48%" fxFlex.lt-md="100%">
+            <mat-card-title class="fill-primary mat-title">
+              <mat-icon>chat</mat-icon> Connect
+            </mat-card-title>
+
+            <mat-card-content>
+              <mat-list>
+                <h3 mat-subheader>Contact us through Social Media</h3>
+
+                <mat-list-item>
+                  <h4 mat-line>Contact us on Facebook</h4>
+                  <a target="_blank" href="https://www.facebook.com/StMarkUniversalCoptsCare/" mat-icon-button>
+                    <mat-icon svgIcon="img:facebook-color" mat-list-icon></mat-icon>
+                  </a>
+                </mat-list-item>
+                <mat-list-item>
+                  <h4 mat-line>Mention us on Instagram</h4>
+                  <a target="_blank" href="https://www.instagram.com/stmarkuniversalcoptscare" mat-icon-button>
+                    <mat-icon class="social-icon" svgIcon="img:instagram-color" mat-list-icon></mat-icon>
+                  </a>
+                </mat-list-item>
+                <mat-list-item>
+                  <h4 mat-line>Send us a direct message on twitter</h4>
+                  <a target="_blank" href="https://twitter.com/stmarkuniversal" mat-icon-button>
+                    <mat-icon svgIcon="img:twitter-color" mat-list-icon></mat-icon>
+                  </a>
+                </mat-list-item>
+                <mat-list-item>
+                  <h4 mat-line>Check our Media list on Youtube</h4>
+                  <a target="_blank" href="https://www.youtube.com/channel/UC7LZnFxq_pO1u8D9o9KFa1g" mat-icon-button>
+                    <mat-icon svgIcon="img:youtube-color" mat-list-icon></mat-icon>
+                  </a>
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+    </section>
+  
+</div>
