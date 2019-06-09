@@ -13,9 +13,10 @@
   
   
     <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-      <mat-card *ngFor="let panel of panels" fxFlex="100%">
+      <mat-card *ngFor="let panel of panels" fxFlex="49%" fxFlex.lt-sm="100%">
+        <img mat-card-image [src]="panel.img">
   
-        <mat-card-content>
+        <mat-card-content class="mat-title">
           <p>{{panel.text}}</p>
         </mat-card-content>
   
@@ -26,13 +27,20 @@
     </section>
   
     <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
-      <mat-card fxFlex="38%" fxFlex.lt-sm="100%" class="stuff-accent">
+      <mat-card fxFlex="70%" fxFlex.lt-sm="100%" class="stuff-warn">
+        <mat-card-header class="mat-title" fxLayout="column">
+          <span>In addition to direct donations, you can support St Mark Universal Copts Care in a number of ways:</span>
+          <span *ngFor="let support of supports">
+            + {{support.name}}
+          </span>
+        </mat-card-header>
+      </mat-card>
+
+      <mat-card fxFlex="28%" fxFlex.lt-sm="100%" class="stuff-accent">
         <mat-card-header class="mat-title">
             We appreciate whatever individuals or businesses are able to do in support of our vital work, and we’re always looking for new initiatives and opportunities.
         </mat-card-header>
       </mat-card>
-  
-      <iframe fxFlex="60%" fxFlex.lt-sm="100%" src="https://www.youtube.com/embed/Z4f777t8dZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
+
     </section>
 </div>

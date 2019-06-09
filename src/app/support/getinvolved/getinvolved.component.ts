@@ -14,6 +14,24 @@ export class GetInvolvedComponent implements OnInit {
 
   panels: TitleTextPanel[];
 
+  supports: any = [
+    {
+      name: 'Bequests'
+    },
+    {
+      name: 'Fundraising through schools'
+    },
+    {
+      name: 'Events from musical performances to Christmas concerts and summer balls'
+    },
+    {
+      name: 'Sponsored challenge and sporting activities'
+    },
+    {
+      name: 'Support in kind from the UK or Egypt – donating time, skills or services for any of our life-enhancing projects'
+    }
+  ]
+
   constructor(private supportService: SupportService) { }
 
   ngOnInit() {
