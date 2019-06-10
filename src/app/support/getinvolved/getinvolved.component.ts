@@ -11,6 +11,7 @@ export class GetInvolvedComponent implements OnInit {
 
   title: string = "Get involved with fundraising";
   getinvolved: string = '/assets/img/support/getinvolved.jpg';
+  frlogo: string = '/assets/img/frwhite.png';
 
   panels: TitleTextPanel[];
 
@@ -28,7 +29,7 @@ export class GetInvolvedComponent implements OnInit {
       name: 'Sponsored challenge and sporting activities'
     },
     {
-      name: 'Support in kind from the UK or Egypt – donating time, skills or services for any of our life-enhancing projects'
+      name: 'Support in kind from the UK or overseas – donating time, skills or services for any of our life-enhancing projects'
     }
   ]
 

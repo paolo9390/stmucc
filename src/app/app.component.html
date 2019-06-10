@@ -115,7 +115,7 @@
           <section class="inner">
               <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutWrap>
                   
-              <img class="logo" [src]="logowhite" fxHide.lt-md>
+                <img class="logo" [src]="logowhite" fxHide.lt-md>
                   <mat-nav-list class="mat-typography" *ngFor="let detail of footerDetails">
                       <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
                       <mat-list-item *ngFor="let list of detail.sublist">
@@ -127,9 +127,9 @@
               <mat-divider></mat-divider>   
 
               <div class="charity-footer mat-typography">
+                  <img class="frlogo" [src]="frlogo">
                   <p>Registered office: The Old Rectory, Rectory Lane, Winwick WA2 8LE.</p>
-                  <p>United Kingdom Committee for StMUCC. Registered charity 1155451. Registered company limited by guarantee 08747202 (England and Wales). 
-                  </p>
+                  <p>United Kingdom Committee for StMUCC. Registered charity 1155451. Registered company limited by guarantee 08747202 (England and Wales).</p>
               </div>
           </section>
 

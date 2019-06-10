@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TeamComponent } from './team.component';
 import { TrusteesComponent } from './trustees/trustees.component';
-import { TrusteesDialogComponent } from './trustees/trustees-dialog/trustees-dialog.component';
+import { StaffComponent } from './staff/staff.component';
+import { TeamDialogComponent } from './team-dialog/team-dialog.component';
 import { TitleModule } from '../_shared/title/title.module';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
@@ -14,7 +15,8 @@ import { TeamService } from '../_services/team.service';
   declarations: [
     TeamComponent,
     TrusteesComponent,
-    TrusteesDialogComponent
+    StaffComponent,
+    TeamDialogComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,7 @@ import { TeamService } from '../_services/team.service';
     FlexLayoutModule,
     TitleModule
   ],
-  entryComponents: [TrusteesDialogComponent],
+  entryComponents: [TeamDialogComponent],
   providers: [TeamService],
   exports: [
     TeamComponent

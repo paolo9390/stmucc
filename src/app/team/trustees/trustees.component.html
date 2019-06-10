@@ -1,16 +1,17 @@
 <div class="mat-typography">
 
 <app-title [title]="title"></app-title>
-
 <section layout-wrap class="cards trustee-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
   <mat-card *ngFor="let trustee of _trustees" fxFlex="45" (click)="viewMore(trustee)">
-
     <mat-card-header>
       <img class="trustee-header-image"  mat-card-avatar [src]="trustee.img">
       <mat-card-title class="fill-accent">{{trustee.name}}</mat-card-title>
       <mat-card-subtitle class="fill-accent trustee-alias">{{trustee.alias}}</mat-card-subtitle>
     </mat-card-header>
+  </mat-card>
 
+  <mat-card class="stuff-accent" routerLink="/about/team/staff-and-volunteers" fxFlex="45">
+    <h1 fxLayoutAlign="center center"><mat-icon fxLayoutAlign="center center">group</mat-icon>Meet Our Team</h1>
   </mat-card>
 </section>
 

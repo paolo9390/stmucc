@@ -1,4 +1,4 @@
-.trustees-title {
+.staff-title {
   font-size: 70px;
   border-bottom: 1px solid;
   line-height: 1em;
@@ -6,15 +6,15 @@
   text-align: center;
 }
 
-.trustee-header-image {
+.staff-header-image {
   background-size: cover;
 }
 
-.trustee-section {
+.staff-section {
   cursor: pointer;
 }
 
-.trustee-alias{
+.staff-alias{
   font-size: larger;
 }
 

@@ -3,19 +3,19 @@
     <mat-icon>close</mat-icon>
   </button>
 
-  <app-title [title]="data.trustee.name | uppercase"></app-title>
+  <app-title [title]="data.team.name | uppercase"></app-title>
 
   <mat-dialog-content>
       <section layout-wrap fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
           <div fxFlex="40%">
             <p style="font-size: x-large">
-              {{data.trustee.description}}
+              {{data.team.description}}
             </p>
-            <button class="contact-button" mat-stroked-button color="primary">Contact {{data.trustee.name}}</button>
+            <button class="contact-button" mat-stroked-button color="primary">Contact {{data.team.name}}</button>
           </div>
       
           <div fxFlex="35%">
-            <img style="margin-top: 0;" mat-card-image [src]="data.trustee.img">
+            <img style="margin-top: 0;" mat-card-image [src]="data.team.img">
           </div>
       
         </section>

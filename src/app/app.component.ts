@@ -15,10 +15,12 @@ import { AppService } from './_services/app.service';
 export class AppComponent {
   blue = "blue";
   title = 'stmucc';
-  logo: string = '/assets/img/stmucc.png';;
+  logo: string = '/assets/img/stmucc.png';
+  fundraisingLogo: string = '/assets/img/fundraising-regulator.png';
+  frlogo: string = '/assets/img/fr.png';
   logowhite: string = '/assets/img/stmuccwhite.png';;
   banner = {
-    slogan: "The charity for all charities"
+    slogan: "Give health, give life, give hope"
   };
   footerDetails: Footer[];
 
@@ -74,6 +76,7 @@ export class AppComponent {
     this.breadcrumbService.addFriendlyNameForRoute('/about/transforming', 'Transforming Lives');
     this.breadcrumbService.addFriendlyNameForRoute('/support/getinvolved', 'Get Involved');
     this.breadcrumbService.addFriendlyNameForRoute('/connect', 'Contact Us');
+    this.breadcrumbService.addFriendlyNameForRoute('/about/team/staff-and-volunteers', 'Staff and Volunteers');
   }
 
   getStyle(){

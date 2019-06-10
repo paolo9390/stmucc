@@ -1,0 +1,19 @@
+[ {
+    "name": "Medhat Boutros",
+    "alias": "Charity Manager",
+    "description": "",
+    "img": "/assets/img/team/medhatboutros.jpg",
+    "email": "hala.fouad@stmucc.com"
+},{
+    "name": "Ashley J. Williams",
+    "alias": "Fundraising and Development Manager",
+    "description": "",
+    "img": "/assets/img/team/ashwilliams.jpg",
+    "email": "ashley.williams@stmucc.com"
+}, {
+    "name": "Michael Fouad",
+    "alias": "Youth Mission Leader",
+    "description": "",
+    "img": "/assets/img/team/michaelfouad.jpg",
+    "email": "michael.fouad@stmucc.com"
+}]

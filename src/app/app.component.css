@@ -79,6 +79,10 @@
     width: 10em;
 }
 
+.frlogo {
+    width: 15em;
+}
+
 .clickable {
     cursor: pointer;
     cursor: hand;

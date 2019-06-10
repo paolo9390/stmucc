@@ -1,0 +1,21 @@
+<div class="mat-typography">
+
+<app-title [title]="title"></app-title>
+
+<section layout-wrap class="cards staff-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+  <mat-card *ngFor="let staff of _staff" fxFlex="45" (click)="viewMore(staff)">
+
+    <mat-card-header>
+      <img class="staff-header-image"  mat-card-avatar [src]="staff.img">
+      <mat-card-title class="fill-primary">{{staff.name}}</mat-card-title>
+      <mat-card-subtitle class="fill-primary staff-alias">{{staff.alias}}</mat-card-subtitle>
+    </mat-card-header>
+
+  </mat-card>
+
+  <mat-card class="stuff-primary" routerLink="/about/team/trustees" fxFlex="45">
+    <h1 fxLayoutAlign="center center"><mat-icon fxLayoutAlign="center center">group</mat-icon>Meet Our Trustees</h1>
+  </mat-card>
+</section>
+
+</div>

@@ -26,7 +26,7 @@ export class GoldCardComponent implements OnInit {
 
     this.img = '/assets/img/shop/perks.png';
     this.heading = "Save Money Save Lives";
-    this.headline = "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for a patient in the Middle East's prescription medication.";
+    this.headline = "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for life saving prescription medication for a patient in the Middle East.";
     this.subheadline = "When you join St Mark Gold Card, you will have access to exclusive perks throught our Partner Perkbox and more:";
     
     this.perklist = [

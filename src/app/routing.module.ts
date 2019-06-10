@@ -17,6 +17,7 @@ import { UKComponent } from './volunteer/uk/uk.component';
 import { OverseasComponent } from './volunteer/overseas/overseas.component';
 import { TestimonialComponent } from './volunteer/testimonial/testimonial.component';
 import { TrusteesComponent } from './team/trustees/trustees.component';
+import { StaffComponent } from './team/staff/staff.component';
 import { AboutComponent } from './about/about.component';
 import { DonationComponent } from './donation/donation.component';
 import { ConnectComponent } from './connect/connect.component';
@@ -49,7 +50,8 @@ export const routes: Routes = [
       { path: 'team',
       children: [
         { path: '', redirectTo: 'trustees', pathMatch: 'full' },
-        { path: 'trustees', component: TrusteesComponent }
+        { path: 'trustees', component: TrusteesComponent },
+        { path: 'staff-and-volunteers', component: StaffComponent }
         ]
       }
     ]

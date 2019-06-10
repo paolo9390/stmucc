@@ -6,30 +6,30 @@ import { MatDialog } from '@angular/material';
 import { TeamDialogComponent } from '../team-dialog/team-dialog.component';
 
 @Component({
-  selector: 'app-trustees',
-  templateUrl: './trustees.component.html',
-  styleUrls: ['./trustees.component.css']
+  selector: 'app-staff',
+  templateUrl: './staff.component.html',
+  styleUrls: ['./staff.component.css']
 })
-export class TrusteesComponent implements OnInit {
+export class StaffComponent implements OnInit {
 
-  title: string = 'OUR TRUSTEES';
-  trustees: Observable<TeamMember[]>
-  _trustees: TeamMember[];
-  trusteesSubscription : Subscription;
+  title: string = 'OUR TEAM';
+  staff: Observable<TeamMember[]>
+  _staff: TeamMember[];
+  staffSubscription : Subscription;
 
   constructor(private teamService: TeamService, public dialog: MatDialog) { }
 
   ngOnInit() {
-    this.teamService.getTrusteesLocally().subscribe(trustees => {
-      this._trustees = trustees;
+    this.teamService.getStaffLocally().subscribe(staff => {
+      this._staff = staff;
     })
   }
 
-  viewMore(trustee): void {
-    if (trustee && trustee.description !== ''){
+  viewMore(staff): void {
+    if (staff && staff.description !== ''){
       const dialogRef = this.dialog.open(TeamDialogComponent, {
         width: '80%',
-        data: {team: trustee}
+        data: {team: staff}
       });
   
       dialogRef.afterClosed().subscribe(result => {
