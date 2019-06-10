@@ -41,4 +41,7 @@ export class GetInvolvedComponent implements OnInit {
     });
   }
 
+  sendMail() {
+    window.location.href = "mailto:ashley.williams@stmucc.com?Subject=Fundraise%20for%20StMark";
+  }
 }

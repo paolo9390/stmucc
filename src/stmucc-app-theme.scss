@@ -106,6 +106,10 @@ $light-app-warn);
     color: mat-color($stmucc-app-warn);
 }
 
+.fill-secondary-primary {
+    color: mat-color($secondary-primary)
+}
+
 .stuff-primary {
     background-color: mat-color($stmucc-app-primary);
     color: aliceblue !important;

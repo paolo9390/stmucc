@@ -26,15 +26,13 @@ export class StaffComponent implements OnInit {
   }
 
   viewMore(staff): void {
-    if (staff && staff.description !== ''){
-      const dialogRef = this.dialog.open(TeamDialogComponent, {
-        width: '80%',
-        data: {team: staff}
-      });
-  
-      dialogRef.afterClosed().subscribe(result => {
-      });
-    }
+    const dialogRef = this.dialog.open(TeamDialogComponent, {
+      width: '80%',
+      data: {team: staff}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 
 }

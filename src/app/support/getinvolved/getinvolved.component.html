@@ -27,7 +27,7 @@
     </section>
   
     <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
-      <mat-card fxFlex="70%" fxFlex.lt-sm="100%" class="stuff-warn">
+      <mat-card fxFlex="100%" fxFlex.lt-sm="100%" class="stuff-secondary-primary">
         <mat-card-header class="mat-title" fxLayout="column">
           <span>In addition to direct donations, you can support St Mark Universal Copts Care in a number of ways:</span>
           <span *ngFor="let support of supports">
@@ -35,12 +35,19 @@
           </span>
         </mat-card-header>
       </mat-card>
-
-      <mat-card fxFlex="28%" fxFlex.lt-sm="100%" class="stuff-accent">
+    </section>
+  
+    <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
+      <mat-card fxFlex="58%" fxFlex.lt-sm="100%" class="stuff-accent">
         <mat-card-header class="mat-title">
             We appreciate whatever individuals or businesses are able to do in support of our vital work, and we’re always looking for new initiatives and opportunities.
         </mat-card-header>
       </mat-card>
 
+      <mat-card (click)="sendMail()" fxFlex="40%" fxFlex.lt-sm="100%" class="fundraise_for__us fill-secondary-primary">
+        <mat-card-header class="mat-title" fxLayout="column">
+            <h1 fxLayoutAlign="center center"><mat-icon>favorite</mat-icon> Click to Fundraise for us</h1>
+        </mat-card-header>
+      </mat-card>
     </section>
 </div>
