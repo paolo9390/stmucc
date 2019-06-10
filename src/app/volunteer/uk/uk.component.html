@@ -3,7 +3,7 @@
   <app-title [title]="title | uppercase"></app-title>
 
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%">
+    <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%" fxFlex.lt-sm="100%">
       <img mat-card-image [src]="panel.img">
 
       <mat-card-title class="fill-primary">
