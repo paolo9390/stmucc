@@ -1,3 +1,7 @@
 mat-icon {
     vertical-align: middle;
 }
+
+.active-url {
+    color: #d81b60;
+}
