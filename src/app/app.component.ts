@@ -39,31 +39,34 @@ export class AppComponent {
     });
 
     this.iconRegistry.addSvgIconInNamespace('img', 'twitter',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/twitter.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'facebook',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/facebook.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'instagram',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/instagram.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'linkedin',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/linkedin.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'youtube',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/youtube.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'twitter-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/twitter-color.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter-color.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'facebook-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/facebook-color.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook-color.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'instagram-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/instagram-color.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram-color.svg'));
+
+    this.iconRegistry.addSvgIconInNamespace('img', 'linkedin-color',
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin-color.svg'));
 
     this.iconRegistry.addSvgIconInNamespace('img', 'youtube-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/youtube-color.svg'));
+    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube-color.svg'));
 
     this.addBreadcrumbFriendlyNames();
   }
