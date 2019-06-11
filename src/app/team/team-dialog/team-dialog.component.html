@@ -12,14 +12,14 @@
               {{data?.team?.description}}
               <a href="mailto:{{data?.team?.email}}" target="_top" class="contact-button" mat-mini-fab color="primary"><mat-icon>email</mat-icon></a>
             </p>
-
-            <mat-chip-list class="mat-chip-list-stacked">
-              <mat-chip class="email-chip" color="primary" selected>{{data?.team?.email}}</mat-chip>
-            </mat-chip-list>
           </div>
       
           <div fxFlex="35%">
             <img style="margin-top: 0;" mat-card-image [src]="data?.team?.img">
+
+            <mat-chip-list class="mat-chip-list-stacked">
+              <mat-chip class="email-chip" color="primary" selected>{{data?.team?.email}}</mat-chip>
+            </mat-chip-list>
           </div>
       
         </section>
