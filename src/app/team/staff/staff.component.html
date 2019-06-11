@@ -3,7 +3,7 @@
 <app-title [title]="title"></app-title>
 
 <section layout-wrap class="cards staff-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-  <mat-card *ngFor="let staff of _staff" fxFlex="45" (click)="viewMore(staff)">
+  <mat-card *ngFor="let staff of _staff" fxFlex="45%" fxFlex.lt-sm="100%" (click)="viewMore(staff)">
 
     <mat-card-header>
       <img class="staff-header-image"  mat-card-avatar [src]="staff.img">

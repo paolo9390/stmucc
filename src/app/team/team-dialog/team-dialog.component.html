@@ -3,19 +3,23 @@
     <mat-icon>close</mat-icon>
   </button>
 
-  <app-title [title]="data.team.name | uppercase"></app-title>
+  <app-title [title]="data?.team?.name | uppercase"></app-title>
 
   <mat-dialog-content>
       <section layout-wrap fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
           <div fxFlex="40%">
             <p style="font-size: x-large">
-              {{data.team.description}}
+              {{data?.team?.description}}
+              <a href="mailto:{{data?.team?.email}}" target="_top" class="contact-button" mat-mini-fab color="primary"><mat-icon>email</mat-icon></a>
             </p>
-            <a href="mailto:{{data.team.email}}" target="_top" class="contact-button" mat-stroked-button color="primary">Contact {{data.team.name}}</a>
+
+            <mat-chip-list class="mat-chip-list-stacked">
+              <mat-chip class="email-chip" color="primary" selected>{{data?.team?.email}}</mat-chip>
+            </mat-chip-list>
           </div>
       
           <div fxFlex="35%">
-            <img style="margin-top: 0;" mat-card-image [src]="data.team.img">
+            <img style="margin-top: 0;" mat-card-image [src]="data?.team?.img">
           </div>
       
         </section>

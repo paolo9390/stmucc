@@ -2,7 +2,7 @@
 
 <app-title [title]="title"></app-title>
 <section layout-wrap class="cards trustee-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-  <mat-card *ngFor="let trustee of _trustees" fxFlex="45" (click)="viewMore(trustee)">
+  <mat-card *ngFor="let trustee of _trustees" fxFlex="45%" fxFlex.lt-sm="100%" (click)="viewMore(trustee)">
     <mat-card-header>
       <img class="trustee-header-image"  mat-card-avatar [src]="trustee.img">
       <mat-card-title class="fill-accent">{{trustee.name}}</mat-card-title>
