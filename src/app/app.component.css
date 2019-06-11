@@ -166,6 +166,6 @@ button {
 }
 
 .donate-icon {
-    vertical-align: text-top;
+    vertical-align: text-top !important;
     margin-left: 0.1em;
 }

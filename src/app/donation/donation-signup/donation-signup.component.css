@@ -16,7 +16,12 @@
     width: 100%;
 }
   
-button {
+.donate-now {
   margin-top: 0.5em;
   float: right;
+  font-size: x-large; 
+}
+
+.donate-now mat-icon {
+  vertical-align: sub !important;
 }

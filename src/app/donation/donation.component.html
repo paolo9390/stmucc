@@ -27,9 +27,9 @@
       <h1 class="mat-display-1">SINGLE DONATION OF</h1>
 
       <div *ngIf="!isOther">
-        <h2 class="mat-headline">{{selectedAmount.amount}}</h2>
+        <h2 class="mat-headline">{{selectedAmount?.amount}}</h2>
         <mat-divider></mat-divider>
-        <p class="mat-title">{{selectedAmount.description}}</p>
+        <p class="mat-title">{{selectedAmount?.description}}</p>
       </div>
 
       <div class="mat-headline">
@@ -40,8 +40,8 @@
       </div>
 
       <mat-card-actions>
-        <button *ngIf="!isSubmitted" (click)="submit()" mat-raised-button [disabled]="donationAmount <= 0">Next</button>
-        <button *ngIf="isSubmitted" (click)="reset()" mat-raised-button>Reset</button>
+        <button *ngIf="!isSubmitted" (click)="submit()" mat-flat-button [disabled]="donationAmount <= 0">Next</button>
+        <button *ngIf="isSubmitted" (click)="reset()" mat-flat-button>Reset</button>
       </mat-card-actions>
 
     </mat-card>
