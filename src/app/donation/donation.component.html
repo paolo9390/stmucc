@@ -71,9 +71,9 @@
   <section *ngIf="!isSubmitted" fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
     <mat-card fxFlex="98%" class="stuff-primary">
       <mat-card-header class="mat-title">
-        Like to save a life every day? (Click here) to become a regular supporter of our work. Save lives now and in
-        the
-        future, and ensure that those you help have a future too... a future free from sickness and deprivation.
+        <span>Like to save a life every day? <strong style="cursor: pointer;" (click)="sendMail()">click here</strong> to become a regular supporter of our work. Save lives now and in
+          the
+          future, and ensure that those you help have a future too... a future free from sickness and deprivation.</span>
       </mat-card-header>
     </mat-card>
   </section>

@@ -61,4 +61,8 @@ export class DonationComponent implements OnInit {
   reset(){
     this.isSubmitted = false;
   }
+
+  sendMail(){
+    window.location.href = 'mailto:medhat.boutros@stmucc.com?Subject=Become%20a%20regular%20supporter';
+  }
 }
