@@ -28,6 +28,10 @@ mat-list-item h4 {
     font-size: x-large !important;
 }
 
+mat-card-content {
+    font-size: larger;
+}
+
 .panel {
     padding-bottom: 0px;
     max-width: 100%;

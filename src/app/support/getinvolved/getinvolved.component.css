@@ -11,3 +11,7 @@
 .fundraise_for__us {
     cursor: pointer;
 }
+
+mat-card-content {
+    font-size: larger;
+}

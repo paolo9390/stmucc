@@ -2,6 +2,10 @@ mat-icon {
     vertical-align: middle;
 }
 
+li {
+    font-size: x-large;
+}
+
 .active-url {
     color: #d81b60;
 }

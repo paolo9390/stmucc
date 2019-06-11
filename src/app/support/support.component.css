@@ -10,3 +10,7 @@
 .cards-section mat-card-title {
   font-size: xx-large;
 }
+
+mat-card-content {
+    font-size: larger;
+}

@@ -22,3 +22,7 @@ button {
     margin: 0.2em;
     font-size: x-large;
 }
+
+mat-card-content {
+    font-size: larger;
+}

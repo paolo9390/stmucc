@@ -22,6 +22,8 @@
     bottom: 0;
     right: 0;
     float: right;
-    /* position: absolute;
-    margin: 0.2em; */
+}
+
+mat-card-content {
+    font-size: larger;
 }

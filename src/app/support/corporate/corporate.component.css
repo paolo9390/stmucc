@@ -2,3 +2,7 @@
 .cards>mat-card {
     margin-top: 1em;
 }
+
+mat-card-content {
+    font-size: larger;
+}
