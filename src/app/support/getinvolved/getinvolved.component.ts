@@ -42,6 +42,6 @@ export class GetInvolvedComponent implements OnInit {
   }
 
   sendMail() {
-    window.location.href = 'mailto:ashley.williams@stmucc.com?Subject=Fundraise%20for%20StMark';
+    window.location.href = 'mailto:ashley.williams@stmarkuniversalcoptscare.org?Subject=Fundraise%20for%20StMark';
   }
 }

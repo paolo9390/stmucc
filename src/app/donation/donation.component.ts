@@ -63,6 +63,6 @@ export class DonationComponent implements OnInit {
   }
 
   sendMail(){
-    window.location.href = 'mailto:medhat.boutros@stmucc.com?Subject=Become%20a%20regular%20supporter';
+    window.location.href = 'mailto:medhat.boutros@stmarkuniversalcoptscare.org?Subject=Become%20a%20regular%20supporter';
   }
 }
