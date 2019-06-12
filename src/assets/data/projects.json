@@ -1,13 +1,8 @@
 [
     {
-      "title": "My Health 'Se7aty' Programme",
+      "title": "My Health 'Sehaty' Programme",
       "description": "The development of a new polyclinic in Faqous, northern Egypt, marks the first major project in the charity’s My Health programme, which was created following extensive evaluation of regional healthcare facilities in Egypt. The plan is to construct and equip four international hospitals and three healthcare centres, in areas of greatest medical need. Having opened Faqous, work is now underway on our first international hospital in Qous, with the main building work complete, and fit-out underway. Each development will offer specialist support, tailored to the particular health requirements of the local population. In addition to Faqous, sites are also being developed in Aswan, Qena, Menia, Giza and Behira in Egypt. A number of the sites are already in construction phase. The completed Faqous project has created an impressive healthcare centre, providing a day surgery centre, outpatient facility and radiology services in a deprived, rural part of the country, where thousands of residents are unable to pay for healthcare. Together with planning and construction, through trusted regional contractors, we are also developing strategic partnerships on the ground, and are engaged in training programmes to guarantee that each new development has the skilled staff to ensure that it is fully operational from day one. As a result of the generosity of supporters, millions of people will benefit from the medical services which will be delivered through the seven new centres in the programme. The ‘My Health’ programme is supported by His Holiness, Pope Tawardros III, leader of the Coptic Orthodox Church.",
       "img": "/assets/img/projects/fundraise-icon.png"
-    },
-    {
-      "title": "St Mark Youth Centre",
-      "description": "Our new centre in Oldham, a home for the St Mark Youth Centre alongside spaces and facilities for the wider community. Officially opened on Saturday 25th May, once fully developed we hope to offer the centre for conferences and events, with en-suite accommodation available. Built in 1871 for Mr Joseph Lees, a local cotton magnate, this beautiful listed building became a convent in 1907 until it became our home in Oldham in December 2018.",
-      "img": "/assets/img/projects/convent.jpg"
     },
     {
       "title": "Medicine Distribution Programme",
@@ -58,5 +53,10 @@
       "title": "Partnerships",
       "description": "Working in partnership with other charities, we’ve been able to complete projects such as the establishment of a vital nursery project in Om Dorman, Sudan, in association with ‘Copts in Need.’ In addition, by working with St Cyril Trust and the diocese of Old Cairo we’ve been able to assist in the funding of university tuition fees for over 120 students from some of the poorest backgrounds.",
       "img": "/assets/img/projects/partnerships.jpg"
+    },
+    {
+      "title": "St Mark Youth Centre",
+      "description": "Our new centre in Oldham, a home for the St Mark Youth Centre alongside spaces and facilities for the wider community. Officially opened on Saturday 25th May, once fully developed we hope to offer the centre for conferences and events, with en-suite accommodation available. Built in 1871 for Mr Joseph Lees, a local cotton magnate, this beautiful listed building became a convent in 1907 until it became our home in Oldham in December 2018.",
+      "img": "/assets/img/projects/convent.jpg"
     }
   ]
