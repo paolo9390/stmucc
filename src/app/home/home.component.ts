@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.projectService.getProjectsLocally().subscribe(projects => {
       if (projects) {
         projects.forEach(project => {
-          if (project.title === 'The Phoenix Project') {
+          if (project.name === 'The Phoenix Project') {
             this.phoenixProject = project;
           }
         });
