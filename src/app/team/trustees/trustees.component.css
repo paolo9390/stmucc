@@ -19,7 +19,7 @@
 }
 
 .cards>mat-card {
-  margin: 1em;
+  margin-bottom: 1em;
 }
 
 .cards mat-card-title {
