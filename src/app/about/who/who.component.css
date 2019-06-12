@@ -13,3 +13,8 @@
 .cards>mat-card {
     margin-bottom: 1em;
 }
+
+.projects__link {
+    cursor: pointer;
+    font-style: oblique;
+}

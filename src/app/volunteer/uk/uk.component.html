@@ -2,6 +2,17 @@
 
   <app-title [title]="title | uppercase"></app-title>
 
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-accent">
+      <mat-card-header class="mat-title" fxLayout="column">
+          <span>In the UK and abroad, we’re looking for those seeking a sense of purpose and a wish to do the right thing for those less fortunate than themselves.</span>
+          <span>If becoming a volunteer is something for you, then read on to learn more about the many opportunities available.</span>
+          <span>  Remember, any voluntary work you undertake will have a real and positive impact on the lives of many people.</span>
+          <span>But don’t just take our word for it.  Read the <strong routerLink="/volunteer/experiences" class="testimonials__link">testimonials of volunteers.</strong></span>
+      </mat-card-header>
+    </mat-card>
+  </section>
+
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
     <mat-card *ngFor="let panel of panels" fxFlex="30%" fxFlex.lt-md="45%" fxFlex.lt-sm="100%">
       <img mat-card-image [src]="panel.img">

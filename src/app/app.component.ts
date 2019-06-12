@@ -72,6 +72,7 @@ export class AppComponent {
   }
 
   addBreadcrumbFriendlyNames(){
+    this.breadcrumbService.hideRoute('/home');
     this.breadcrumbService.addFriendlyNameForRoute('/about/what-we-do', 'What We Do');
     this.breadcrumbService.addFriendlyNameForRoute('/about/why-we-do-it', 'Why We Do It');
     this.breadcrumbService.addFriendlyNameForRoute('/about/who-we-are', 'Who We Are');
@@ -87,6 +88,14 @@ export class AppComponent {
       return 'transparent';
     } else {
       return "#f5f5f5";
+    }
+  }
+
+  hideBreadcrumb(){
+    if (this.router.url === '/home'){
+      return 'none';
+    } else {
+      return '';
     }
   }
 }

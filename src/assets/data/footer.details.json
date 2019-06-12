@@ -1,56 +1,38 @@
 [
-    {
-      "name": "Media",
-      "link": "./",
-      "sublist": [
-        {
-        "name": "Photos",
-        "link": "./"
-        },
-        {
-          "name": "Videos",
-          "link": "./"
-        },
-        {
-          "name": "Annual Reports",
-          "link": "./about/annual-reports"
-        }
-      ]
-    },
-    {
-      "name": "Help Us",
-      "link": "./about/why-we-do-it",
-      "sublist": [
-        {
-        "name": "Donate",
-        "link": "./support/donations"
-        },
-        {
-          "name": "Volunteer",
-          "link": "./volunteer"
-        },
-        {
-          "name": "Youth Mission",
-          "link": "./about/what-we-do"
-        }
-      ]
-    },
-    {
-      "name": "StMUCC",
-      "link": "./about",
-      "sublist": [
-        {
-        "name": "Community",
-        "link": "./"
-        },
-        {
-          "name": "Careers",
-          "link": "./"
-        },
-        {
-          "name": "JustGiving",
-          "link": "./"
-        }
-      ]
-    }
+  {
+    "name": "About Us",
+    "link": "./about",
+    "sublist": [
+      {
+      "name": "Donate",
+      "link": "./support/donations"
+      },
+      {
+        "name": "Volunteer",
+        "link": "./volunteer"
+      },
+      {
+        "name": "Youth Mission",
+        "link": "./about/what-we-do"
+      }
+    ]
+  },
+  {
+    "name": "Contact Us",
+    "link": "./connect",
+    "sublist": [
+      {
+      "name": "Support",
+      "link": "./support"
+      },
+      {
+        "name": "Annual Reports",
+        "link": "./about/annual-reports"
+      },
+      {
+        "name": "JustGiving",
+        "link": "https://uk.virginmoneygiving.com/charities/stmarkuniversalcoptscare"
+      }
+    ]
+  }
 ]

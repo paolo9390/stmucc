@@ -67,6 +67,7 @@
                     <mat-menu #aboutus="matMenu">
                         <button mat-menu-item routerLink="/about/who-we-are">Who we are</button>
                         <button mat-menu-item routerLink="/about/what-we-do">What we do</button>
+                        <button mat-menu-item routerLink="/about/why-we-do-it">Why we do it</button>
                         <button mat-menu-item routerLink="/about/annual-reports">Annual Reports</button>
                         <button mat-menu-item routerLink="/about/team/trustees">Meet the team</button>
                     </mat-menu>
@@ -101,7 +102,7 @@
       
       <section [style.background-color]="getStyle()">
           <div class="content-outlet">
-              <div *ngIf="router.url != '/home'" class="breadcrumb">
+              <div [style.display]="hideBreadcrumb()" class="breadcrumb">
                   <breadcrumb></breadcrumb>
               </div>
 
@@ -120,7 +121,8 @@
                   <mat-nav-list class="mat-typography" *ngFor="let detail of footerDetails">
                       <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
                       <mat-list-item *ngFor="let list of detail.sublist">
-                          <a matLine [routerLink]="list.link">{{list.name}}</a>
+                          <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
+                          <a *ngIf="list.name === 'JustGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
                       </mat-list-item>
                   </mat-nav-list>
               </div>

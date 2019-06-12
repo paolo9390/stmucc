@@ -27,12 +27,14 @@
     </section>
   
     <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
-      <mat-card fxFlex="100%" fxFlex.lt-sm="100%" class="stuff-secondary-primary">
+      <mat-card fxFlex="100%" class="stuff-secondary-primary">
         <mat-card-header class="mat-title" fxLayout="column">
           <span>In addition to direct donations, you can support St Mark Universal Copts Care in a number of ways:</span>
-          <span *ngFor="let support of supports">
-            + {{support.name}}
-          </span>
+          
+          <mat-chip-list>
+            <mat-chip *ngFor="let support of supports">{{support.name}}</mat-chip>
+          </mat-chip-list>
+
         </mat-card-header>
       </mat-card>
     </section>

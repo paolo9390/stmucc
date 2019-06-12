@@ -7,7 +7,6 @@ import { GoldCardComponent } from './gold-card/gold-card.component';
 import { ShopComponent } from './shop/shop.component';
 import { GetInvolvedComponent } from './support/getinvolved/getinvolved.component';
 import { CorporateComponent } from './support/corporate/corporate.component';
-import { SummaryComponent } from './about/summary/summary.component';
 import { WhatComponent } from './about/what/what.component';
 import { WhyComponent } from './about/why/why.component';
 import { WhoComponent } from './about/who/who.component';
@@ -42,7 +41,6 @@ export const routes: Routes = [
   { path: 'about',
     children: [
       { path: '', component: AboutComponent },
-      { path: 'transforming', component: SummaryComponent },
       { path: 'what-we-do', component: WhatComponent },
       { path: 'why-we-do-it', component: WhyComponent },
       { path: 'who-we-are', component: WhoComponent },
