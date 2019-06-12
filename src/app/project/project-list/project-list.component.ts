@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { ProjectDialogComponent } from '../project-dialog/project-dialog.component';
+import { SingularDialogComponent } from '../../_shared/singular-dialog/singular-dialog.component';
 import { ProjectService } from 'src/app/_services/project.service';
 import { Project } from 'src/app/_models/project.model';
 
@@ -24,9 +24,9 @@ export class ProjectListComponent implements OnInit {
   }
 
   viewMore(project): void {
-    const dialogRef = this.dialog.open(ProjectDialogComponent, {
+    const dialogRef = this.dialog.open(SingularDialogComponent, {
       width: '80%',
-      data: {project: project}
+      data: {info: project}
     });
 
     dialogRef.afterClosed().subscribe(result => {

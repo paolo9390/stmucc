@@ -11,8 +11,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { BreadcrumbComponent } from './_shared/breadcrumb/breadcrumb.component';
 import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
-import { PartnerComponent } from './partner/partner.component';
-import { PartnerListComponent } from './partner/partner-list/partner-list.component';
+import { PartnerModule } from './partner/partner.module';
 import { SupportModule } from './support/support.module';
 import { DonationModule } from './donation/donation.module';
 import { GoldCardModule } from './gold-card/gold-card.module';
@@ -32,8 +31,6 @@ import { TitleModule } from './_shared/title/title.module';
   declarations: [
     AppComponent,
     BreadcrumbComponent,
-    PartnerComponent,
-    PartnerListComponent,
     ShopComponent,
     SuccessComponent
   ],
@@ -41,6 +38,7 @@ import { TitleModule } from './_shared/title/title.module';
     AboutModule,
     DonationModule,
     ConnectModule,
+    PartnerModule,
     SupportModule,
     TeamModule,
     HomeModule,

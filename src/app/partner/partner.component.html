@@ -1,3 +1,39 @@
-<p>
-  partner works!
-</p>
+<div class="mat-typography">
+
+  <app-title [title]="title"></app-title>
+
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-warn">
+      <mat-card-header class="mat-title" fxLayout="column">
+        St Mark Universal Copt Care is supported by, and works with, carefully chosen partners who share our objectives and mission. We support each other with time, money and information to change lives all around the world.
+      </mat-card-header>
+    </mat-card>
+  </section>
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let partner of partners" fxFlex="32%" fxFlex.lt-md="48%" fxFlex.lt-sm="100%" (click)="viewMore(partner)">
+        <mat-card-title class="fill-primary">
+            <p>{{partner.name}}</p>
+          </mat-card-title>
+          <mat-card-content fxLayoutAlign="center center" fxHide.lt-sm>
+            <img class="partner-header-image" mat-card-image [src]="partner.logo">
+          </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section>
+    <mat-card class="stuff-primary" fxFlex="100%">
+      <mat-card-title class="mat-title">
+        <mat-icon>thumb_up</mat-icon> Be Our Partner
+      </mat-card-title>
+
+      <mat-card-content>
+        <p class="mat-title">If your organisation could work with us to help the poor and needy in the Coptic world, please get in touch:</p>
+        <h2 mat-line>Chair: Dr Naser Fouad - naser.fouad@stmarkuniversalcoptscare.org</h2>
+        <h2 mat-line>Treasurer: Mrs Hala Elnarshy-Fouad - hala.fouad@stmarkuniversalcoptscare.org</h2>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+</div>
+    

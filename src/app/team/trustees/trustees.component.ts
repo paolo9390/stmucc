@@ -27,7 +27,7 @@ export class TrusteesComponent implements OnInit {
 
   viewMore(trustee): void {
     const dialogRef = this.dialog.open(TeamDialogComponent, {
-      width: '80%',
+      width: '90%',
       data: {team: trustee}
     });
 

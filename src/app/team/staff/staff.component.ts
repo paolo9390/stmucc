@@ -27,7 +27,7 @@ export class StaffComponent implements OnInit {
 
   viewMore(staff): void {
     const dialogRef = this.dialog.open(TeamDialogComponent, {
-      width: '80%',
+      width: '90%',
       data: {team: staff}
     });
 

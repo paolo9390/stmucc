@@ -1,0 +1,63 @@
+[
+    {
+      "name": "Warrington Disability Partnership",
+      "description": "WDP is a user-led charity that supports people with disabilities or long term health conditions. For more information, visit:  www.disabilitypartnership.org.uk",
+      "logo": "/assets/img/partners/wdp.jpg"
+    },
+    {
+      "name": "Egyptian Ministry of Health",
+      "description": "The support of the Ministry of Health and Population in Cairo, Egypt, has been vital in assisting us to arrange shipments and distribution of equipment for people with disabilities. For more information about The Ministry, please visit:  www.mohp.gov.eg",
+      "logo": "/assets/img/partners/egyptianministry.png"
+    },
+    {
+      "name": "IHP",
+      "description": "IHP is Europe’s largest facilitator of product donations between healthcare companies and aid agencies. For more information, please visit www.ihpuk.org",
+      "logo": "/assets/img/partners/ihp.jpg"
+    },
+    {
+      "name": "St Mina Charity",
+      "description": "A charity based in Cairo that supports orphans and families in deprived areas, helping fund their daily living, educational and healthcare needs, as well as funding small projects to help with the high percentage of unemployment. For more information, please visit: www.stminacharity.org",
+      "logo": "/assets/img/partners/stminacharity.jpg"
+    },
+    {
+      "name": "Coptic Orphans",
+      "description": "Coptic Orphans work through child sponsors and a network of hundreds of village-based volunteers, churches and organisations, to help children stay in school, and with their families, until they unlock their full potential. For more information, please visit: www.copticorphans.org.uk",
+      "logo": "/assets/img/partners/copticorphans.jpg"
+    },
+    {
+      "name": "Coptic Medical Society",
+      "description": "Coptic Medical Society work to support Coptic doctors, dentists and pharmacists in the UK, as well as supporting patients and Christian hospitals in Egypt. For more information, please visit: www.copticmedical.com",
+      "logo": "/assets/img/partners/copticmedical.png"
+    },
+    {
+      "name": "Bless UK",
+      "description": "Bless UK supports local programmes in healthcare, education, housing, marriage and income-generating projects. For more information, please visit: www.blessuk.org/mission",
+      "logo": "/assets/img/partners/blessuk.png"
+    },
+    {
+      "name": "Copts in Need",
+      "description": "Copts in Need works alongside existing charities in Egypt to increase awareness of the poor living conditions of many people in Upper Egypt and Sudan. For more information, please visit coptsinneed.org",
+      "logo": "/assets/img/partners/coptsinneed.png"
+    },
+    {
+      "name": "St Kyrel Trust",
+      "description": "The main objective of the Trust is to improve life chances through education by supporting Coptic youth in Egypt in either their last year of high school or in university with their basic necessities, such as food, clothes, transport, books and stationery. For more information, please visit www.stkyreltrust.org ",
+      "logo": "/assets/img/partners/stkyreltrust.png"
+    },
+    {
+      "name": "St George Benevolent Fund",
+      "description": "The fund endeavors to help underprivileged brothers and sisters, with the aim of improving basic living conditions. For more information, visit www.copticcentre.com/st-george-benevolent-fund/ ",
+      "logo": "/assets/img/partners/stgeorgebenevolent.gif"
+    },
+    {
+      "name": "Forgotten Angels",
+      "description": "Forgotten Angels’ mission is the relief of poverty and hardship among the poor and underprivileged street children living in Egypt, Sudan and Africa.",
+      "logo": "/assets/img/partners/forgottenangels.gif"
+    },
+    {
+      "name": "Perkbox",
+      "description": "Perkbox helps businesses attract, engage and retain their best talent with all the things that make winning company cultures – perks, employee benefits, reward etc",
+      "logo": "/assets/img/partners/perkbox.svg"
+    }
+]
+

@@ -22,12 +22,14 @@ import { DonationComponent } from './donation/donation.component';
 import { ConnectComponent } from './connect/connect.component';
 import { ProjectListComponent } from './project/project-list/project-list.component';
 import { ReportComponent } from './about/report/report.component';
+import { PartnerComponent } from './partner/partner.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'projects', component: ProjectListComponent },
+  { path: 'partners', component: PartnerComponent },
   { path: 'connect', component: ConnectComponent},
   { path: 'support',
     children: [

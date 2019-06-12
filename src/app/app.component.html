@@ -58,7 +58,7 @@
                     <button mat-icon-button color="primary" [matMenuTriggerFor]="mobile" fxHide.gt-xs><mat-icon>menu</mat-icon></button>
                     <mat-menu #mobile="matMenu">
                         <button mat-menu-item routerLink="/projects">OUR PROJECTS</button>
-                        <button mat-menu-item disabled>PARTNERS</button>
+                        <button mat-menu-item routerLink="/partners">PARTNERS</button>
                         <button mat-menu-item routerLink="/connect">CONNECT</button>
                     </mat-menu>
     
@@ -88,7 +88,7 @@
                         <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
                     </mat-menu>
 
-                    <button mat-button fxHide.lt-sm color="primary" disabled>PARTNERS</button>
+                    <button mat-button fxHide.lt-sm color="primary" routerLink="/partners">PARTNERS</button>
 
                     <button mat-button fxHide.lt-sm color="primary" routerLink="/connect">CONNECT</button>
 
@@ -107,7 +107,6 @@
               </div>
 
               <router-outlet></router-outlet>
-              <app-partner-list *ngIf="router.url === '/home'"></app-partner-list>
           </div>
       </section>
       
