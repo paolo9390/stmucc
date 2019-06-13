@@ -27,6 +27,10 @@ h2 {
     font-size: 58px;
 }
 
+.donations__amount {
+    width: 60%;
+}
+
 .amount-card>p {
     margin: 0;
     font-size: 20px;
@@ -44,18 +48,8 @@ h2 {
     margin-top: 0px !important;
 }
 
-.amount-div {
-    width: 100%;
-}
-
 .description-card {
-    margin-top: 1em;
     margin-bottom: 1em;
-}
-
-.amount-div>button {
-    font-size: x-large;
-    margin: 0.3em;
 }
 
 .amount-toggle>mat-button-toggle {
@@ -74,6 +68,10 @@ mat-divider {
     background: aliceblue;
     max-width: 70%;
     margin-left: 1em;
+}
+
+mat-card-actions {
+    padding-top: 0 !important;
 }
 
 .mat-form-field-label {

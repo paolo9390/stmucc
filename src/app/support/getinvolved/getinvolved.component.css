@@ -18,5 +18,6 @@ mat-card-content {
 
 mat-chip {
     font-size: large;
+    height: auto !important;
     background-color: aliceblue !important;
 }

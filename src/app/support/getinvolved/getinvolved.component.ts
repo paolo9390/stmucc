@@ -29,10 +29,7 @@ export class GetInvolvedComponent implements OnInit {
       name: 'Sponsored challenge and sporting activities'
     },
     {
-      name: 'Support in kind from the UK or overseas'
-    },
-    {
-      name: 'Donating time, skills or services for any of our life-enhancing projects'
+      name: 'Support in kind from the UK or overseas - donating time, skills or services for any of our life-enhancing projects'
     }
   ]
 
