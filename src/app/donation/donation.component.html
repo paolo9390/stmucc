@@ -47,8 +47,8 @@
         </div>
 
         <!-- next button -->
-        <div fxFlex="20%">
-            <button *ngIf="!isSubmitted" (click)="submit()" mat-flat-button [disabled]="donationAmount <= 0">DONATE NOW</button>
+        <div fxFlex="25%">
+            <button *ngIf="!isSubmitted" (click)="submit()" mat-flat-button [disabled]="donationAmount <= 0">GIVE NOW</button>
             <button *ngIf="isSubmitted" (click)="reset()" mat-flat-button>Choose other amount</button>
         </div>
       </mat-card-actions>

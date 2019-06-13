@@ -70,10 +70,6 @@ mat-divider {
     margin-left: 1em;
 }
 
-mat-card-actions {
-    padding-top: 0 !important;
-}
-
 .mat-form-field-label {
     color: aliceblue !important;
 }
