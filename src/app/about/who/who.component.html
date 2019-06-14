@@ -13,16 +13,10 @@
 
 
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <mat-card *ngFor="let panel of panels" fxFlex="100%">
-      <!-- <img mat-card-image [src]="whoweare"> -->
-
-      <mat-card-header class="mat-title">
-        <p>{{panel.text}}</p>
-      </mat-card-header>
-
-      <mat-card-actions>
-      </mat-card-actions>
-
+    <mat-card fxFlex="100%">
+      <mat-card-content>
+        <p *ngFor="let panel of panels">{{panel.text}}</p>
+      </mat-card-content>
     </mat-card>
   </section>
 

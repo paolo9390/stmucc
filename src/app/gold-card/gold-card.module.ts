@@ -7,21 +7,24 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { GoldCardComponent } from './gold-card.component';
 import { GoldCardService } from '../_services/goldcard.service';
-
+import { SignUpDialogComponent } from './signup-dialog/signup-dialog.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     GoldCardComponent,
-    TermsDialogComponent
+    TermsDialogComponent,
+    SignUpDialogComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModule,
     FlexLayoutModule,
+    FormsModule,
     TitleModule
   ],
-  entryComponents: [TermsDialogComponent],
+  entryComponents: [TermsDialogComponent, SignUpDialogComponent],
   providers: [GoldCardService],
   exports: [
     GoldCardComponent

@@ -4,6 +4,7 @@ import { Router } from "@angular/router";
 import { GoldCardService } from '../_services/goldcard.service';
 import { MatDialog } from '@angular/material';
 import { TermsDialogComponent } from './terms-dialog/terms-dialog.component';
+import { SignUpDialogComponent } from './signup-dialog/signup-dialog.component';
 
 @Component({
   selector: 'app-gold-card',
@@ -70,6 +71,17 @@ export class GoldCardComponent implements OnInit {
       data: {
         title: 'Terms & Conditions',
         terms: this.terms
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
+
+  signUp(): void {
+    const dialogRef = this.dialog.open(SignUpDialogComponent, {
+      panelClass: 'no-padding-dialog',
+      data: {
       }
     });
 

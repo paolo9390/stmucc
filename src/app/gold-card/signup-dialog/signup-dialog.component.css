@@ -1,0 +1,21 @@
+.donate-button {
+  font-size: large;
+  float: right;
+}
+
+.donation-panel mat-panel-title, .donation-panel mat-panel-description {
+  font-size: larger;
+}
+
+.mat-button-toggle-checked {
+  background-color: #FBC02D;
+}
+
+.signup-button {
+  background-color: #FBC02D;
+  color: aliceblue;
+}
+
+button {
+  margin-top: 0.6em;
+}

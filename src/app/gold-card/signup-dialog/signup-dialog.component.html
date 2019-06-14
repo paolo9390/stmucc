@@ -1,0 +1,32 @@
+<div class="mat-typography">
+
+  <mat-dialog-content>
+      <mat-accordion>
+          <mat-expansion-panel class="donation-panel" expanded="true">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Select amount
+              </mat-panel-title>
+              <mat-panel-description>
+                Monthly donation
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+        
+            <div class="mat-display-1" fxLayoutAlign="space-around stretch" fxLayout="column">
+                <mat-button-toggle-group style="width: 100%" [(ngModel)]="donationAmount">
+                  <mat-button-toggle fxFlex value="10">£10</mat-button-toggle>
+                  <mat-button-toggle fxFlex value="20">£20</mat-button-toggle>
+                  <mat-button-toggle fxFlex value="30">£30</mat-button-toggle>
+                </mat-button-toggle-group>
+                
+
+                <button mat-raised-button class="signup-button" [disabled]="!donationAmount">
+                  <span class="mat-display-1">SIGN UP NOW</span>
+                </button>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+  </mat-dialog-content>
+  
+</div>
