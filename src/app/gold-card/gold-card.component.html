@@ -11,13 +11,15 @@
 
         <mat-card-content>
             <p>{{headline}}</p>
-            <mat-list role="list">
-              <span mat-line>{{subheadline}}</span>
-              <mat-list-item *ngFor="let perk of perklist">
-                <mat-icon mat-list-icon>{{perk.icon}}</mat-icon>
-                <p mat-line>{{perk.text}}</p>
-              </mat-list-item>
-            </mat-list>
+            <mat-list>
+                <span mat-line>{{subheadline}}</span>
+                <div style="margin-top: 0.5em" >
+                  <mat-list-item *ngFor="let perk of perklist">
+                    <mat-icon mat-list-icon>{{perk.icon}}</mat-icon>
+                    <span>{{perk.text}}</span>
+                  </mat-list-item>
+                </div>
+              </mat-list>
         </mat-card-content>
       </mat-card>
     </div>

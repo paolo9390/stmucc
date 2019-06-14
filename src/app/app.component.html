@@ -114,10 +114,10 @@
       <footer class="footer background-secondary-accent">
 
           <section class="inner">
-              <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
+              <div class="mat-typography" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
                   
                 <img class="logo" [src]="logowhite" fxHide.lt-md>
-                  <mat-nav-list class="mat-typography" *ngFor="let detail of footerDetails">
+                  <mat-nav-list *ngFor="let detail of footerDetails">
                       <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
                       <mat-list-item *ngFor="let list of detail.sublist">
                           <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>

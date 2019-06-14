@@ -11,7 +11,7 @@
 // `headlines` and `body-1` levels.
 $custom-typography: mat-typography-config( $font-family: 'Yanone Kaffeesatz, sans-serif',
 $headline: mat-typography-level(32px, 48px, 500),
-$body-1: mat-typography-level(20px, 26px, 300));
+$body-1: mat-typography-level(20px, 24px, 300));
 // Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
 // @include mat-base-typography($custom-typography);
 // Override typography for a specific Angular Material components.
