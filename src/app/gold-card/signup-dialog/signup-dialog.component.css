@@ -11,11 +11,13 @@
   background-color: #F9A825;
 }
 
+.donation-toggle {
+  margin-bottom: 0;
+}
+
 .signup-button {
   background-color: #F9A825;
   color: aliceblue;
-}
-
-button {
-  margin-top: 0.6em;
+  margin-top: 3em;
+  margin-bottom: 1em;
 }
