@@ -51,7 +51,7 @@ export const routes: Routes = [
       { path: 'annual-reports', component: ReportComponent},
       { path: 'team',
       children: [
-        { path: '', redirectTo: 'trustees', pathMatch: 'full' },
+        { path: '', redirectTo: 'staff-and-volunteers', pathMatch: 'full' },
         { path: 'trustees', component: TrusteesComponent },
         { path: 'staff-and-volunteers', component: StaffComponent }
         ]
