@@ -118,14 +118,14 @@
                   
                 <img class="logo" [src]="logowhite" fxHide.lt-md>
                   <mat-nav-list *ngFor="let detail of footerDetails">
-                      <mat-list-item>
-												<a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
-											</mat-list-item>
+                    <mat-list-item>
+                      <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
+                    </mat-list-item>
                       
-                      <mat-list-item *ngFor="let list of detail.sublist">
-                          <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
-                          <a *ngIf="list.name === 'JustGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
-                      </mat-list-item>
+                    <mat-list-item *ngFor="let list of detail.sublist">
+                        <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
+                        <a *ngIf="list.name === 'JustGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
+                    </mat-list-item>
                   </mat-nav-list>
               </div>
               

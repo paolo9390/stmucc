@@ -10,6 +10,10 @@
     padding: 0.6em;
 }
 
+.main-section mat-card-content {
+    font-size: larger;
+}
+
 .cards>mat-card {
     margin: 0.5em;
 }

@@ -1,19 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { Footer } from './_models/footer.model';
 import { AppService } from './_services/app.service';
+import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  blue = "blue";
+export class AppComponent implements OnInit, OnDestroy {
+  
+  routerSubscription: Subscription;
+
   title = 'stmucc';
   logo: string = '/assets/img/stmucc.png';
   fundraisingLogo: string = '/assets/img/fundraising-regulator.png';
@@ -37,6 +41,11 @@ export class AppComponent {
     this.appService.getFooterLocally().subscribe(footerDetails => {
       this.footerDetails = footerDetails;
     });
+
+    this.routerSubscription = this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)).subscribe(
+        () => window.scrollTo(0, 0)
+      );
 
     this.iconRegistry.addSvgIconInNamespace('img', 'twitter',
     this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter.svg'));
@@ -69,6 +78,10 @@ export class AppComponent {
     this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube-color.svg'));
 
     this.addBreadcrumbFriendlyNames();
+  }
+
+  ngOnDestroy() {
+    this.routerSubscription.unsubscribe();
   }
 
   addBreadcrumbFriendlyNames(){

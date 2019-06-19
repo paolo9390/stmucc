@@ -23,6 +23,14 @@ export class ProjectListComponent implements OnInit {
     });
   }
 
+  cleanParams(parameter): string {
+    if (parameter && typeof parameter === 'string') {
+      parameter = parameter.replace(/[^a-zA-Z0-9]/g, '-');
+      return parameter.toLowerCase();
+    }
+    return parameter;
+  }
+
   viewMore(project): void {
     const dialogRef = this.dialog.open(SingularDialogComponent, {
       width: '80%',

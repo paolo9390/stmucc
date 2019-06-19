@@ -25,6 +25,7 @@ import { ProjectModule } from './project/project.module';
 import { PaypalService } from './_services/paypal.service';
 import { AppService } from './_services/app.service';
 import { TitleModule } from './_shared/title/title.module';
+import { SingularModule } from './_shared/singular/singular.module';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { TitleModule } from './_shared/title/title.module';
     HomeModule,
     ProjectModule,
     GoldCardModule,
+    SingularModule,
     TitleModule,
     BrowserModule,
     BrowserAnimationsModule,

@@ -26,3 +26,12 @@ button {
 mat-card-content {
     font-size: larger;
 }
+
+.stuff-gold {
+    background-color: #F9A825;
+    color: aliceblue;
+}
+
+.fill-gold {
+    color: #F9A825;
+}

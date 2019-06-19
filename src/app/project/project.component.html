@@ -1,15 +1,33 @@
 <div class="mat-typography">
 
-  <app-title [title]="project.title"></app-title>
+  <app-title [title]="project?.name"></app-title>
 
-  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="stuff-accent">
-      <img *ngIf="fundraise" mat-card-image [src]="fundraise">
+  <section fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around stretch">
 
-      <mat-card-header class="mat-title">
-        {{project.description}}
-      </mat-card-header>
-    </mat-card>
+    <div fxFlex="65%" fxLayout="column">
+      <div fxFlex="100%" fxFlex.lt-md="100%" class="fill-primary">
+        <mat-card-content>
+          {{project?.description}}
+        </mat-card-content>
+      </div>
+
+      <mat-card fxFlex="100%" class="stuff-accent">
+        <mat-card-header class="mat-title">
+          As you can see, we cover a lot of ground. And, with the help of corporate donations and continued support
+          from the public at home and overseas, we will develop our vital work further to do the right thing for many
+          more
+          people in need.
+        </mat-card-header>
+      </mat-card>
+    </div>
+
+
+    <div *ngIf="project?.img" fxFlex="33%" fxFlex.lt-md="100%">
+      <mat-card fxFlex.lt-sm="100%">
+        <img class="thanks-div" mat-card-image [src]="project?.img">
+      </mat-card>
+    </div>
+
   </section>
 
 </div>

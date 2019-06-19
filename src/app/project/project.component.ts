@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/_services/project.service';
+import { Project } from 'src/app/_models/project.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-project',
@@ -7,12 +10,35 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  @Input() project: any;
+  projects: Project[];
+  project: Project;
+  projectId: string;
+
   fundraise: string = '/assets/img/projects/fundraise-icon.png';
 
-  constructor() { }
+  constructor(private projectService: ProjectService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => this.projectId = params.projectId);
+
+    this.projectService.getProjectsLocally().subscribe(projects => {
+      this.projects = projects;
+      if (this.projectId){
+        for (let proj of projects) {
+          if (this.cleanParams(proj.name) === this.projectId){
+            this.project = proj;
+          }
+        }      
+      }
+    });
+  }
+
+  cleanParams(parameter): string {
+    if (parameter && typeof parameter === 'string') {
+      parameter = parameter.replace(/[^a-zA-Z0-9]/g, '-');
+      return parameter.toLowerCase();
+    }
+    return parameter;
   }
 
 }

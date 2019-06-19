@@ -14,13 +14,13 @@
         
             <div class="donation-toggle mat-display-1" fxLayoutAlign="space-around stretch" fxLayout="column">
                 <mat-button-toggle-group style="width: 100%" [(ngModel)]="donationAmount">
-                  <mat-button-toggle fxFlex value="10">£10</mat-button-toggle>
-                  <mat-button-toggle fxFlex value="20">£20</mat-button-toggle>
-                  <mat-button-toggle fxFlex value="30">£30</mat-button-toggle>
+                  <mat-button-toggle (click)="onSelectAmount()" fxFlex value="10">£10</mat-button-toggle>
+                  <mat-button-toggle (click)="onSelectAmount()" fxFlex value="20">£20</mat-button-toggle>
+                  <mat-button-toggle (click)="onSelectAmount()" fxFlex value="30">£30</mat-button-toggle>
                 </mat-button-toggle-group>
                 
 
-                <button mat-raised-button class="signup-button" [disabled]="!donationAmount">
+                <button mat-raised-button class="signup-button" [disabled]="!donationSelected">
                   <span class="mat-display-1">SIGN UP NOW</span>
                 </button>
             </div>

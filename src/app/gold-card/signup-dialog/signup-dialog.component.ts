@@ -9,6 +9,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 export class SignUpDialogComponent {
   
   donationAmount: number;
+  donationSelected: boolean = false;
   
   constructor(
     public dialogRef: MatDialogRef<SignUpDialogComponent>,
@@ -16,6 +17,10 @@ export class SignUpDialogComponent {
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  onSelectAmount(): void {
+    this.donationSelected = true;
   }
 
 }
