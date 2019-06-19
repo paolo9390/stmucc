@@ -1,86 +1,99 @@
 <div class="mat-typography">
 
   <app-title [title]="title"></app-title>
-  
-  <section *ngIf="!isSubmitted" fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="98%" class="stuff-accent">
-      <mat-card-header class="mat-title">
-        Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many
-        life-saving/life-changing initiatives.
-      </mat-card-header>
-    </mat-card>
 
-    <mat-card fxFlex="98%" class="fill-accent">
-      <mat-card-content>
-        100% of the donations you give to St Mark Universal Copts Care go directly to funding our programmes and vital
-        work. Unlike some charitable organisations, we do not use donations for administration costs or other
-        overheads.
-        What you donate gets to where it’s needed, and every pound makes an impact.
-      </mat-card-content>
-    </mat-card>
+
+  <section fxLayoutAlign="space-around stretch" layout-wrap>
+    <div fxFlex="98%" [ngClass.gt-sm]="['container']">
+      <img mat-card-image [src]="donateImg">
+
+      <mat-card class="donation-card" [ngClass.gt-sm]="['centered']">
+        <h1>
+          GIVE HOPE
+        </h1>
+        <mat-card-header>
+          Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many
+          life-saving/life-changing initiatives.
+        </mat-card-header>
+
+
+        <mat-card-content fxLayout="column">
+          <mat-button-toggle-group class="donation-type" [(ngModel)]="donationType">
+            <mat-button-toggle fxFlex value="single">SINGLE</mat-button-toggle>
+            <mat-button-toggle fxFlex value="monthly">MONTHLY</mat-button-toggle>
+          </mat-button-toggle-group>
+
+          <!-- donations options buttons -->
+          <div class="donation-type" fxFlex="100%" layout-wrap
+            fxLayoutAlign="space-around stretch">
+            <button fxFlex="33%" [ngClass]="{'stuff-secondary-primary': selectedAmount === donation}"
+              (click)="onAmountSelect(donation)" mat-stroked-button
+              *ngFor="let donation of fixedDonations">{{donation.amount}}</button>
+          </div>
+        </mat-card-content>
+
+        <div *ngIf="!isOther">
+          <h2 class="mat-headline">{{selectedAmount?.amount}}</h2>
+          <mat-divider></mat-divider>
+          <span class="mat-title">{{selectedAmount?.description}}</span>
+        </div>
+
+        <div class="mat-headline" fxLayoutAlign="center center">
+          <mat-form-field *ngIf="isOther" fxFlex="90%">
+            <input [disabled]="isSubmitted" matInput type="number" [(ngModel)]="donationAmount">
+            <span matPrefix>£&nbsp;</span>
+          </mat-form-field>
+        </div>
+
+
+        <mat-card-actions fxLayout="row" fxLayoutAlign="space-around stretch">
+          <!-- next button -->
+          <div fxFlex="90%" class="stmucc-secondary-theme">
+            <button class="donate-now" mat-raised-button color="primary" (click)="submit()"
+              [disabled]="donationAmount <= 0">
+              GIVE NOW
+            </button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </section>
 
-  <section class="amount-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch" layout-wrap>
-
-    <mat-card fxFlex="48%" fxFlex.lt-sm="100%" class="amount-card stuff-secondary-primary">
-      <h1 class="mat-display-1">SINGLE DONATION OF</h1>
-
-      <div *ngIf="!isOther">
-        <h2 class="mat-headline">{{selectedAmount?.amount}}</h2>
-        <mat-divider></mat-divider>
-        <span class="mat-title">{{selectedAmount?.description}}</span>
-      </div>
-
-      <div class="mat-headline">
-        <mat-form-field class="amount-field" *ngIf="isOther">
-          <input [disabled]="isSubmitted" matInput placeholder="Amount" type="number" [(ngModel)]="donationAmount">
-          <span matPrefix>£&nbsp;</span>
-        </mat-form-field>
-      </div>
 
 
-      <mat-card-actions fxLayout="row" fxLayoutAlign="space-between end">
-        <!-- donations options buttons -->
-        <div *ngIf="!isSubmitted" fxFlex="70%" layout-wrap fxLayoutAlign="space-around stretch">
-            <button fxFlex="33%" [ngClass]="{'stuff-accent': selectedAmount === donation}" (click)="onAmountSelect(donation)"
-            mat-stroked-button *ngFor="let donation of fixedDonations">{{donation.amount}}</button>
-        </div>
+  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
+    <mat-divider fxFlex="50%"></mat-divider>
 
-        <!-- next button -->
-        <div fxFlex="25%">
-            <button *ngIf="!isSubmitted" (click)="submit()" mat-flat-button [disabled]="donationAmount <= 0">GIVE NOW</button>
-            <button *ngIf="isSubmitted" (click)="reset()" mat-flat-button>Choose other amount</button>
-        </div>
-      </mat-card-actions>
-    </mat-card>
+    <span fxFlex="100%" class="second-title fill-accent">DONATE TO OUR CAUSE</span>
 
-    <div *ngIf="isSubmitted" fxFlex="40%" fxHide.lt-sm>
-      <img class="thanks-div" mat-card-image [src]="heartbeat">
+    <p fxFlex="100%">
+      100% of the donations you give to St Mark Universal Copts Care go directly to funding our programmes and vital
+      work. Unlike some charitable organisations, we do not use donations for administration costs or other
+      overheads.
+      What you donate gets to where it’s needed, and every pound makes an impact.
+    </p>
+  </section>
+
+  <section class="amount-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch"
+    layout-wrap>
+
+    <div fxFlex="20%" fxFlex.lt-sm="100%">
+      <img class="thanks-div" mat-card-image [src]="donate2">
     </div>
 
-    <mat-card fxFlex="48%" fxFlex.lt-sm="100%" *ngIf="!isSubmitted" class="description-card" fxLayoutAlign="center center">
+    <div fxFlex="70%" fxFlex.lt-sm="100%" class="description-card" fxLayoutAlign="center center">
       <mat-card-content>
         <p>
           Donate today to cover prescription costs for someone with a chronic condition or see your donation go
           towards the costs of life-saving surgery. Remember, 100% of your donation is used for this purpose.
         </p>
-      </mat-card-content>
-    </mat-card>
-  </section>
-
-
-  <section *ngIf="!isSubmitted" fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="98%" class="stuff-primary">
-      <mat-card-header class="mat-title">
-        <span>Like to save a life every day? <strong style="cursor: pointer;" (click)="sendMail()">click here</strong> to become a regular supporter of our work. Save lives now and in
+        <span>Like to save a life every day? <strong style="cursor: pointer;" (click)="sendMail()">click here</strong>
+          to become a regular supporter of our work. Save lives now and in
           the
-          future, and ensure that those you help have a future too... a future free from sickness and deprivation.</span>
-      </mat-card-header>
-    </mat-card>
-  </section>
-
-  <section *ngIf="isSubmitted">
-    <donation-signup [donationAmount]="donationAmount"></donation-signup>
+          future, and ensure that those you help have a future too... a future free from sickness and
+          deprivation.</span>
+      </mat-card-content>
+    </div>
   </section>
 
 </div>

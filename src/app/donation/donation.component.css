@@ -6,6 +6,48 @@
     text-align: center;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.container>img {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+}
+
+.donation-card {
+    background-color: #ffffff91;
+}
+
+.mat-button-toggle-checked {
+    background-color: #d81b60;
+    color: aliceblue;
+}
+
+.donation-type {
+    margin: 1em !important;
+}
+
+.donate-now {
+    width: 100%;
+}
+  
+.second-title {
+    margin: 0.5em;
+    text-align: center;
+    font-size: xx-large;
+}
+
 .amount-section {
     margin-top: 1em;
 }
@@ -68,6 +110,10 @@ mat-divider {
     background: aliceblue !important;
 }
 
+::ng-deep .mat-form-field-infix {
+    border-top: solid transparent;
+}
+
 ::ng-deep .amount-section .mat-form-field-label {
     color: #f0f8ff8c !important;
 }
@@ -84,6 +130,6 @@ mat-divider {
     background: aliceblue !important;
 }
 
-::ng-deep .mat-input-element:disabled {
+::ng-deep .amount-section .mat-input-element:disabled {
     color: aliceblue;
 }

@@ -10,7 +10,9 @@ import { RegularDonation, DonationPanel } from '../_models/donation.model';
 export class DonationComponent implements OnInit {
 
   title: string = 'YOUR DONATION';
-  panelImg: string;
+  panelImg: string = '/assets/img/heal.jpeg';
+  donateImg: string = '/assets/img/donate.jpg';
+  donate2: string = '/assets/img/donate2.jpg';
   selectedAmount: any;
 
   panels: DonationPanel[];
@@ -19,13 +21,12 @@ export class DonationComponent implements OnInit {
   
   isOther: boolean = false;
   isSubmitted: boolean = false;
+
   donationAmount: number = 10;
+  donationType: string = 'monthly';
 
 
-  heartbeat: string = '/assets/img/about/donate_heart.jpg';
-
-  constructor(private donationService: DonationService) { 
-    this.panelImg = '/assets/img/heal.jpeg';
+  constructor(private donationService: DonationService) {
   }
 
   ngOnInit() {
