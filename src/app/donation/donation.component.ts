@@ -25,6 +25,8 @@ export class DonationComponent implements OnInit {
   donationAmount: number = 10;
   donationType: string = 'monthly';
 
+  donationformPdf: string = '/assets/pdf/donation-form.pdf';
+
 
   constructor(private donationService: DonationService) {
   }

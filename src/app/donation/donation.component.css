@@ -99,7 +99,15 @@ h2 {
 mat-divider {
     background: aliceblue;
     max-width: 70%;
-    margin-left: 1em;
+}
+
+.vertical-divider {
+    height: 100%;
+    margin-right: 1em;
+}
+
+.other-ways-section {
+    margin-top: 1em;
 }
 
 .mat-form-field-label {

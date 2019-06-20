@@ -24,8 +24,7 @@
           </mat-button-toggle-group>
 
           <!-- donations options buttons -->
-          <div class="donation-type" fxFlex="100%" layout-wrap
-            fxLayoutAlign="space-around stretch">
+          <div class="donation-type" fxFlex="100%" layout-wrap fxLayoutAlign="space-around stretch">
             <button fxFlex="33%" [ngClass]="{'stuff-secondary-primary': selectedAmount === donation}"
               (click)="onAmountSelect(donation)" mat-stroked-button
               *ngFor="let donation of fixedDonations">{{donation.amount}}</button>
@@ -95,5 +94,38 @@
       </mat-card-content>
     </div>
   </section>
+
+
+  <section class="other-ways-section" fxLayoutAlign="space-around stretch" layout-wrap>
+    <mat-divider fxFlex="50%"></mat-divider>
+
+    <span fxFlex="100%" class="second-title fill-primary">OTHER WAYS TO GIVE</span>
+
+    <div class="other-ways-section" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+      <div>
+        <h1>
+          <mat-icon>local_phone</mat-icon> Donate by phone
+        </h1>
+        <p>
+            If you have any questions about donating or if you want to discuss current options, please follow the links above or get in touch by
+            calling +44 (0)161 652 5600.
+        </p>
+      </div>
+
+      <mat-divider class="vertical-divider" [vertical]="true"></mat-divider>
+
+      <div>
+        <h1>
+          <mat-icon>event_note</mat-icon> Donate by check
+        </h1>
+        <p>
+          If you would prefer to set up a regular payment, or donate by cheque or cash, please download our <a targe="blank" [href]="donationformPdf">donation form.</a>
+        </p>
+      </div>
+    </div>
+
+
+  </section>
+
 
 </div>
