@@ -2,28 +2,28 @@
     {
       "name": "My Health 'Sehaty' Programme",
       "description": [
-        { "img": "",
+        { "img": "/assets/img/projects/sehaty1.jpg",
           "paragraph": "The development of a new polyclinic in Faqous, northern Egypt, marks the first major project in the charity’s My Health programme, which was created following extensive evaluation of regional healthcare facilities in Egypt."
         },
         { "img": "",
           "paragraph": "The plan is to construct and equip four international hospitals and three healthcare centres, in areas of greatest medical need."
         },
-        { "img": "",
+        { "img": "/assets/img/projects/sehaty2.jpg",
           "paragraph": "Having opened Faqous, work is now underway on our first international hospital in Qous, with the main building work complete, and fit-out underway."
         },
-        { "img": "/assets/img/projects/sehaty1.jpg",
+        { "img": "",
           "paragraph": "Each development will offer specialist support, tailored to the particular health requirements of the local population. In addition to Faqous, sites are also being developed in Aswan, Qena, Menia, Giza and Behira in Egypt. A number of the sites are already in construction phase."
         },
-        { "img": "",
+        { "img": "/assets/img/projects/kimi-hospital.jpg",
           "paragraph": "The completed Faqous project has created an impressive healthcare centre, providing a day surgery centre, outpatient facility and radiology services in a deprived, rural part of the country, where thousands of residents are unable to pay for healthcare."
         },
-        { "img": "/assets/img/projects/sehaty2.jpg",
+        { "img": "",
           "paragraph": "Together with planning and construction, through trusted regional contractors, we are also developing strategic partnerships on the ground, and are engaged in training programmes to guarantee that each new development has the skilled staff to ensure that it is fully operational from day one."
         },
-        { "img": "/assets/img/projects/kimi-hospital.jpg",
+        { "img": "/assets/img/projects/sehaty3.jpg",
           "paragraph": "As a result of the generosity of supporters, millions of people will benefit from the medical services which will be delivered through the seven new centres in the programme."
         },
-        { "img": "/assets/img/projects/sehaty3.jpg",
+        { "img": "",
           "paragraph": "The ‘My Health’ programme is supported by His Holiness, Pope Tawardros III, leader of the Coptic Orthodox Church. "
         }
       ],
