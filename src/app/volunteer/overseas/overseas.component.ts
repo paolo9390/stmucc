@@ -10,6 +10,7 @@ import { TitleTextPanel } from 'src/app/_models/default.model';
 export class OverseasComponent implements OnInit {
   
   overseas: string = '/assets/img/volunteer/overseas.jpg';
+  overseas2: string = '/assets/img/volunteer/overseas2.jpg';
   title: string = 'Volunteer Overseas';
 
   panels: TitleTextPanel[];

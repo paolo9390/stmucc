@@ -6,29 +6,28 @@
     <mat-card fxFlex="100%" class="stuff-primary">
       <img mat-card-image [src]="corporate">
       <mat-card-header class="mat-title">
-          Whether in the UK or overseas, we would welcome more businesses to become corporate partners with us, to help deliver on our goals.
+        Whether in the UK or overseas, we would welcome more businesses to become corporate partners with us, to help
+        deliver on our goals.
       </mat-card-header>
     </mat-card>
   </section>
-  
-  
-  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <mat-card *ngFor="let panel of panels" fxFlex="100%">
 
-      <mat-card-content>
-        <p>{{panel.text}}</p>
-      </mat-card-content>
+  <section layout-wrap class="panels" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <div fxFlex="60%" fxLayout="column">
+      <p *ngFor="let panel of panels" fxFlex="100%">
+        {{panel.text}}
+      </p>
+    </div>
 
-      <mat-card-actions>
-      </mat-card-actions>
-
-    </mat-card>
+    <div fxFlex="30%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%" fxLayoutAlign="center">
+      <img mat-card-image [src]="corporate2">
+    </div>
   </section>
 
   <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
     <mat-card fxFlex="100%" class="stuff-accent">
       <mat-card-header class="mat-title">
-          If you would like to find out more about collaborating with us as a corporate sponsor, please do get in touch
+        If you would like to find out more about collaborating with us as a corporate sponsor, please do get in touch
       </mat-card-header>
     </mat-card>
 

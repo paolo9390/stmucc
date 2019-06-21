@@ -1,8 +1,5 @@
 
-.cards>mat-card {
+.panels>div {
     margin-top: 1em;
-}
-
-mat-card-content {
     font-size: larger;
 }

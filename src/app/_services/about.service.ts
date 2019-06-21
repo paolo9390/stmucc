@@ -25,8 +25,8 @@ export class AboutService {
     return panels;
   }
 
-  getWhyPanelsLocally(): Observable<TitleTextPanel[]> {
-    var panels = this.http.get<TitleTextPanel[]>(`${globals.LOCAL_URL}/why.panels.json`);
+  getWhyPanelsLocally(): Observable<DefaultPanel[]> {
+    var panels = this.http.get<DefaultPanel[]>(`${globals.LOCAL_URL}/why.panels.json`);
     return panels;
   }
 

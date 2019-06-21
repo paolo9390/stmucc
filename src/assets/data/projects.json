@@ -20,7 +20,7 @@
         { "img": "/assets/img/projects/sehaty2.jpg",
           "paragraph": "Together with planning and construction, through trusted regional contractors, we are also developing strategic partnerships on the ground, and are engaged in training programmes to guarantee that each new development has the skilled staff to ensure that it is fully operational from day one."
         },
-        { "img": "",
+        { "img": "/assets/img/projects/kimi-hospital.jpg",
           "paragraph": "As a result of the generosity of supporters, millions of people will benefit from the medical services which will be delivered through the seven new centres in the programme."
         },
         { "img": "/assets/img/projects/sehaty3.jpg",
@@ -77,11 +77,11 @@
         { "img": "",
           "paragraph": "Wheelchairs, walking frames, hoists, medical beds and chairs, and specialist mattresses are among the items donated."
         },
-        { "img": "/assets/img/projects/phoenix-project.jpeg",
+        { "img": "/assets/img/projects/phoenix-project.jpg",
           "paragraph": "The ongoing programme is also generating employment in the local Warrington area by recycling and refurbishing equipment that would otherwise have been destined for UK landfill sites."
         }
       ],
-      "img": "/assets/img/projects/phoenix-project.jpeg"
+      "img": "/assets/img/projects/phoenix-project.jpg"
     },
     {
       "name": "Project Happiness",

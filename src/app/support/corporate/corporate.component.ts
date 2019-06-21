@@ -11,6 +11,8 @@ export class CorporateComponent implements OnInit {
 
   title: string = "Corporate Support";
   corporate: string = '/assets/img/support/corporate.jpg';
+  corporate2: string = '/assets/img/support/corporate2.jpg';
+  corporate3: string = '/assets/img/support/corporate3.jpg';
 
   panels: TitleTextPanel[];
 

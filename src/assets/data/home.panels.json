@@ -1,12 +1,12 @@
 [{
     "items": [],
     "_id": 1,
-    "title": "Appeals",
+    "title": "My Health Programme",
     "subtitle": "",
-    "text": "Find out about volunteering, fundraising or taking part in an event",
+    "text": "Find out about our plan to construct and equip 7 international hospitals and healthcare centres",
     "img": "/assets/img/appeals.jpg",
     "button": "Find out more",
-    "url": "/support",
+    "url": "/projects/my-health--sehaty--programme",
     "standard": true
   },
   {
@@ -21,15 +21,28 @@
     "standard": true
   },
   {
-    "items": [{
-      "name": "Operations",
-      "value": "1,804",
-      "icon": "local_hospital"
-    }, {
-      "name": "Prescriptions",
-      "value": "58,719",
-      "icon": "local_pharmacy"
-    }],
+    "items": [
+      {
+        "name": "Polyclinic",
+        "value": "1",
+        "icon": "local_hospital"
+      },
+      {
+        "name": "Healthcare Centres",
+        "value": "3",
+        "icon": "child_care"
+      },
+      {
+        "name": "Operations",
+        "value": "1,804",
+        "icon": "healing"
+      },
+      {
+        "name": "Prescriptions",
+        "value": "58,719",
+        "icon": "local_pharmacy"
+      }
+    ],
     "_id": 3,
     "title": "Our progress",
     "subtitle": "",
@@ -41,12 +54,12 @@
   {
     "items": [],
     "_id": 4,
-    "title": "News",
+    "title": "Phoenix Project",
     "subtitle": "",
-    "img": "/assets/img/phoenix.jpg",
-    "text": "Read the latest news about our support",
+    "img": "/assets/img/projects/phoenix-project.jpg",
+    "text": "We are refurbishing independent living aids for people with chronic health conditions",
     "button": "Read more",
-    "url": "/projects",
+    "url": "/projects/the-phoenix-project",
     "standard": true
   }, {
     "items": [],

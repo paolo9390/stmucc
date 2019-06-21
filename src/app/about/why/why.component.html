@@ -13,7 +13,7 @@
 
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
     <mat-card *ngFor="let panel of panels" fxFlex="49%" fxFlex.lt-sm="100%">
-      <!-- <img mat-card-image [src]="heartbeat"> -->
+      <img mat-card-image [src]="panel.img">
 
       <mat-card-content class="fill-accent">
         <p>{{panel.text}}</p>

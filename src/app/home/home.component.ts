@@ -11,7 +11,7 @@ import { Project } from '../_models/project.model';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  panelImg: string = '/assets/img/heal.jpeg';
+  panelImg: string = '/assets/img/home.jpg';
   panels: Observable<Panel[]>
   _panels: Panel[];
   panelsSubscription: Subscription;
