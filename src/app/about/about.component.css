@@ -1,29 +1,34 @@
 .title {
-    font-size: 70px;
-    border-bottom: 1px solid ;
-    line-height: 1em;
-    letter-spacing: .1em;
-    text-align: center;
+  font-size: 70px;
+  border-bottom: 1px solid;
+  line-height: 1em;
+  letter-spacing: .1em;
+  text-align: center;
 }
 
-.main-section> mat-card {
-    margin-bottom: 0.5em;
+.main-section>mat-card {
+  margin-bottom: 0.5em;
 }
 
 .cards>mat-card {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .cards mat-card-title {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
 .cards mat-card-actions {
-    bottom: 0;
-    right: 0;
-    float: right;
+  bottom: 0;
+  right: 0;
+  float: right;
 }
 
 mat-card-content {
-    font-size: larger;
+  font-size: larger;
+}
+
+.image-div>img {
+  max-width: 100%;
+  margin-top: 0.4em;
 }

@@ -10,3 +10,11 @@
 mat-card-content {
   font-size: x-large;
 }
+
+.image-div {
+  margin-top: 0.4em;
+}
+
+.image-div > img {
+  max-width: 100%;
+}

@@ -27,7 +27,9 @@
           <div class="donation-type" fxFlex="100%" layout-wrap fxLayoutAlign="space-around stretch">
             <button fxFlex="33%" [ngClass]="{'stuff-secondary-primary': selectedAmount === donation}"
               (click)="onAmountSelect(donation)" mat-stroked-button
-              *ngFor="let donation of fixedDonations">{{donation.amount}}</button>
+              *ngFor="let donation of fixedDonations">
+                <span class="mat-typography">{{donation.amount}}</span>
+              </button>
           </div>
         </mat-card-content>
 
@@ -50,7 +52,7 @@
           <div fxFlex="90%" class="stmucc-secondary-theme">
             <button class="donate-now" mat-raised-button color="primary" (click)="submit()"
               [disabled]="donationAmount <= 0">
-              GIVE NOW
+              <span class="mat-typography">GIVE NOW</span>
             </button>
           </div>
         </mat-card-actions>

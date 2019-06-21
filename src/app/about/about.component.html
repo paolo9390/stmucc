@@ -1,30 +1,51 @@
 <div class="mat-typography">
-    
+
   <app-title [title]="title"></app-title>
 
   <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="98%" class="stuff-primary">
-      <mat-card-header class="mat-title">
-        Transforming lives around the world
-        Doing the right thing has always been the right thing to do.
-        That’s why St Mark Universal Copts Care exists...to do the right thing for those in need, overseas and in the
-        UK. <br>
-        Our work began as a mission to improve the lives of disadvantaged communities in Egypt, North
-        Africa
-        and the Middle East, through a series of targeted health and welfare programmes, but now we do much, much more,
-        including our work and alliances with charitable organisations close to our Warrington, UK home.
-      </mat-card-header>
-    </mat-card>
+    <div fxFlex="98%">
+      <mat-card-content fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+        <div fxFlex="25%" class="image-div" fxFlex.lt-sm="100%">
+          <img mat-card-image [src]="whoweare3">
+        </div>
 
-    <mat-card fxFlex="98%" class="stuff-accent">
-      <mat-card-header class="mat-title">
-        As Christians, we believe passionately that it is our duty to support those groups in need, irrespective of
-        religion
-        or national boundaries, which is why we have helped thousands of people gain access to life-saving healthcare
-        that
-        has helped to transform their health and their life chances.
-      </mat-card-header>
-    </mat-card>
+        <div fxFlex="70%">
+          <p>
+            Transforming lives around the world
+            Doing the right thing has always been the right thing to do.
+            That’s why St Mark Universal Copts Care exists...to do the right thing for those in need, overseas and in
+            the
+            UK.
+          </p>
+          <p>Our work began as a mission to improve the lives of disadvantaged communities in Egypt, North
+            Africa
+            and the Middle East, through a series of targeted health and welfare programmes, but now we do much, much
+            more,
+            including our work and alliances with charitable organisations close to our Warrington, UK home.</p>
+        </div>
+      </mat-card-content>
+    </div>
+
+    <div fxFlex="98%">
+      <mat-card-content fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+
+        <div fxFlex="60%">
+          <p>
+            As Christians, we believe passionately that it is our duty to support those groups in need, irrespective of
+            religion
+            or national boundaries, which is why we have helped thousands of people gain access to life-saving
+            healthcare
+            that
+            has helped to transform their health and their life chances.
+          </p>
+        </div>
+
+        <div fxFlex="30%" class="image-div" fxFlex.lt-sm="100%">
+          <img mat-card-image [src]="whoweare2">
+        </div>
+      </mat-card-content>
+
+    </div>
   </section>
 
 

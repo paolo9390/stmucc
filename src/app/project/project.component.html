@@ -4,28 +4,22 @@
 
   <section fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around stretch">
 
-    <div fxFlex="65%" fxLayout="column">
-      <div fxFlex="100%" fxFlex.lt-md="100%" class="fill-primary">
+    <div fxFlex="70%" fxLayout="column">
+      <div fxFlex="100%" fxFlex.lt-md="100%">
         <mat-card-content>
-          {{project?.description}}
+          <p *ngFor="let description of project?.description">
+            {{description?.paragraph}}
+          </p>
+
         </mat-card-content>
       </div>
-
-      <mat-card fxFlex="100%" class="stuff-accent">
-        <mat-card-header class="mat-title">
-          As you can see, we cover a lot of ground. And, with the help of corporate donations and continued support
-          from the public at home and overseas, we will develop our vital work further to do the right thing for many
-          more
-          people in need.
-        </mat-card-header>
-      </mat-card>
     </div>
 
-
-    <div *ngIf="project?.img" fxFlex="33%" fxFlex.lt-md="100%">
-      <mat-card fxFlex.lt-sm="100%">
-        <img class="thanks-div" mat-card-image [src]="project?.img">
-      </mat-card>
+    <div fxFlex="20%" fxLayout="column">
+      <div *ngFor="let description of project?.description" [hidden]="!description?.img" class="image-div"
+        fxFlex.lt-sm="100%">
+        <img mat-card-image [src]="description?.img">
+      </div>
     </div>
 
   </section>

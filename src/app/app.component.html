@@ -2,143 +2,153 @@
 
 <div>
   <section role="main" class="container">
-      <div layout-fill class="social-toolbar" fxLayout="row" fxLayoutAlign="center center" layout-fill>
-          <mat-toolbar>
-              <a [routerLink]="['./']" mat-button>
-                  <div class="app-tilte-container" fxLayout="row" fxLayoutAlign="start center">
-                  </div>
-              </a>
-
-              <span class="config-spacer"></span>
-
-              <a target="_blank" href="https://www.facebook.com/StMarkUniversalCoptsCare/" mat-icon-button>
-                  <mat-icon svgIcon="img:facebook" color="primary"></mat-icon>
-              </a>
-
-              <a target="_blank" href="https://www.instagram.com/stmarkuniversalcoptscare" mat-icon-button>
-                  <mat-icon svgIcon="img:instagram" color="primary"></mat-icon>
-              </a>
-
-              <a target="_blank" href="https://twitter.com/stmarkuniversal" mat-icon-button>
-                  <mat-icon svgIcon="img:twitter" color="primary"></mat-icon>
-              </a>
-
-              <a target="_blank" href="https://www.linkedin.com/company/st-mark-universal-copts-care" mat-icon-button>
-                  <mat-icon svgIcon="img:linkedin" color="primary"></mat-icon>
-              </a>
-
-              <a target="_blank" href="https://www.youtube.com/channel/UC7LZnFxq_pO1u8D9o9KFa1g" mat-icon-button>
-                  <mat-icon svgIcon="img:youtube" color="primary"></mat-icon>
-              </a>
-          </mat-toolbar>
-      </div>
-
-      <header role="banner" class="site-banner">
-
-          <div class="inner">
-              <div fxLayout="row" fxLayoutAlign="space-around center">
-                  <a [routerLink]="['./home']">
-                      <img class="logo" [src]="logo">
-                  </a>
-
-                  <section fxHide.lt-md class="mat-typography">
-                      <h1 class="slogan fill-primary">"{{banner.slogan}}"</h1>
-                  </section>
-
-                  <div class="stmucc-secondary-theme">
-                        <button routerLink="/support/donations" mat-raised-button color="primary">Donate
-                            <mat-icon class="donate-icon">favorite_border</mat-icon>
-                        </button>
-                  </div>
-              </div>
-
-              <div class="toolbar">
-                  <mat-toolbar fxLayout.gt-md="row" fxLayoutAlign="center center" class="navbar" layout-fill>
-                    <!-- menu for responsive devices -->
-                    <button mat-icon-button color="primary" [matMenuTriggerFor]="mobile" fxHide.gt-xs><mat-icon>menu</mat-icon></button>
-                    <mat-menu #mobile="matMenu">
-                        <button mat-menu-item routerLink="/projects">OUR PROJECTS</button>
-                        <button mat-menu-item routerLink="/partners">PARTNERS</button>
-                        <button mat-menu-item routerLink="/connect">CONNECT</button>
-                    </mat-menu>
-    
-                    <!-- other menu -->
-                    <button mat-button color="primary" [matMenuTriggerFor]="aboutus">ABOUT US<mat-icon>arrow_drop_down</mat-icon></button>
-                    <mat-menu #aboutus="matMenu">
-                        <button mat-menu-item routerLink="/about/who-we-are">Who we are</button>
-                        <button mat-menu-item routerLink="/about/what-we-do">What we do</button>
-                        <button mat-menu-item routerLink="/about/why-we-do-it">Why we do it</button>
-                        <button mat-menu-item routerLink="/about/annual-reports">Annual Reports</button>
-                        <button mat-menu-item routerLink="/about/team/staff-and-volunteers">Meet the team</button>
-                    </mat-menu>
-
-                    <button mat-button color="primary" fxHide.lt-sm routerLink="/projects">OUR PROJECTS</button>
-
-                    <button mat-button color="primary" [matMenuTriggerFor]="fundraise">FUNDRAISE<mat-icon>arrow_drop_down</mat-icon></button>
-                    <mat-menu #fundraise="matMenu">
-                        <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
-                        <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
-                        <button mat-menu-item routerLink="/support/gold-card">The Gold Card</button>
-                    </mat-menu>
-
-                    <button mat-button color="primary" [matMenuTriggerFor]="volunteer">VOLUNTEER<mat-icon>arrow_drop_down</mat-icon></button>
-                    <mat-menu #volunteer="matMenu">
-                        <button mat-menu-item routerLink="/volunteer/uk">UK</button>
-                        <button mat-menu-item routerLink="/volunteer/overseas">Overseas</button>
-                        <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
-                    </mat-menu>
-
-                    <button mat-button fxHide.lt-sm color="primary" routerLink="/partners">PARTNERS</button>
-
-                    <button mat-button fxHide.lt-sm color="primary" routerLink="/connect">CONNECT</button>
-
-                  </mat-toolbar>
-              </div>
-
+    <div layout-fill class="social-toolbar" fxLayout="row" fxLayoutAlign="center center" layout-fill>
+      <mat-toolbar>
+        <a [routerLink]="['./']" mat-button>
+          <div class="app-tilte-container" fxLayout="row" fxLayoutAlign="start center">
           </div>
+        </a>
 
-      </header>
+        <span class="config-spacer"></span>
 
-      
-      <section [style.background-color]="getStyle()">
-          <div class="content-outlet">
-              <div [style.display]="hideBreadcrumb()" class="breadcrumb">
-                  <breadcrumb></breadcrumb>
-              </div>
+        <a target="_blank" href="https://www.facebook.com/StMarkUniversalCoptsCare/" mat-icon-button>
+          <mat-icon svgIcon="img:facebook" color="primary"></mat-icon>
+        </a>
 
-              <router-outlet></router-outlet>
-          </div>
-      </section>
-      
+        <a target="_blank" href="https://www.instagram.com/stmarkuniversalcoptscare" mat-icon-button>
+          <mat-icon svgIcon="img:instagram" color="primary"></mat-icon>
+        </a>
 
-      <footer class="footer background-secondary-accent">
+        <a target="_blank" href="https://twitter.com/stmarkuniversal" mat-icon-button>
+          <mat-icon svgIcon="img:twitter" color="primary"></mat-icon>
+        </a>
 
-          <section class="inner">
-              <div class="mat-typography" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
-                  
-                <img class="logo" [src]="logowhite" fxHide.lt-md>
-                  <mat-nav-list *ngFor="let detail of footerDetails">
-                    <mat-list-item>
-                      <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
-                    </mat-list-item>
-                      
-                    <mat-list-item *ngFor="let list of detail.sublist">
-                        <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
-                        <a *ngIf="list.name === 'JustGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
-                    </mat-list-item>
-                  </mat-nav-list>
-              </div>
-              
-              <mat-divider></mat-divider>   
+        <a target="_blank" href="https://www.linkedin.com/company/st-mark-universal-copts-care" mat-icon-button>
+          <mat-icon svgIcon="img:linkedin" color="primary"></mat-icon>
+        </a>
 
-              <div class="charity-footer mat-typography">
-                  <img class="frlogo" [src]="frlogo">
-                  <p>Registered office: The Old Rectory, Rectory Lane, Winwick WA2 8LE.</p>
-                  <p>United Kingdom Committee for StMUCC. Registered charity 1155451. Registered company limited by guarantee 08747202 (England and Wales).</p>
-              </div>
+        <a target="_blank" href="https://www.youtube.com/channel/UC7LZnFxq_pO1u8D9o9KFa1g" mat-icon-button>
+          <mat-icon svgIcon="img:youtube" color="primary"></mat-icon>
+        </a>
+      </mat-toolbar>
+    </div>
+
+    <header role="banner" class="site-banner">
+
+      <div class="inner">
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+          <a [routerLink]="['./home']">
+            <img class="logo" [src]="logo">
+          </a>
+
+          <section fxHide.lt-md class="mat-typography">
+            <h1 class="slogan fill-primary">"{{banner.slogan}}"</h1>
           </section>
 
-      </footer>
+          <div class="stmucc-secondary-theme">
+            <button routerLink="/support/donations" mat-raised-button color="primary">
+              <span class="mat-typography mat-display-1">DONATE
+                <mat-icon class="donate-icon">favorite_border</mat-icon>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <mat-toolbar fxLayout.gt-md="row" fxLayoutAlign="center center" class="navbar" layout-fill>
+            <!-- menu for responsive devices -->
+            <button mat-icon-button color="primary" [matMenuTriggerFor]="mobile" fxHide.gt-xs>
+              <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #mobile="matMenu">
+              <button mat-menu-item routerLink="/projects">OUR PROJECTS</button>
+              <button mat-menu-item routerLink="/partners">PARTNERS</button>
+              <button mat-menu-item routerLink="/connect">CONNECT</button>
+            </mat-menu>
+
+            <!-- other menu -->
+            <button mat-button color="primary" [matMenuTriggerFor]="aboutus">ABOUT US<mat-icon>arrow_drop_down
+              </mat-icon></button>
+            <mat-menu #aboutus="matMenu">
+              <button mat-menu-item routerLink="/about">Overview</button>
+              <button mat-menu-item routerLink="/about/who-we-are">Who we are</button>
+              <button mat-menu-item routerLink="/about/what-we-do">What we do</button>
+              <button mat-menu-item routerLink="/about/why-we-do-it">Why we do it</button>
+              <button mat-menu-item routerLink="/about/annual-reports">Annual Reports</button>
+              <button mat-menu-item routerLink="/about/team/staff-and-volunteers">Meet the team</button>
+            </mat-menu>
+
+            <button mat-button color="primary" fxHide.lt-sm routerLink="/projects">OUR PROJECTS</button>
+
+            <button mat-button color="primary" [matMenuTriggerFor]="fundraise">FUNDRAISE<mat-icon>arrow_drop_down
+              </mat-icon></button>
+            <mat-menu #fundraise="matMenu">
+              <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
+              <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
+              <button mat-menu-item routerLink="/support/donations">Donations</button>
+              <button mat-menu-item routerLink="/support/gold-card">The Gold Card</button>
+            </mat-menu>
+
+            <button mat-button color="primary" [matMenuTriggerFor]="volunteer">VOLUNTEER<mat-icon>arrow_drop_down
+              </mat-icon></button>
+            <mat-menu #volunteer="matMenu">
+              <button mat-menu-item routerLink="/volunteer/uk">UK</button>
+              <button mat-menu-item routerLink="/volunteer/overseas">Overseas</button>
+              <button mat-menu-item routerLink="/volunteer/experiences">Our Experiences</button>
+            </mat-menu>
+
+            <button mat-button fxHide.lt-sm color="primary" routerLink="/partners">PARTNERS</button>
+
+            <button mat-button fxHide.lt-sm color="primary" routerLink="/connect">CONNECT</button>
+
+          </mat-toolbar>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <section [style.background-color]="getStyle()">
+      <div class="content-outlet">
+        <div [style.display]="hideBreadcrumb()" class="breadcrumb">
+          <breadcrumb></breadcrumb>
+        </div>
+
+        <router-outlet></router-outlet>
+      </div>
+    </section>
+
+
+    <footer class="footer background-secondary-accent">
+
+      <section class="inner">
+        <div class="mat-typography" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
+
+          <img class="logo" [src]="logowhite" fxHide.lt-md>
+          <mat-nav-list *ngFor="let detail of footerDetails">
+            <mat-list-item>
+              <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
+            </mat-list-item>
+
+            <mat-list-item *ngFor="let list of detail.sublist">
+              <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
+              <a *ngIf="list.name === 'JustGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
+            </mat-list-item>
+          </mat-nav-list>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="charity-footer mat-typography">
+          <img class="frlogo" [src]="frlogo">
+          <p>Registered office: The Old Rectory, Rectory Lane, Winwick WA2 8LE.</p>
+          <p>United Kingdom Committee for StMUCC. Registered charity 1155451. Registered company limited by guarantee
+            08747202 (England and Wales).</p>
+        </div>
+      </section>
+
+    </footer>
   </section>
 
 </div>
