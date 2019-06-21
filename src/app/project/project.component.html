@@ -17,7 +17,7 @@
 
     <div fxFlex="20%" fxLayout="column">
       <div *ngFor="let description of project?.description" [hidden]="!description?.img" class="image-div"
-        fxFlex.lt-sm="100%">
+        fxFlex.lt-sm="100%" fxLayoutAlign="center">
         <img mat-card-image [src]="description?.img">
       </div>
     </div>
