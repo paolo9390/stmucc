@@ -13,9 +13,9 @@ mat-card-content {
 
 .image-div {
   margin-top: 0.4em;
-  margin: auto;
 }
 
 .image-div > img {
   max-width: 100%;
+  margin: auto;
 }
