@@ -10,7 +10,7 @@ import { AboutPanel } from '../_models/about.model';
 export class AboutComponent implements OnInit {
   
   title: string = 'ABOUT US';
-  whoweare2: string = '/assets/img/about/whoweare2.jpg';
+  youthpower: string = '/assets/img/about/youthpower.jpg';
   whoweare3: string = '/assets/img/about/whoweare3.jpg';
   panels: AboutPanel[];
 
