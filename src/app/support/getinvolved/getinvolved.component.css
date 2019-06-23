@@ -20,3 +20,26 @@ mat-chip {
     font-size: large;
     height: auto !important;
 }
+
+mat-divider {
+    background: aliceblue;
+}
+
+.fundraise-img {
+    width: 100%;
+    margin: auto;
+}
+
+.other-ways-section {
+    margin-top: 1em;
+}
+
+.second-title {
+    margin: 0.5em;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.giving-icon {
+    vertical-align: bottom;
+}

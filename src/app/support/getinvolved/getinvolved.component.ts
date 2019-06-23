@@ -11,6 +11,7 @@ export class GetInvolvedComponent implements OnInit {
 
   title: string = "Get involved with fundraising";
   getinvolved: string = '/assets/img/support/getinvolved.jpg';
+  fundraise2: string = '/assets/img/support/fundraise2.jpg';
   frlogo: string = '/assets/img/frwhite.png';
 
   panels: TitleTextPanel[];
@@ -43,5 +44,13 @@ export class GetInvolvedComponent implements OnInit {
 
   sendMail() {
     window.location.href = 'mailto:ashley.williams@stmarkuniversalcoptscare.org?Subject=Fundraise%20for%20StMark';
+  }
+
+  donateByMoneyGiving() {
+    window.location.href = 'https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?uniqueVmgCharityUrl=stmarkuniversalcoptscare';
+  }
+
+  fundraiseByMoneyGiving() {
+    window.location.href = 'https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?uniqueVmgCharityUrl=stmarkuniversalcoptscare';
   }
 }

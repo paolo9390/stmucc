@@ -13,11 +13,15 @@
 
 
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <mat-card fxFlex="100%">
+    <div fxFlex="25%" class="image-div" fxFlex.lt-sm="100%">
+      <img mat-card-image [src]="smile">
+    </div>
+
+    <div fxFlex="70%">
       <mat-card-content>
         <p *ngFor="let panel of panels">{{panel.text}}</p>
       </mat-card-content>
-    </mat-card>
+    </div>
   </section>
 
   <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>

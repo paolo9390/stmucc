@@ -103,8 +103,20 @@
 
     <span fxFlex="100%" class="second-title fill-primary">OTHER WAYS TO GIVE</span>
 
-    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around start">
-      
+    <div class="other-ways-main-div" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around start">
+      <div fxFlex="40">
+        <h1>
+          <mat-icon>account_balance</mat-icon> Donate by bank transfer
+        </h1>
+        <p>
+          If you would prefer to donate directly by bank transfer:</p>
+          <p>St Mark Universal Copts Care <br>
+          Acct No: 65722695 <br>
+          Sort code: 08 - 92 - 99 <br>
+        </p>
+      </div>
+
+      <mat-divider fxHide.lt-sm class="vertical-divider" [vertical]="true"></mat-divider>
       <div fxFlex="32">
         <h1>
           <mat-icon>local_phone</mat-icon> Donate by phone
@@ -122,19 +134,6 @@
         </h1>
         <p>
           If you would prefer to set up a regular payment, or donate by cheque or cash, please download our <a targe="blank" [href]="donationformPdf">donation form.</a>
-        </p>
-      </div>
-
-      <mat-divider fxHide.lt-sm class="vertical-divider" [vertical]="true"></mat-divider>
-      <div fxFlex="40">
-        <h1>
-          <mat-icon>account_balance</mat-icon> Donate by bank transfer
-        </h1>
-        <p>
-          If you would prefer to donate directly by bank transfer:</p>
-          <p>St Mark Universal Copts Care <br>
-          Acct No: 65722695 <br>
-          Sort code: 08 - 92 - 99 <br>
         </p>
       </div>
 

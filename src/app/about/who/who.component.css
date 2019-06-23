@@ -18,3 +18,13 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.image-div {
+  margin-top: 0.4em;
+
+}
+
+.image-div>img {
+  max-width: 100%;
+  margin: auto;
+}

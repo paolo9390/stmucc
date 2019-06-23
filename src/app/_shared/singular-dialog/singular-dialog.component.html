@@ -6,15 +6,15 @@
   <app-title [title]="data?.info?.name | uppercase"></app-title>
 
   <mat-dialog-content>
-      <section layout-wrap fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
-          <div fxFlex>
-            <p style="font-size: x-large">
-              {{data?.info?.description}}
-            </p>
-            <button class="more-button" mat-raised-button color="accent" disabled>Read more</button>
-          </div>
-        </section>
+    <section layout-wrap fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+      <div fxFlex>
+        <p style="font-size: x-large">
+          {{data?.info?.description}}
+        </p>
+        <button class="more-button" mat-raised-button color="accent" *ngIf="data?.info?.url">Read more</button>
+      </div>
+    </section>
 
   </mat-dialog-content>
-  
+
 </div>

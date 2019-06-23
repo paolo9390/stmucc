@@ -132,8 +132,8 @@
             </mat-list-item>
 
             <mat-list-item *ngFor="let list of detail.sublist">
-              <a *ngIf="list.name !== 'JustGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
-              <a *ngIf="list.name === 'JustGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
+              <a *ngIf="list.name !== 'MoneyGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
+              <a *ngIf="list.name === 'MoneyGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
             </mat-list-item>
           </mat-nav-list>
         </div>
