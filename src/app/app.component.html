@@ -128,7 +128,7 @@
           <img class="logo" [src]="logowhite" fxHide.lt-md>
           <mat-nav-list *ngFor="let detail of footerDetails">
             <mat-list-item>
-              <a matLine [routerLink]="detail.link">{{detail.name | uppercase}}</a>
+              <a matLine [routerLink]="detail.link">{{detail.name}}</a>
             </mat-list-item>
 
             <mat-list-item *ngFor="let list of detail.sublist">

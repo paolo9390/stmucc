@@ -4,8 +4,7 @@
     font-size: larger;
 }
 
-.connect__link {
-    margin-left: 0.1em;
-    cursor: pointer;
-    text-decoration: underline;
+.img {
+    width: 100%;
+    margin: auto;
 }

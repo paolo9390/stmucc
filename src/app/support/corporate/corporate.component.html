@@ -19,16 +19,21 @@
       </p>
     </div>
 
-    <div fxFlex="30%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%" fxLayoutAlign="center">
-      <img mat-card-image [src]="corporate2">
+    <div fxFlex="30%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="corporate2">
     </div>
   </section>
 
   <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
     <mat-card fxFlex="100%" class="stuff-accent">
       <mat-card-header class="mat-title">
-        If you would like to find out more about collaborating with us as a corporate sponsor, <strong class="connect__link" routerLink="/connect"> please do get in touch.</strong>
+        If you would like to find out more about collaborating with us as a corporate sponsor, please do get in touch.
       </mat-card-header>
+      <mat-card-actions fxLayoutAlign="end start">
+        <button mat-flat-button routerLink="/connect">
+          <span class="mat-typography">Get in touch</span>
+        </button>
+      </mat-card-actions>
     </mat-card>
 
   </section>
