@@ -2,32 +2,42 @@
 
   <app-title [title]="title | uppercase"></app-title>
 
-  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="stuff-primary">
-      <img mat-card-image [src]="corporate">
-      <mat-card-header class="mat-title">
-        Whether in the UK or overseas, we would welcome more businesses to become corporate partners with us, to help
-        deliver on our goals.
-      </mat-card-header>
-    </mat-card>
-  </section>
-
   <section layout-wrap class="panels" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <div fxFlex="60%" fxLayout="column">
+    <div fxFlex="50%" fxLayout="column">
       <p *ngFor="let panel of panels" fxFlex="100%">
         {{panel.text}}
       </p>
     </div>
 
-    <div fxFlex="30%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
-      <img class="img" mat-card-image [src]="corporate2">
+    <div fxFlex="45%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="corporatesmall">
     </div>
   </section>
+
+  <section class="other-ways-section">
+    <div fxLayout="column" fxLayoutAlign="space-around stretch" layout-wrap>
+      <mat-divider></mat-divider>
+      <span fxFlex="100%" class="second-title fill-primary">IDEAS FOR SUPPORT</span>
+    </div>
+  </section>
+
+  <section class="panels" fxLayoutAlign="space-around center" fxLayout.gt-sm="row" fxLayout.lt-sm="column" layout-wrap>
+    <div fxFlex="40%" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="campaign">
+    </div>
+
+    <div fxFlex="55%" fxFlex.lt-sm="100%">
+      <p *ngFor="let idea of ideas"><mat-icon>star_half</mat-icon> {{idea.description}}</p>
+    </div>
+
+  </section>
+
 
   <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
     <mat-card fxFlex="100%" class="stuff-accent">
       <mat-card-header class="mat-title">
-        If you would like to find out more about collaborating with us as a corporate sponsor, please do get in touch.
+        If you would like to discuss opportunities for corporate giving, please contact
+        ashley.williams@stmarkuniversalcoptscare.org.
       </mat-card-header>
       <mat-card-actions fxLayoutAlign="end start">
         <button mat-flat-button routerLink="/connect">

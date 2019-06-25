@@ -1,0 +1,49 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section layout-wrap class="panels" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <div fxFlex="60%" fxLayout="column">
+      <p fxFlex="100%">
+        Are you considering leaving a legacy to St Mark Universal Copts Care to support our future work providing
+        healthcare relief and socio-economic development to some of the most disadvantaged communities across the Middle
+        East?
+      </p>
+      <p fxFlex="100%">
+        If you choose to leave a donation in your will it is not included in your estate for inheritance tax
+        calculations and therefore it is a tax efficient method of supporting your chosen charitable cause.
+      </p>
+    </div>
+
+    <div fxFlex="35%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="legacies">
+    </div>
+  </section>
+
+  <section layout-wrap class="panels" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <div fxFlex="40%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="legacy">
+    </div>
+    <div fxFlex="50%" fxLayout="column">
+      <p fxFlex="100%">
+        You can choose to donate a specific sum of money, a share of your estate or by leaving a specific item.
+      </p>
+      <p fxFlex="100%">
+        If you have already made your will, a legacy can often be added easily by a simple codicil. It is also important
+        that you take advice on estate planning to make sure that your wishes are met and that your loved ones are both
+        properly provided for and aware of your wishes to support a charity.
+      </p>
+    </div>
+
+  </section>
+
+
+  <section fxLayoutAlign="space-around stretch" class="cards" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-accent">
+      <mat-card-header class="mat-title">
+        For more information, please contact
+        ashley.williams@stmarkuniversalcoptscare.org.
+      </mat-card-header>
+    </mat-card>
+  </section>
+</div>

@@ -41,14 +41,19 @@
         "name": "Prescriptions",
         "value": "58,719",
         "icon": "local_pharmacy"
+      },
+      {
+        "name": "Mobility and Medical devices",
+        "value": "4,345",
+        "icon": "accessible"
       }
     ],
     "_id": 3,
     "title": "Our progress",
     "subtitle": "",
-    "text": "Since 2014 we have provided",
+    "text": "",
     "button": "Donate",
-    "url": "/support/donations",
+    "url": "/support/donate",
     "standard": false
   },
   {
@@ -69,7 +74,7 @@
     "img": "/assets/img/getinvolved.jpg",
     "text": "Find out about volunteering, fundraising or taking part in an event",
     "button": "Get involved",
-    "url": "/support/getinvolved",
+    "url": "/support/fundraising",
     "standard": true
   }, {
     "items": [],

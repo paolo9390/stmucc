@@ -8,3 +8,9 @@ export interface DefaultPanel {
     text: String;
     img: String;
 }
+
+export interface ParagraphsPanel {
+    title: String;
+    text: [];
+    img: String;
+}

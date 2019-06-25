@@ -84,3 +84,11 @@ button {
 .help-card mat-card-title, .help-card p, .help-card h4, .help-card mat-icon {
     color: white !important;
 }
+
+.mat-list-base {
+    padding-top: 0px;
+}
+
+.mat-list-base .mat-list-item.mat-2-line {
+    height: 4.2em;
+}

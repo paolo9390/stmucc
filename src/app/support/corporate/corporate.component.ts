@@ -9,12 +9,33 @@ import { SupportService } from 'src/app/_services/support.service';
 })
 export class CorporateComponent implements OnInit {
 
-  title: string = "Corporate Support";
+  title: string = "Corporate Giving";
   corporate: string = '/assets/img/support/corporate.jpg';
-  corporate2: string = '/assets/img/support/corporate2.jpg';
-  corporate3: string = '/assets/img/support/corporate3.jpg';
+  corporatesmall: string = '/assets/img/support/corporate-small.jpg';
+  campaign: string = '/assets/img/support/campaign.jpg';
 
   panels: TitleTextPanel[];
+
+  ideas = [
+    {
+      description: 'Make St Mark Universal Copts Care your charity of the year and hold fundraising events',
+    },
+    {
+      description: 'Sponsor one of our events',
+    },
+    {
+      description: 'Sponsor one of our projects or campaigns',
+    },
+    {
+      description: 'Buy naming rights for a room or building across the network of our projects',
+    },
+    {
+      description: 'Host collection boxes at your premises',
+    },
+    {
+      description: 'Donate raffle prizes',
+    }
+  ];
 
   constructor(private supportService: SupportService) { }
 

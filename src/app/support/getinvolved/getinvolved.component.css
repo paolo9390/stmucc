@@ -3,13 +3,10 @@
     margin-top: 1em;
 }
 
-.frlogo {
-    width: 16em;
-    margin-left: 0.6em;
-}
-
 .fundraise_for__us {
     cursor: pointer;
+    margin: auto;
+    max-width: 15em;
 }
 
 mat-card-content {

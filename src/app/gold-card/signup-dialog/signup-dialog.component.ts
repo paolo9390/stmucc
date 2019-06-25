@@ -23,4 +23,16 @@ export class SignUpDialogComponent {
     this.donationSelected = true;
   }
 
+  onSubmit() {
+    if (this.donationAmount) {
+      if (this.donationAmount == 10){
+        window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S845YMCTLBPKS`;
+      } else if (this.donationAmount == 20){
+        window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=STT88KVF47MUU`;
+      } else if (this.donationAmount == 30){
+        window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RA24KG5FA4EAN`;
+      }
+    }
+  }
+
 }

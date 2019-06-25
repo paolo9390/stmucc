@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SupportService } from 'src/app/_services/support.service';
-import { TitleTextPanel } from 'src/app/_models/default.model';
+import { ParagraphsPanel } from 'src/app/_models/default.model';
 
 @Component({
   selector: 'app-getinvolved',
@@ -10,29 +10,9 @@ import { TitleTextPanel } from 'src/app/_models/default.model';
 export class GetInvolvedComponent implements OnInit {
 
   title: string = "Get involved with fundraising";
-  getinvolved: string = '/assets/img/support/getinvolved.jpg';
   fundraise2: string = '/assets/img/support/fundraise2.jpg';
-  frlogo: string = '/assets/img/frwhite.png';
 
-  panels: TitleTextPanel[];
-
-  supports: any = [
-    {
-      name: 'Bequests'
-    },
-    {
-      name: 'Fundraising through schools'
-    },
-    {
-      name: 'Events from musical performances to Christmas concerts and summer balls'
-    },
-    {
-      name: 'Sponsored challenge and sporting activities'
-    },
-    {
-      name: 'Support in kind from the UK or overseas - donating time, skills or services for any of our life-enhancing projects'
-    }
-  ]
+  panels: ParagraphsPanel[];
 
   constructor(private supportService: SupportService) { }
 
@@ -40,14 +20,6 @@ export class GetInvolvedComponent implements OnInit {
     this.supportService.getGetInvolvedPanelsLocally().subscribe(panels => {
       this.panels = panels;
     });
-  }
-
-  sendMail() {
-    window.location.href = 'mailto:ashley.williams@stmarkuniversalcoptscare.org?Subject=Fundraise%20for%20StMark';
-  }
-
-  donateByMoneyGiving() {
-    window.location.href = 'https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?uniqueVmgCharityUrl=stmarkuniversalcoptscare';
   }
 
   fundraiseByMoneyGiving() {

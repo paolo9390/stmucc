@@ -21,7 +21,7 @@
     <img *ngIf="panel.img" mat-card-image [src]="panel.img">
 
     <mat-card-content>
-      <p>{{panel.text}}</p>
+      <p [hidden]="!panel.text">{{panel.text}}</p>
       <mat-list *ngIf="panel.items">
         <mat-list-item *ngFor="let help of panel.items">
           <mat-icon mat-list-icon>{{help.icon}}</mat-icon>

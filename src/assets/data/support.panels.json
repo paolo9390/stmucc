@@ -1,23 +1,44 @@
 [
-    {
-      "title": "Corporate",
-      "img": "",
-      "url": "corporate",
-      "button": "Corporate Support",
-      "text": "Whether in Egypt or the UK, we would welcome more businesses to become corporate partners with us, to help deliver on our goals."
-    },
-    {
-      "title": "Fundraise",
-      "img": "",
-      "url": "getinvolved",
-      "button": "Get Involved",
-      "text": "We are grateful for all the support that we receive, because every donation, however small, enables us to do the right thing in support of those without a voice."
-    },
-    {
-      "title": "Gold Card",
-      "img": "",
-      "url": "gold-card",
-      "button": "Sign Up",
-      "text": "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for a patient in the Middle East\"s prescription medication."
-    }
+  {
+    "title": "Donation",
+    "img": "",
+    "url": "donate",
+    "button": "Donate now",
+    "text": "Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many life-saving/life-changing initiatives."
+  },
+  {
+    "title": "Fundraise",
+    "img": "",
+    "url": "fundraising",
+    "button": "Get Involved",
+    "text": "We are grateful for all the support that we receive, because every donation, however small, enables us to do the right thing in support of those without a voice."
+  },
+  {
+    "title": "Corporate",
+    "img": "",
+    "url": "corporate",
+    "button": "Corporate Support",
+    "text": "Whether in Egypt or the UK, we would welcome more businesses to become corporate partners with us, to help deliver on our goals."
+  },
+  {
+    "title": "The Gold Card ",
+    "img": "",
+    "url": "gold-card",
+    "button": "Sign Up",
+    "text": "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for a patient in the Middle East\"s prescription medication."
+  },
+  {
+    "title": "Legacies",
+    "img": "",
+    "url": "legacies",
+    "button": "Lecagies",
+    "text": "Are you considering leaving a legacy to St Mark Universal Copts Care to support our future work providing healthcare relief and socio-economic development to some of the most disadvantaged communities across the Middle East?"
+  },
+  {
+    "title": "Collection box",
+    "img": "",
+    "url": "collection-box",
+    "button": "Host a collection box",
+    "text": "If you have a place you would like to host a box, we can supply the box and come to empty it either on regular visits, or when you let us know it is getting full.  Our boxes are fully branded and show the work of the charity."
+  }
 ]

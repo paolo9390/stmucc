@@ -8,13 +8,19 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SupportService } from '../_services/support.service';
+import { LegacyComponent } from './legacy/legacy.component';
+import { CollectionBoxComponent } from './collectionbox/collectionbox.component';
+import { PromiseComponent } from './promise/promise.component';
 
 
 @NgModule({
   declarations: [
     SupportComponent,
     CorporateComponent,
-    GetInvolvedComponent
+    GetInvolvedComponent,
+    LegacyComponent,
+    CollectionBoxComponent,
+    PromiseComponent
   ],
   imports: [
     CommonModule,

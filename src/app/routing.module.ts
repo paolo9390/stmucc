@@ -24,6 +24,9 @@ import { ProjectListComponent } from './project/project-list/project-list.compon
 import { ReportComponent } from './about/report/report.component';
 import { PartnerComponent } from './partner/partner.component';
 import { ProjectComponent } from './project/project.component';
+import { LegacyComponent } from './support/legacy/legacy.component';
+import { CollectionBoxComponent } from './support/collectionbox/collectionbox.component';
+import { PromiseComponent } from './support/promise/promise.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -36,10 +39,13 @@ export const routes: Routes = [
   { path: 'support',
     children: [
       { path: '', component: SupportComponent },
-      { path: 'getinvolved', component: GetInvolvedComponent },
-      { path: 'gold-card', component: GoldCardComponent },
-      { path: 'donations', component: DonationComponent },
+      { path: 'donate', component: DonationComponent },
+      { path: 'fundraising', component: GetInvolvedComponent },
+      { path: 'legacies', component: LegacyComponent },
       { path: 'corporate', component: CorporateComponent },
+      { path: 'gold-card', component: GoldCardComponent },
+      { path: 'collection-box', component: CollectionBoxComponent },
+      { path: 'fundraising-promise', component: PromiseComponent }
     ]
   },
   { path: 'about',

@@ -2,23 +2,15 @@
 
   <app-title [title]="title | uppercase"></app-title>
 
-  <section fxLayoutAlign="space-around stretch" class="main-section" layout-wrap>
-    <mat-card fxFlex="100%" class="stuff-primary">
-      <img class="frlogo" mat-card-image [src]="frlogo">
-      <mat-card-header class="mat-title">
-        We are grateful for all the support that we receive, because every donation, however small, enables us to do the
-        right thing in support of those without a voice.
-      </mat-card-header>
-    </mat-card>
-  </section>
-
-
   <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
     <mat-card *ngFor="let panel of panels" fxFlex="49%" fxFlex.lt-sm="100%">
+      <mat-card-title class="fill-accent">
+        {{panel.title}}
+      </mat-card-title>
       <img mat-card-image [src]="panel.img">
 
       <mat-card-content>
-        <p>{{panel.text}}</p>
+        <p *ngFor="let paragraphs of panel.text">{{paragraphs.paragraph}}</p>
       </mat-card-content>
 
       <mat-card-actions>
@@ -31,21 +23,26 @@
   <section class="other-ways-section">
     <div fxLayout="column" fxLayoutAlign="space-around stretch" layout-wrap>
       <mat-divider></mat-divider>
-      <span fxFlex="100%" class="second-title fill-primary">OTHER WAYS TO FUNDRAISE</span>
+      <span fxFlex="100%" class="second-title fill-primary">Set up a fundraising page</span>
     </div>
   </section>
 
   <section fxLayoutAlign="space-around center" fxLayout.gt-sm="row" fxLayout.lt-sm="column" layout-wrap>
     <div fxFlex="68%" fxFlex.lt-sm="100%">
       <mat-card-content>
-        <span>In addition to direct donations, you can support St Mark Universal Copts Care in a number of ways:</span>
-
-        <div style="margin-top: 0.5em;">
-          <span *ngFor="let support of supports">
-            {{support.name}} |
-          </span>
-        </div>
+        <p>Through Virgin money giving, you can create a page for your event and fundraise either as an individual or as
+          part of a team. The page is created directly with the account for St Mark Universal Copts Care, so our
+          information and logo are added to your fundraising page.</p>
+        <p>The process is fast, secure and easy to use for both the fundraiser and sponsors.</p>
       </mat-card-content>
+      <mat-card-actions>
+        <mat-card (click)="fundraiseByMoneyGiving()" class="fundraise_for__us stuff-secondary-primary">
+          <mat-card-content>
+            Fundraise through MoneyGiving
+            <mat-icon class="giving-icon">favorite_outline</mat-icon>
+          </mat-card-content>
+        </mat-card>
+      </mat-card-actions>
     </div>
 
     <div fxFlex="22%" fxFlex.lt-sm="100%">
@@ -53,36 +50,18 @@
     </div>
   </section>
 
-  <section class="cards" fxLayoutAlign="space-around stretch" fxLayout.gt-sm="row" fxLayout.lt-sm="column" layout-wrap>
-    <mat-card (click)="fundraiseByMoneyGiving()" class="fundraise_for__us stuff-secondary-primary" fxFlex="32%" fxFlex.lt-sm="100%">
-      <mat-card-content>
-        Fundraise through MoneyGiving
-        <mat-icon class="giving-icon">favorite_outline</mat-icon>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card (click)="donateByMoneyGiving()" class="fundraise_for__us fill-secondary-primary" fxFlex="32%" fxFlex.lt-sm="100%">
-      <mat-card-content>
-        Donate through MoneyGiving
-        <mat-icon class="giving-icon">favorite</mat-icon>
-      </mat-card-content>
-    </mat-card>
-
-
-    <mat-card class="fundraise_for__us" (click)="sendMail()" fxFlex="32%" fxFlex.lt-sm="100%">
-      <mat-card-content>
-        Contact us for FUNDRAISING IDEAS
-      </mat-card-content>
-    </mat-card>
-
-  </section>
-
   <section fxLayoutAlign="space-around stretch" class="main-section cards" layout-wrap>
     <mat-card fxFlex="100%" class="stuff-accent">
-      <mat-card-header class="mat-title">
-        We appreciate whatever individuals or businesses are able to do in support of our vital work, and we’re always
-        looking for new initiatives and opportunities.
-      </mat-card-header>
+      <mat-card-title class="mat-title">
+        <mat-icon>more</mat-icon> Contact us
+      </mat-card-title>
+
+      <mat-card-content>
+        <p class="mat-title">For any support with creating your fundraising page or to discuss your ideas for an event,
+          please contact:</p>
+        <h2 mat-line>Ashley J. Williams - ashley.williams@stmarkuniversalcoptscare.org</h2>
+      </mat-card-content>
+
     </mat-card>
 
   </section>

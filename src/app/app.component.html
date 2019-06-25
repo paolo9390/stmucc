@@ -46,7 +46,7 @@
           </section>
 
           <div class="stmucc-secondary-theme">
-            <button routerLink="/support/donations" mat-raised-button color="primary">
+            <button routerLink="/support/donate" mat-raised-button color="primary">
               <span class="mat-typography mat-display-1">DONATE
                 <mat-icon class="donate-icon">favorite_border</mat-icon>
               </span>
@@ -80,13 +80,16 @@
 
             <button mat-button color="primary" fxHide.lt-sm routerLink="/projects">OUR PROJECTS</button>
 
-            <button mat-button color="primary" [matMenuTriggerFor]="fundraise">FUNDRAISE<mat-icon>arrow_drop_down
+            <button mat-button color="primary" [matMenuTriggerFor]="support">SUPPORT<mat-icon>arrow_drop_down
               </mat-icon></button>
-            <mat-menu #fundraise="matMenu">
-              <button mat-menu-item routerLink="/support/getinvolved">Get Involved</button>
+            <mat-menu #support="matMenu">
+              <button mat-menu-item routerLink="/support/donate">Donate now</button>
+              <button mat-menu-item routerLink="/support/fundraising">Fundraising</button>
+              <button mat-menu-item routerLink="/support/legacies">Legacies</button>
               <button mat-menu-item routerLink="/support/corporate">Corporate Support</button>
-              <button mat-menu-item routerLink="/support/donations">Donations</button>
               <button mat-menu-item routerLink="/support/gold-card">The Gold Card</button>
+              <button mat-menu-item routerLink="/support/collection-box">Host a collection box</button>
+              <button mat-menu-item routerLink="/support/fundraising-promise">Our Fundraising Promise</button>
             </mat-menu>
 
             <button mat-button color="primary" [matMenuTriggerFor]="volunteer">VOLUNTEER<mat-icon>arrow_drop_down

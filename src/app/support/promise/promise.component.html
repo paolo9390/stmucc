@@ -1,0 +1,32 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section layout-wrap class="panels" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <div fxFlex="60%" fxLayout="column">
+      <p fxFlex="100%">
+        This promise outlines the commitment made to donors and the public by St Mark Universal Copts Care, as a charity
+        registered with the Fundraising Regulator. We agree to ensure our fundraising is legal, open, honest and
+        respectful.
+      </p>
+    </div>
+    <div fxFlex="30%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="promise">
+    </div>
+  </section>
+
+
+  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <mat-card *ngFor="let panel of panels" fxFlex="49%" fxFlex.lt-sm="100%">
+      <mat-card-title class="fill-accent">
+        {{panel.title}}
+      </mat-card-title>
+
+      <mat-card-content>
+        <p *ngFor="let paragraphs of panel.text">{{paragraphs.paragraph}}</p>
+      </mat-card-content>
+
+    </mat-card>
+  </section>
+
+</div>

@@ -20,10 +20,11 @@
                 </mat-button-toggle-group>
                 
 
-                <button mat-raised-button class="signup-button" [disabled]="!donationSelected">
+                <button (click)="onSubmit()" mat-raised-button class="signup-button" [disabled]="!donationSelected">
                   <span class="mat-display-1">SIGN UP NOW</span>
                 </button>
             </div>
+            
           </mat-expansion-panel>
         </mat-accordion>
 

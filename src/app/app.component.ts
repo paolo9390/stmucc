@@ -90,9 +90,9 @@ export class AppComponent implements OnInit, OnDestroy {
     this.breadcrumbService.addFriendlyNameForRoute('/about/why-we-do-it', 'Why We Do It');
     this.breadcrumbService.addFriendlyNameForRoute('/about/who-we-are', 'Who We Are');
     this.breadcrumbService.addFriendlyNameForRoute('/about/annual-reports', 'Annual Reports');
-    this.breadcrumbService.addFriendlyNameForRoute('/about/transforming', 'Transforming Lives');
-    this.breadcrumbService.addFriendlyNameForRoute('/support/getinvolved', 'Get Involved');
-    this.breadcrumbService.addFriendlyNameForRoute('/connect', 'Contact Us');
+    this.breadcrumbService.addFriendlyNameForRoute('/support/gold-card', 'The Gold Card');
+    this.breadcrumbService.addFriendlyNameForRoute('/support/collection-box', 'Collection box');
+    this.breadcrumbService.addFriendlyNameForRoute('/support/fundraising-promise', 'Fundraising Promise');
     this.breadcrumbService.addFriendlyNameForRoute('/about/team/staff-and-volunteers', 'Staff and Volunteers');
   }
 

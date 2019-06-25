@@ -1,12 +1,29 @@
 [
     {
-      "title": "",
-      "text": "This ranges from the generosity of our generous corporate and individual donors, and many others investing their time and ingenuity to help raise funds, through all manner of sporting and other challenges; attracting sponsorship and spreading goodwill in the process.",
-      "img": "/assets/img/support/girl.jpg"
+      "title": "Create your own challenge",
+      "text": [
+        {
+          "paragraph": "Maybe you plan to run a marathon, swim, cycle or participate in a competition.  Why not create a sponsorship page with St Mark Universal Copts Care so that you can raise money for our cause through sponsorship from family, friends and colleagues."
+        },
+        {
+          "paragraph": "With Virgin Money Giving, you can create your own sponsorship page that links directly to us, and deals gift aid directly, allowing you to raise funds easily and efficiently while you focus on your preparations for the event."
+        }
+      ],
+      "img": "/assets/img/support/tough-mudder.jpg"
     },
     {
-      "title": "",
-      "text": "As always, there’s much more to do, and with ambitious aspirations to support more and more people gain access to healthcare and improve their life chances, we need your help to improve the lives of millions of people overseas and in the UK.",
-      "img": "/assets/img/support/hospital.jpg"
+      "title": "Create your own event",
+      "text": [
+        {
+          "paragraph": "You could host a dinner, bake sale, coffee morning, barbecue or a school or community event.  We can help by supplying materials for you to promote the charity, and offer advice for organising your event."
+        },
+        {
+          "paragraph": "Musical performances and concerts are also a great way to get involved."
+        },
+        {
+          "paragraph": "Whether you charge set prices, or would like a donation box for the event, these private initiatives are a great way of supporting our work and we are happy to help promote your event on our website and social media."
+        }
+      ],
+      "img": "/assets/img/support/concert.jpg"
     }
 ]

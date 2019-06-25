@@ -1,0 +1,29 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section layout-wrap class="panels" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+    <div fxFlex="20%" fxLayout="column" class="image-div" fxFlex.lt-sm="100%">
+      <img class="img" mat-card-image [src]="collectionbox">
+    </div>
+    <div fxFlex="70%" fxLayout="column">
+      <p fxFlex="100%">
+          Collection boxes are a very simple way to fundraise. 
+      </p>
+      <p fxFlex="100%">
+          If you have a place you would like to host a box, we can supply the box and come to empty it either on regular visits, or when you let us know it is getting full.  Our boxes are fully branded and show the work of the charity.  
+      </p>
+    </div>
+
+  </section>
+
+
+  <section fxLayoutAlign="space-around stretch" class="cards" layout-wrap>
+    <mat-card fxFlex="100%" class="stuff-accent">
+      <mat-card-header class="mat-title">
+        If you would like to discuss hosting a collection box
+        ashley.williams@stmarkuniversalcoptscare.org.
+      </mat-card-header>
+    </mat-card>
+  </section>
+</div>

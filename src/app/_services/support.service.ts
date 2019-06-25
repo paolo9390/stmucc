@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import * as globals from './globals.service';
 import { SupportPanel } from '../_models/support.model';
 import { Observable } from 'rxjs';
-import { TitleTextPanel } from '../_models/default.model';
+import { TitleTextPanel, ParagraphsPanel } from '../_models/default.model';
 
 @Injectable()
 export class SupportService {
@@ -17,12 +17,17 @@ export class SupportService {
   }
 
   getCorporatePanelsLocally(): Observable<TitleTextPanel[]> {
-    var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/corporate.panels.json`);
+    var panels = this.http.get<TitleTextPanel[]>(`${globals.LOCAL_URL}/corporate.panels.json`);
     return panels;
   }
 
-  getGetInvolvedPanelsLocally(): Observable<TitleTextPanel[]> {
-    var panels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/getinvolved.panels.json`);
+  getGetInvolvedPanelsLocally(): Observable<ParagraphsPanel[]> {
+    var panels = this.http.get<ParagraphsPanel[]>(`${globals.LOCAL_URL}/getinvolved.panels.json`);
+    return panels;
+  }
+
+  getFundraisingPromisePanelsLocally(): Observable<ParagraphsPanel[]> {
+    var panels = this.http.get<ParagraphsPanel[]>(`${globals.LOCAL_URL}/fundraisingpromise.panels.json`);
     return panels;
   }
 }

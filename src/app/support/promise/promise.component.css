@@ -1,4 +1,3 @@
-
 .panels>div {
     margin-top: 1em;
     font-size: larger;
@@ -17,4 +16,8 @@
     margin: 0.5em;
     text-align: center;
     font-size: xx-large;
+}
+
+.cards > mat-card, .cards > iframe {
+    margin-top: 1em;
 }
