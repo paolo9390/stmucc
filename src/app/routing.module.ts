@@ -10,7 +10,6 @@ import { CorporateComponent } from './support/corporate/corporate.component';
 import { WhatComponent } from './about/what/what.component';
 import { WhyComponent } from './about/why/why.component';
 import { WhoComponent } from './about/who/who.component';
-import { SuccessComponent } from './gold-card/success/success.component';
 import { VolunteerComponent } from './volunteer/volunteer.component';
 import { UKComponent } from './volunteer/uk/uk.component';
 import { OverseasComponent } from './volunteer/overseas/overseas.component';
