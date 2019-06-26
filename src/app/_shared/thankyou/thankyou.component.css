@@ -1,0 +1,18 @@
+.main-section>div {
+    margin-top: auto;
+    font-size: xx-large;
+}
+
+.main-section>img {
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+a {
+    font-size: xx-large;
+}
+
+.icon {
+    vertical-align: sub;
+    margin-right: 0.3em;
+}

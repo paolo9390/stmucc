@@ -23,7 +23,7 @@ export class DonationComponent implements OnInit {
   isSubmitted: boolean = false;
 
   donationAmount: number = 10;
-  donationType: string = 'monthly';
+  donationType: string = 'single';
 
   donationformPdf: string = '/assets/pdf/donation-form.pdf';
 
@@ -67,5 +67,34 @@ export class DonationComponent implements OnInit {
 
   sendMail(){
     window.location.href = 'mailto:ashley.williams@stmarkuniversalcoptscare.org?Subject=Become%20a%20regular%20supporter';
+  }
+
+
+  onSubmit() {
+    if (this.selectedAmount.value) {
+      if (this.donationType){
+
+        if (this.donationType === 'monthly'){
+          window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=NDU9BDRHXRYQN&a3=${this.donationAmount}&t3=M&p3=1&currency_code=GBP&item_name=Donation&sra=1&src=1&amount=${this.donationAmount}`;
+        }
+        else if (this.donationType === 'single'){
+          if (this.selectedAmount.value == 10){
+            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DTAHPYPGG2YTC&source=url`;
+          } else if (this.selectedAmount.value == 25){
+            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4QRLPCAK5K6KG&source=url`;
+          } else if (this.selectedAmount.value == 50){
+            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NCLRG4Q7DYVA8&source=url`;
+          } else if (this.selectedAmount.value == 100){
+            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HZYHNEXLR236C&source=url`;
+          } else if (this.selectedAmount.value == 500){
+            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K7H6VNB7HFH6U&source=url`;
+          } else if (this.selectedAmount.value == -1){
+            window.location.href = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=NDU9BDRHXRYQN&item_name=Donation&currency_code=GBP&amount=${this.donationAmount}`;
+          }
+        }
+        
+      }
+      
+    }
   }
 }

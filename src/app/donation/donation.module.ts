@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DonationService } from '../_services/donation.service';
+import { ThankyouModule } from '../_shared/thankyou/thankyou.module';
 
 
 @NgModule({
@@ -19,10 +20,12 @@ import { DonationService } from '../_services/donation.service';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterModule,
     MaterialModule,
     FlexLayoutModule,
-    TitleModule
+    TitleModule,
+    ThankyouModule
   ],
   providers: [DonationService],
   exports: [

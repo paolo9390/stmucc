@@ -1,0 +1,20 @@
+<div class="mat-typography">
+
+  <section fxLayoutAlign="center center" class="main-section" layout-wrap>
+
+    <div fxFlex="100%" fxLayout="column">
+      <span class="mat-display-4 fill-secondary-primary">{{message | uppercase}}</span>
+      <p>We are grateful for all the support that we receive, because every donation, however small, enables us to do
+        the right thing in support of those without a voice.
+      </p>
+      <p>Again thank you for your contribution!
+        <a target="_blank" href="https://www.facebook.com/StMarkUniversalCoptsCare/" mat-button color="accent">
+          <mat-icon class="icon" svgIcon="img:facebook" color="accent"></mat-icon>
+          <span>Link us on Facebook</span>
+        </a>
+      </p>
+
+    </div>
+    <img mat-card-image [src]="thankyou">
+  </section>
+</div>

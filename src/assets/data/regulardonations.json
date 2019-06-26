@@ -25,7 +25,7 @@
       "description": "will buy an electric hospital bed"
     },
     {
-      "value": 0,
+      "value": -1,
       "amount": "Other",
       "description": "Other amount"
     }

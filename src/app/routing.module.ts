@@ -27,6 +27,7 @@ import { ProjectComponent } from './project/project.component';
 import { LegacyComponent } from './support/legacy/legacy.component';
 import { CollectionBoxComponent } from './support/collectionbox/collectionbox.component';
 import { PromiseComponent } from './support/promise/promise.component';
+import { ThankyouComponent } from './_shared/thankyou/thankyou.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -45,7 +46,8 @@ export const routes: Routes = [
       { path: 'corporate', component: CorporateComponent },
       { path: 'gold-card', component: GoldCardComponent },
       { path: 'collection-box', component: CollectionBoxComponent },
-      { path: 'fundraising-promise', component: PromiseComponent }
+      { path: 'fundraising-promise', component: PromiseComponent },
+      { path: 'thank-you', component: ThankyouComponent }
     ]
   },
   { path: 'about',

@@ -19,17 +19,16 @@
 
         <mat-card-content fxLayout="column">
           <mat-button-toggle-group class="donation-type" [(ngModel)]="donationType">
-            <mat-button-toggle fxFlex value="single">SINGLE</mat-button-toggle>
             <mat-button-toggle fxFlex value="monthly">MONTHLY</mat-button-toggle>
+            <mat-button-toggle fxFlex value="single">SINGLE</mat-button-toggle>
           </mat-button-toggle-group>
 
           <!-- donations options buttons -->
           <div class="donation-type" fxFlex="100%" layout-wrap fxLayoutAlign="space-around stretch">
             <button fxFlex="33%" [ngClass]="{'stuff-secondary-primary': selectedAmount === donation}"
-              (click)="onAmountSelect(donation)" mat-stroked-button
-              *ngFor="let donation of fixedDonations">
-                <span class="mat-typography">{{donation.amount}}</span>
-              </button>
+              (click)="onAmountSelect(donation)" mat-stroked-button *ngFor="let donation of fixedDonations">
+              <span class="mat-typography">{{donation.amount}}</span>
+            </button>
           </div>
         </mat-card-content>
 
@@ -39,6 +38,7 @@
           <span class="mat-title">{{selectedAmount?.description}}</span>
         </div>
 
+        <!-- enable it properly when api is enabled -->
         <div class="mat-headline" fxLayoutAlign="center center">
           <mat-form-field *ngIf="isOther" fxFlex="90%">
             <input [disabled]="isSubmitted" matInput type="number" [(ngModel)]="donationAmount">
@@ -46,11 +46,10 @@
           </mat-form-field>
         </div>
 
-
         <mat-card-actions fxLayout="row" fxLayoutAlign="space-around stretch">
           <!-- next button -->
           <div fxFlex="90%" class="stmucc-secondary-theme">
-            <button class="donate-now" mat-raised-button color="primary" (click)="submit()"
+            <button class="donate-now" mat-raised-button color="primary" (click)="onSubmit()"
               [disabled]="donationAmount <= 0">
               <span class="mat-typography">GIVE NOW</span>
             </button>
@@ -110,7 +109,7 @@
         </h1>
         <p>
           If you would prefer to donate directly by bank transfer:</p>
-          <p>St Mark Universal Copts Care <br>
+        <p>St Mark Universal Copts Care <br>
           Acct No: 65722695 <br>
           Sort code: 08 - 92 - 99 <br>
         </p>
@@ -122,8 +121,9 @@
           <mat-icon>local_phone</mat-icon> Donate by phone
         </h1>
         <p>
-            If you have any questions about donating or if you want to discuss current options, please follow the links above or get in touch by
-            calling +44 (0)161 652 5600.
+          If you have any questions about donating or if you want to discuss current options, please follow the links
+          above or get in touch by
+          calling +44 (0)161 652 5600.
         </p>
       </div>
 
@@ -133,7 +133,8 @@
           <mat-icon>event_note</mat-icon> Donate by cheque
         </h1>
         <p>
-          If you would prefer to set up a regular payment, or donate by cheque or cash, please download our <a targe="blank" [href]="donationformPdf">donation form.</a>
+          If you would prefer to set up a regular payment, or donate by cheque or cash, please download our <a
+            targe="blank" [href]="donationformPdf">donation form.</a>
         </p>
       </div>
 
