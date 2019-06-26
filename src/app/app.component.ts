@@ -19,7 +19,7 @@ export class AppComponent implements OnInit, OnDestroy {
   routerSubscription: Subscription;
 
   title = 'stmucc';
-  logo: string = '/assets/img/stmucc.png';
+  logo: string = '/assets/img/stmucc-brand-logo.png';
   fundraisingLogo: string = '/assets/img/fundraising-regulator.png';
   frlogo: string = '/assets/img/fr.png';
   logowhite: string = '/assets/img/stmuccwhite.png';;
