@@ -20,7 +20,6 @@ import { VolunteerModule } from './volunteer/volunteer.module';
 import { AboutModule } from './about/about.module';
 import { ConnectModule } from './connect/connect.module';
 import { TeamModule } from './team/team.module';
-import { SuccessComponent } from './gold-card/success/success.component';
 import { ProjectModule } from './project/project.module';
 import { PaypalService } from './_services/paypal.service';
 import { AppService } from './_services/app.service';
@@ -32,8 +31,7 @@ import { SingularModule } from './_shared/singular/singular.module';
   declarations: [
     AppComponent,
     BreadcrumbComponent,
-    ShopComponent,
-    SuccessComponent
+    ShopComponent
   ],
   imports: [
     AboutModule,
