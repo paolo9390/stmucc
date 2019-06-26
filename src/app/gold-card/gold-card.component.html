@@ -4,7 +4,7 @@
 
   <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between stretch" fxLayoutWrap>
     <div fxFlex="55">
-      <mat-card>
+      <div>
         <mat-card-title class="fill-gold">
           <p>{{heading}}</p>
         </mat-card-title>
@@ -21,7 +21,7 @@
                 </div>
               </mat-list>
         </mat-card-content>
-      </mat-card>
+      </div>
     </div>
 
     <div fxFlex="45" class="div-img">
@@ -31,12 +31,12 @@
 
   <section fxLayoutAlign="space-around stretch" class="end-section" layout-wrap>
     <mat-card fxFlex="100%" class="stuff-gold">
-      <mat-card-header class="mat-title">
-          100% of your monthly subscription will fund the monthly prescription of medication for one patient, as part of our healthcare projects in Egypt and beyond.
-      </mat-card-header>
+      <mat-card-content fxLayoutAlign="center center">
+          100% of your monthly subscription will fund the monthly prescription of medication for one patient.
+      </mat-card-content>
       
       <div class="apply" fxLayoutAlign="center center">
-        <button mat-button (click)="viewTerms()">Terms & Conditions</button>
+        <button mat-button (click)="viewTerms()"><span class="mat-typography">Terms & Conditions</span></button>
         <button (click)="signUp()" mat-flat-button>Sign Up</button>
       </div>
     </mat-card>
