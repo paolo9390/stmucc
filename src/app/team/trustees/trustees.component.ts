@@ -25,14 +25,16 @@ export class TrusteesComponent implements OnInit {
     })
   }
 
-  viewMore(trustee): void {
-    const dialogRef = this.dialog.open(TeamDialogComponent, {
-      width: '90%',
-      data: {team: trustee}
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-    });
+  viewMore(trustee: TeamMember): void {
+    if (trustee.description){
+      const dialogRef = this.dialog.open(TeamDialogComponent, {
+        width: '90%',
+        data: {team: trustee}
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+      });
+    }
   }
 
 }
