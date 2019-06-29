@@ -5,17 +5,29 @@
     "img": "/assets/img/trustees/drnaserfouad.jpg",
     "email": "naser.fouad@stmarkuniversalcoptscare.org"
 }, {
-    "name": "Hala elNarshy Fouad",
+    "name": "Hala Elnarshy Fouad",
     "alias": "Treasurer",
     "description": "Hala Fouad is co-founder of the charity and also the St George Healthcare Group, bringing extensive experience in financial and operational management of healthcare projects.",
     "img": "/assets/img/trustees/halaelnarshyfouad.jpg",
     "email": "hala.fouad@stmarkuniversalcoptscare.org"
 }, {
     "name": "Paolo Baskharoun",
-    "alias": "IT & Media Leader",
+    "alias": "IT Developer & Media Leader",
     "description": "Co-founder of St Mark Universal Copts Care, Paolo works as an IT Developer for a big financial institution based in the north west of the UK. Technology is his passion, and thanks to his working background, he took the responsibility to lead the IT and Media aspects of the charity.",
     "img": "/assets/img/trustees/paolobaskharoun.jpg",
     "email": "paolo.baskharoun@stmarkuniversalcoptscare.org"
+}, {
+    "name": "Maha Hamer",
+    "alias": "BA, MA, CIPR Dip",
+    "description": "A career public relations and marketing professional, Maha is account director at Triangle PR in Manchester and marketing consultant for award-winning, not-for-profit care village operator. She has spent almost 20 years delivering high-impact, award-winning campaigns with wide-ranging objectives, both in the not-for-profit and private sectors.",
+    "img": "/assets/img/trustees/mahahamer.jpg",
+    "email": "maha.hamer@stmarkuniversalcoptscare.org"
+}, {
+    "name": "Dr Lourence Lewis-Hanna ",
+    "alias": "Consultant Child and Adolescent Psychiatrist",
+    "description": "Lourence joined St Mark Charity board of Trustees in 2017. He qualified as a doctor in 2007 and subsequently became the first Academic Clinical Fellow in Psychiatry in the South Yorkshire region. He completed his training in Psychiatry and subsequently took up a post as a Consultant Child and Adolescent Psychiatrist in the South Yorkshire region in 2016 where he currently works. He is a specialist in the treatment of psychiatric illness and neurodevelopmental disorders with a particular interest in ADHD.",
+    "img": "/assets/img/trustees/lourencelewishanna.jpg",
+    "email": "lourence.hanna@stmarkuniversalcoptscare.org"
 }, {
     "name": "Mariam Ibraheim Asaad",
     "alias": "Dentist",
@@ -28,16 +40,5 @@
     "description": "Co-Founder of St Mark Universal Copts Care, Shery is the youngest member of the board of Trustees. Shery is also a Wealth Manager representing St. James’s Place with a passion for serving young children.",
     "img": "/assets/img/trustees/sheryibraheim.jpg",
     "email": "shery.ibraheim@stmarkuniversalcoptscare.org"
-}, {
-    "name": "Maha Hamer",
-    "alias": "BA, MA, CIPR Dip",
-    "description": "A career public relations and marketing professional, Maha is account director at Triangle PR in Manchester and marketing consultant for award-winning, not-for-profit care village operator. She has spent almost 20 years delivering high-impact, award-winning campaigns with wide-ranging objectives, both in the not-for-profit and private sectors.",
-    "img": "/assets/img/trustees/mahahamer.jpg",
-    "email": "maha.hamer@stmarkuniversalcoptscare.org"
-}, {
-    "name": "Mr Lourence Lewis Hanna",
-    "alias": "Consultant",
-    "description": "",
-    "img": "/assets/img/trustees/lourencelewishanna.jpg",
-    "email": "lourence.hanna@stmarkuniversalcoptscare.org"
-}]
+    }
+]
