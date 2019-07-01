@@ -3,8 +3,8 @@
     "_id": 1,
     "title": "My Health Programme",
     "subtitle": "",
-    "text": "Find out about our plan to construct and equip 7 international hospitals and healthcare centres",
-    "img": "/assets/img/appeals.jpg",
+    "text": "Our project to address the gaps in healthcare provision with seven new state-of-the-art facilities is well underway.",
+    "img": "/assets/img/kimi.jpg",
     "button": "Find out more",
     "url": "/projects/my-health--sehaty--programme",
     "standard": true
@@ -23,14 +23,14 @@
   {
     "items": [
       {
-        "name": "Polyclinic",
-        "value": "1",
-        "icon": "local_hospital"
-      },
-      {
         "name": "Healthcare Centres",
         "value": "3",
         "icon": "child_care"
+      },
+      {
+        "name": "Polyclinic",
+        "value": "1",
+        "icon": "local_hospital"
       },
       {
         "name": "Operations",
@@ -49,9 +49,9 @@
       }
     ],
     "_id": 3,
-    "title": "Our progress",
+    "title": "Building better health",
     "subtitle": "",
-    "text": "",
+    "text": "Our healthcare projects are creating new facilities and medical provision. To date we have provided:",
     "button": "Donate",
     "url": "/support/donate",
     "standard": false

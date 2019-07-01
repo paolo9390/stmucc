@@ -25,6 +25,10 @@
         },
         { "img": "",
           "paragraph": "The ‘My Health’ programme is supported by His Holiness, Pope Tawardros II, leader of the Coptic Orthodox Church. "
+        },
+        {
+          "img": "",
+          "paragraph": "The model is based on each site becoming self-sufficient, with 80% of any surplus generated used to subsidise healthcare for those who cannot afford to pay for it, and the remaining 20% directed back to the Papal Office to fund further schemes."
         }
       ],
       "img": "/assets/img/projects/sehaty-logo.png"
@@ -32,8 +36,13 @@
     {
       "name": "Medicine Distribution Programme",
       "description": [
-        { "img": "/assets/img/projects/medicines.jpg",
-          "paragraph": "Deprived areas of Upper Egypt and Cairo now benefit from the expansion of the St Mark Universal Copts Care programme, which distributes prescriptions to chronically ill patients living below the poverty line. Each month over 1,500 prescriptions are issued to patients."
+        { 
+          "img": "/assets/img/projects/medicines.jpg",
+          "paragraph": "Deprived areas of Upper Egypt and Cairo now benefit from the expansion of the St Mark Universal Copts Care programme, which distributes prescriptions to chronically ill patients living below the poverty line. Each month over 1,500 prescriptions are dispensed to patients."
+        },
+        { 
+          "img": "",
+          "paragraph": "By identifying needs centrally, the charity’s medicine management strategy is enabling medication to be purchased in bulk from wholesale pharmaceuticals, ensuring that funding goes further in meeting people’s needs.  We also support those eligible to access Government funding available for chronic illnesses."
         }
       ],
       "img": "/assets/img/projects/medicines.jpg"
@@ -86,7 +95,7 @@
     {
       "name": "Project Happiness",
       "description": [
-        { "img": "/assets/img/projects/no-rain.jpg",
+        { "img": "/assets/img/projects/happiness.jpg",
           "paragraph": "Project Happiness was a successful collaboration project with Cheshire community group, No Rain, No Rainbows, providing workshops, coaching and support for people affected by stress, loneliness, depression, anxiety, addiction or lack of self-worth."
         },
         { "img": "",
@@ -95,7 +104,7 @@
         { "img": "",
           "paragraph": "Designed to be fun and engaging, the workshops helped to improve mental health conditions in those people living with a range of psychological issues."
         },
-        { "img": "",
+        { "img": "/assets/img/projects/no-rain.jpg",
           "paragraph": "At a time when depression is set to become the UK’s second most common medical condition, Project Happiness proved a timely and effective support mechanism. "
         }
       ],
@@ -131,7 +140,7 @@
     {
       "name": "Partnerships",
       "description": [
-        { "img": "/assets/img/projects/partnerships.jpg",
+        { "img": "/assets/img/projects/partners.jpg",
           "paragraph": "Working in partnership with other charities, we’ve been able to complete projects such as the establishment of a vital nursery project in Om Dorman, Sudan, in association with ‘Copts in Need.’ In addition, by working with St Cyril Trust and the diocese of Old Cairo we’ve been able to assist in the funding of university tuition fees for over 120 students from some of the poorest backgrounds."
         }
       ],
@@ -141,7 +150,7 @@
       "name": "St Mark Youth Centre",
       "description": [
         { "img": "/assets/img/projects/convent.jpg",
-          "paragraph": "Our new centre in Oldham, a home for the St Mark Youth Centre alongside spaces and facilities for the wider community. Officially opened on Saturday 25th May, once fully developed we hope to offer the centre for conferences and events, with en-suite accommodation available."
+          "paragraph": "Our new centre in Oldham is a home for the St Mark Youth Centre alongside spaces and facilities for the wider community. Officially opened on Saturday 25th May 2019, the centre is undergoing renovations to provide facilities for conferences and events, with en-suite accommodation available."
         },
         { "img": "",
           "paragraph": "Built in 1871 for Mr Joseph Lees, a local cotton magnate, this beautiful listed building became a convent in 1907 until it became our home in Oldham in December 2018."
