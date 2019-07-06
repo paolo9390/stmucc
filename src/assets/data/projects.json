@@ -2,13 +2,13 @@
     {
       "name": "My Health 'Sehaty' Programme",
       "description": [
-        { "img": "/assets/img/projects/sehaty1.jpg",
+        { "img": "/assets/img/projects/sehaty2.jpg",
           "paragraph": "The development of a new polyclinic in Faqous, northern Egypt, marks the first major project in the charity’s My Health programme, which was created following extensive evaluation of regional healthcare facilities in Egypt."
         },
         { "img": "",
           "paragraph": "The plan is to construct and equip four international hospitals and three healthcare centres, in areas of greatest medical need."
         },
-        { "img": "/assets/img/projects/sehaty2.jpg",
+        { "img": "/assets/img/projects/sehaty1.jpg",
           "paragraph": "Having opened Faqous, work is now underway on our first international hospital in Qous, with the main building work complete, and fit-out underway."
         },
         { "img": "",
@@ -20,14 +20,14 @@
         { "img": "",
           "paragraph": "Together with planning and construction, through trusted regional contractors, we are also developing strategic partnerships on the ground, and are engaged in training programmes to guarantee that each new development has the skilled staff to ensure that it is fully operational from day one."
         },
-        { "img": "/assets/img/projects/sehaty3.jpg",
+        { "img": "/assets/img/projects/sehaty-opening.jpg",
           "paragraph": "As a result of the generosity of supporters, millions of people will benefit from the medical services which will be delivered through the seven new centres in the programme."
         },
         { "img": "",
           "paragraph": "The ‘My Health’ programme is supported by His Holiness, Pope Tawardros II, leader of the Coptic Orthodox Church. "
         },
         {
-          "img": "",
+          "img": "/assets/img/projects/sehaty3.jpg",
           "paragraph": "The model is based on each site becoming self-sufficient, with 80% of any surplus generated used to subsidise healthcare for those who cannot afford to pay for it, and the remaining 20% directed back to the Papal Office to fund further schemes."
         }
       ],
