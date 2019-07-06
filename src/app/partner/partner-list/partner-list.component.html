@@ -1,9 +1,0 @@
-
-<section fxHide.lt-md class="partner-section mat-typography">
-    <h1 class="fill-warn">Our Partners</h1>
-    <div fxLayout.gt-md="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center" fxLayoutWrap>
-      <div matTooltip="{{partner.name}}" *ngFor="let partner of partners" fxFlex="10">
-          <img width="100%" *ngIf="partner.logo" mat-card-image [src]="partner.logo">
-      </div>
-    </div>
-</section>

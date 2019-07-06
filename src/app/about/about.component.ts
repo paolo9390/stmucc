@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutService } from '../_services/about.service';
 import { AboutPanel } from '../_models/about.model';
+import { LoaderService } from '../_services/loader.service';
 
 @Component({
   selector: 'app-about',
@@ -14,11 +15,12 @@ export class AboutComponent implements OnInit {
   whoweare3: string = '/assets/img/about/whoweare3.jpg';
   panels: AboutPanel[];
 
-  constructor(private aboutService: AboutService) { }
+  constructor(private aboutService: AboutService, private loader: LoaderService) { }
 
   ngOnInit() {
     this.aboutService.getAboutPanelsLocally().subscribe(panels => {
       this.panels = panels;
+      this.loader.hide();
     });
   }
 

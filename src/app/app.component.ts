@@ -4,8 +4,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
 import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
 import { Router, NavigationEnd } from '@angular/router';
-import { Footer } from './_models/footer.model';
-import { AppService } from './_services/app.service';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
@@ -18,29 +16,15 @@ export class AppComponent implements OnInit, OnDestroy {
   
   routerSubscription: Subscription;
 
-  title = 'stmucc';
-  logo: string = '/assets/img/stmucc-brand-logo.png';
-  fundraisingLogo: string = '/assets/img/fundraising-regulator.png';
-  frlogo: string = '/assets/img/fr.png';
-  logowhite: string = '/assets/img/stmuccwhite.png';;
-  banner = {
-    slogan: "Give health, give life, give hope"
-  };
-  footerDetails: Footer[];
-
   constructor (
     private sanitizer: DomSanitizer,
     private iconRegistry: MatIconRegistry,
     private breadcrumbService: BreadcrumbService,
-    private appService: AppService,
     public router: Router
     ){
   }
 
   ngOnInit() {
-    this.appService.getFooterLocally().subscribe(footerDetails => {
-      this.footerDetails = footerDetails;
-    });
 
     this.routerSubscription = this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)).subscribe(

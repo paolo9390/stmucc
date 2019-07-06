@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material';
 import { SingularDialogComponent } from '../../_shared/singular-dialog/singular-dialog.component';
 import { ProjectService } from 'src/app/_services/project.service';
 import { Project } from 'src/app/_models/project.model';
+import { LoaderService } from 'src/app/_services/loader.service';
 
 @Component({
   selector: 'app-project-list',
@@ -15,11 +16,14 @@ export class ProjectListComponent implements OnInit {
 
   projects: Project[];
 
-  constructor(public dialog: MatDialog, private projectService: ProjectService) { }
+  constructor(public dialog: MatDialog, 
+    private projectService: ProjectService,
+    private loader: LoaderService) { }
 
   ngOnInit() {
     this.projectService.getProjectsLocally().subscribe(projects => {
       this.projects = projects;
+      this.loader.hide();
     });
   }
 

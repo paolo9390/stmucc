@@ -8,6 +8,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectService } from '../_services/project.service';
+import { LoaderService } from '../_services/loader.service';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { ProjectService } from '../_services/project.service';
     SingularDialogModule,
     TitleModule
   ],
-  providers: [ProjectService],
+  providers: [ProjectService, LoaderService],
   exports: [
     ProjectComponent
   ]

@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutService } from '../_services/about.service';
 import { ReportComponent } from './report/report.component';
+import { LoaderService } from '../_services/loader.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { ReportComponent } from './report/report.component';
     FlexLayoutModule,
     TitleModule
   ],
-  providers: [AboutService],
+  providers: [AboutService, LoaderService],
   exports: [
     AboutComponent
   ]

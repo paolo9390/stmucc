@@ -4,11 +4,14 @@ import * as globals from './globals.service';
 import { Observable } from 'rxjs';
 import { AboutPanel } from '../_models/about.model';
 import { TitleTextPanel, DefaultPanel } from '../_models/default.model';
+import { LoaderService } from './loader.service';
 
 @Injectable()
 export class AboutService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private loader: LoaderService) { 
+    this.loader.show();
+  }
 
   getAboutPanelsLocally(): Observable<AboutPanel[]> {
     var panels = this.http.get<AboutPanel[]>(`${globals.LOCAL_URL}/about.panels.json`);

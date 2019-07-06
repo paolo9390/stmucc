@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DonationService } from '../_services/donation.service';
 import { RegularDonation, DonationPanel } from '../_models/donation.model';
+import { LoaderService } from '../_services/loader.service';
 
 @Component({
   selector: 'app-donation',
@@ -28,17 +29,19 @@ export class DonationComponent implements OnInit {
   donationformPdf: string = '/assets/pdf/donation-form.pdf';
 
 
-  constructor(private donationService: DonationService) {
+  constructor(private donationService: DonationService, private loader: LoaderService) {
   }
 
   ngOnInit() {
     this.donationService.getDonationsPanelsLocally().subscribe(panels => {
       this.panels = panels;
+      this.loader.hide();
     });
 
     this.donationService.getRegularDonationsLocally().subscribe(regularDonations => {
       this.fixedDonations = regularDonations;
       this.selectedAmount = regularDonations[0];
+      this.loader.hide();
     });
   }
 

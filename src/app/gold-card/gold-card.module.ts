@@ -9,6 +9,7 @@ import { GoldCardComponent } from './gold-card.component';
 import { GoldCardService } from '../_services/goldcard.service';
 import { SignUpDialogComponent } from './signup-dialog/signup-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { LoaderService } from '../_services/loader.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     TitleModule
   ],
   entryComponents: [TermsDialogComponent, SignUpDialogComponent],
-  providers: [GoldCardService],
+  providers: [GoldCardService, LoaderService],
   exports: [
     GoldCardComponent
   ]

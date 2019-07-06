@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TitleTextPanel } from 'src/app/_models/default.model';
 import { SupportService } from 'src/app/_services/support.service';
+import { LoaderService } from 'src/app/_services/loader.service';
 
 @Component({
   selector: 'app-corporate',
@@ -37,11 +38,12 @@ export class CorporateComponent implements OnInit {
     }
   ];
 
-  constructor(private supportService: SupportService) { }
+  constructor(private supportService: SupportService, private loader: LoaderService) { }
 
   ngOnInit() {
     this.supportService.getCorporatePanelsLocally().subscribe(panels => {
       this.panels = panels;
+      this.loader.hide();
     });
   }
 

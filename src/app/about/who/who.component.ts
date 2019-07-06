@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TitleTextPanel } from 'src/app/_models/default.model';
 import { AboutService } from 'src/app/_services/about.service';
+import { LoaderService } from 'src/app/_services/loader.service';
 
 @Component({
   selector: 'app-who',
@@ -15,11 +16,12 @@ export class WhoComponent implements OnInit {
 
   panels: TitleTextPanel[];
 
-  constructor(private aboutService: AboutService) { }
+  constructor(private aboutService: AboutService, private loader: LoaderService) { }
 
   ngOnInit() {
     this.aboutService.getWhoPanelsLocally().subscribe(panels => {
       this.panels = panels;
+      this.loader.hide();
     });
   }
 

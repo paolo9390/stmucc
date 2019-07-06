@@ -4,6 +4,7 @@ import { Panel } from '../_models/panel.model';
 import { Observable, Subscription } from 'rxjs';
 import { ProjectService } from '../_services/project.service';
 import { Project } from '../_models/project.model';
+import { LoaderService } from '../_services/loader.service';
 
 @Component({
   selector: 'app-home',
@@ -22,11 +23,14 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   phoenixProject: Project;
 
-  constructor(private AppService: AppService, private projectService: ProjectService) {}
+  constructor(private AppService: AppService, 
+    private projectService: ProjectService, 
+    private loader: LoaderService) {}
 
   ngOnInit() {
     this.AppService.getHomePanelsLocally().subscribe(panels => {
       this._panels = panels;
+      this.loader.hide();
     });
 
     this.projectService.getProjectsLocally().subscribe(projects => {
@@ -36,6 +40,7 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.phoenixProject = project;
           }
         });
+        this.loader.hide();
       }
     });
   }

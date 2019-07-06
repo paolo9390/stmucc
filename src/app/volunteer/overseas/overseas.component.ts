@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { VolunteerService } from 'src/app/_services/volunteer.service';
 import { TitleTextPanel } from 'src/app/_models/default.model';
+import { LoaderService } from 'src/app/_services/loader.service';
 
 @Component({
   selector: 'app-overseas',
@@ -15,11 +16,12 @@ export class OverseasComponent implements OnInit {
 
   panels: TitleTextPanel[];
 
-  constructor(private volunteerService: VolunteerService) { }
+  constructor(private volunteerService: VolunteerService, private loader: LoaderService) { }
 
   ngOnInit() {
     this.volunteerService.getOverseasPanelsLocally().subscribe(panels => {
       this.panels = panels;
+      this.loader.hide();
     });
   }
 

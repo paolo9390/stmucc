@@ -4,11 +4,14 @@ import * as globals from './globals.service';
 import { Observable } from 'rxjs';
 import { TitleTextPanel, DefaultPanel } from '../_models/default.model';
 import { VolunteerPanel } from '../_models/volunteer.model';
+import { LoaderService } from './loader.service';
 
 @Injectable()
 export class VolunteerService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private loader: LoaderService) {
+    this.loader.show();
+   }
 
   getVolunteerPanelsLocally(): Observable<VolunteerPanel[]> {
     var panels = this.http.get<VolunteerPanel[]>(`${globals.LOCAL_URL}/volunteer.panels.json`);

@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppService } from '../_services/app.service';
 import { ProjectService } from '../_services/project.service';
+import { LoaderService } from '../_services/loader.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { ProjectService } from '../_services/project.service';
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [AppService, ProjectService],
+  providers: [AppService, ProjectService, LoaderService],
   exports: [
     HomeComponent
   ]

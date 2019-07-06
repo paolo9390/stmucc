@@ -3,13 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import * as globals from './globals.service';
 import { RegularDonation, DonationPanel } from '../_models/donation.model';
 import { Observable } from 'rxjs';
+import { LoaderService } from './loader.service';
 
 @Injectable()
 export class DonationService {
   regularDonations: Observable<RegularDonation[]>
   donationPanels: Observable<DonationPanel[]>
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private loader: LoaderService) {
+    this.loader.show();
+   }
 
   getRegularDonationsLocally(): Observable<RegularDonation[]> {
     var regularDonations = this.http.get<RegularDonation[]>(`${globals.LOCAL_URL}/regulardonations.json`);

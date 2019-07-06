@@ -9,6 +9,7 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TeamService } from '../_services/team.service';
+import { LoaderService } from '../_services/loader.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { TeamService } from '../_services/team.service';
     TitleModule
   ],
   entryComponents: [TeamDialogComponent],
-  providers: [TeamService],
+  providers: [TeamService, LoaderService],
   exports: [
     TeamComponent
   ]

@@ -5,6 +5,7 @@ import { GoldCardService } from '../_services/goldcard.service';
 import { MatDialog } from '@angular/material';
 import { TermsDialogComponent } from './terms-dialog/terms-dialog.component';
 import { SignUpDialogComponent } from './signup-dialog/signup-dialog.component';
+import { LoaderService } from '../_services/loader.service';
 
 @Component({
   selector: 'app-gold-card',
@@ -22,8 +23,8 @@ export class GoldCardComponent implements OnInit {
 
   constructor(private paypalService: PaypalService, 
     private goldcardService: GoldCardService, 
-    public dialog: MatDialog,
-    private router: Router) {
+    private loader: LoaderService,
+    public dialog: MatDialog) {
 
     this.img = '/assets/img/shop/perks.png';
     this.heading = "Save Money Save Lives";
@@ -53,15 +54,13 @@ export class GoldCardComponent implements OnInit {
   ngOnInit() {
     this.goldcardService.getTsCsLocally().subscribe(terms => {
       this.terms = terms;
+      this.loader.hide();
     })
   }
 
   pay(){
     this.paypalService.pay().subscribe(res => {
       window.location.href = res.redirectUrl;
-      // this.router.navigate(['/externalRedirect', { externalUrl: res.redirectUrl }], {
-      //   skipLocationChange: true,
-      // });
     });
   }
 

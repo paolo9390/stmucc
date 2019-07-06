@@ -32,10 +32,7 @@ $stmucc-app-warn);
 // Include the default theme styles.
 @include angular-material-theme($stmucc-app-theme);
 // Define an alternate dark theme.
-$secondary-primary: mat-palette($mat-pink,
-600,
-500,
-900);
+$secondary-primary: mat-palette($mat-pink);
 $secondary-accent: mat-palette($mat-gray, 500);
 $secondary-warn: mat-palette($mat-deep-orange);
 $secondary-theme: mat-light-theme($secondary-primary,

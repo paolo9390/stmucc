@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PartnerListComponent } from './partner-list/partner-list.component';
 import { PartnerComponent } from './partner.component';
 import { SingularDialogModule } from '../_shared/singular-dialog/singular-dialog.module';
 import { TitleModule } from '../_shared/title/title.module';
@@ -8,12 +7,12 @@ import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PartnerService } from '../_services/partner.service';
+import { LoaderService } from '../_services/loader.service';
 
 
 @NgModule({
   declarations: [
-    PartnerComponent,
-    PartnerListComponent
+    PartnerComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +22,7 @@ import { PartnerService } from '../_services/partner.service';
     SingularDialogModule,
     TitleModule
   ],
-  providers: [PartnerService],
+  providers: [PartnerService, LoaderService],
   exports: [
     PartnerComponent
   ]

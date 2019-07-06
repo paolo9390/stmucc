@@ -1,0 +1,60 @@
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.config-spacer {
+    flex: 1 1 auto;
+}
+
+.social-toolbar {
+    background-color: #EBEBEB;
+}
+
+.social-toolbar mat-toolbar {
+    background-color: #EBEBEB;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    height: 40px;
+    width: 960px;
+}
+
+.social-toolbar button {
+    box-shadow: 10px 0px 0px 0px transparent;
+    background: transparent;
+}
+
+.navbar {
+    background-color: transparent;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    height: 2em;
+}
+
+.navbar>button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-banner {
+    background: white;
+}
+
+.logo {
+    width: 10em;
+}
+
+.slogan {
+    font-weight: 100;
+    vertical-align: middle;
+}
+
+button {
+    font-size: large;
+}
+
+.donate-icon {
+    margin-left: 0.1em;
+}

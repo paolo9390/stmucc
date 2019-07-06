@@ -11,6 +11,7 @@ import { SupportService } from '../_services/support.service';
 import { LegacyComponent } from './legacy/legacy.component';
 import { CollectionBoxComponent } from './collectionbox/collectionbox.component';
 import { PromiseComponent } from './promise/promise.component';
+import { LoaderService } from '../_services/loader.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { PromiseComponent } from './promise/promise.component';
     FlexLayoutModule,
     TitleModule
   ],
-  providers: [SupportService],
+  providers: [SupportService, LoaderService],
   exports: [
     SupportComponent
   ]

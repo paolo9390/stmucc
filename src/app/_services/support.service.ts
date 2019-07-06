@@ -4,12 +4,15 @@ import * as globals from './globals.service';
 import { SupportPanel } from '../_models/support.model';
 import { Observable } from 'rxjs';
 import { TitleTextPanel, ParagraphsPanel } from '../_models/default.model';
+import { LoaderService } from './loader.service';
 
 @Injectable()
 export class SupportService {
   supportPanels: Observable<SupportPanel[]>
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private loader: LoaderService) {
+    this.loader.show();
+  }
 
   getSupportPanelsLocally(): Observable<SupportPanel[]> {
     var supportPanels = this.http.get<SupportPanel[]>(`${globals.LOCAL_URL}/support.panels.json`);

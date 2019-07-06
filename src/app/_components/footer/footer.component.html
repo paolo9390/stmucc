@@ -1,0 +1,29 @@
+<footer class="footer background-secondary-accent">
+
+  <section class="inner">
+    <div class="mat-typography" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
+
+      <img class="logo" [src]="logowhite" fxHide.lt-md>
+      <mat-nav-list *ngFor="let detail of footerDetails">
+        <mat-list-item>
+          <a matLine [routerLink]="detail.link">{{detail.name}}</a>
+        </mat-list-item>
+
+        <mat-list-item *ngFor="let list of detail.sublist">
+          <a *ngIf="list.name !== 'MoneyGiving'" matLine [routerLink]="list.link">{{list.name}}</a>
+          <a *ngIf="list.name === 'MoneyGiving'" matLine [href]="list.link" target="_blank">{{list.name}}</a>
+        </mat-list-item>
+      </mat-nav-list>
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <div class="charity-footer mat-typography">
+      <img class="frlogo" [src]="frlogo">
+      <p>Registered office: The Old Rectory, Rectory Lane, Winwick WA2 8LE.</p>
+      <p>United Kingdom Committee for StMUCC. Registered charity 1155451. Registered company limited by guarantee
+        08747202 (England and Wales).</p>
+    </div>
+  </section>
+
+</footer>

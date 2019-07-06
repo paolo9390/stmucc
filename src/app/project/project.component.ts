@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectService } from 'src/app/_services/project.service';
 import { Project } from 'src/app/_models/project.model';
 import { ActivatedRoute } from '@angular/router';
+import { LoaderService } from '../_services/loader.service';
 
 @Component({
   selector: 'app-project',
@@ -16,7 +17,9 @@ export class ProjectComponent implements OnInit {
 
   fundraise: string = '/assets/img/projects/fundraise-icon.png';
 
-  constructor(private projectService: ProjectService, private route: ActivatedRoute) { }
+  constructor(private projectService: ProjectService, 
+    private loader: LoaderService,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => this.projectId = params.projectId);
@@ -27,6 +30,7 @@ export class ProjectComponent implements OnInit {
         for (let proj of projects) {
           if (this.cleanParams(proj.name) === this.projectId){
             this.project = proj;
+            this.loader.hide();
           }
         }      
       }

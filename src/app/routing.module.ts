@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SupportComponent } from './support/support.component';
 import { GoldCardComponent } from './gold-card/gold-card.component';
-import { ShopComponent } from './shop/shop.component';
 import { GetInvolvedComponent } from './support/getinvolved/getinvolved.component';
 import { CorporateComponent } from './support/corporate/corporate.component';
 import { WhatComponent } from './about/what/what.component';
@@ -31,7 +30,6 @@ import { ThankyouComponent } from './_shared/thankyou/thankyou.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'shop', component: ShopComponent },
   { path: 'projects', component: ProjectListComponent },
   { path: 'projects/:projectId', component: ProjectComponent},
   { path: 'partners', component: PartnerComponent },

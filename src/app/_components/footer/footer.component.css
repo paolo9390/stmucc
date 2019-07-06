@@ -1,0 +1,32 @@
+.footer {
+    bottom: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+    border-top: 1px solid;
+    color: #e3e3e3;
+}
+
+.footer>div {
+    text-align: center;
+}
+
+.charity-footer {
+    margin-top: 0.5em;
+}
+
+.inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 10em;
+}
+
+.frlogo {
+    width: 15em;
+}
