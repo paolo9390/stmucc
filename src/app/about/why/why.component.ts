@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutService } from 'src/app/_services/about.service';
-import { DefaultPanel } from 'src/app/_models/default.model';
-import { LoaderService } from 'src/app/_services/loader.service';
+import { AboutService } from '../../_services/about.service';
+import { DefaultPanel } from '../../_models/default.model';
+import { LoaderService } from '../../_services/loader.service';
 
 @Component({
   selector: 'app-why',

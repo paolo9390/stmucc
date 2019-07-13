@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DefaultPanel } from 'src/app/_models/default.model';
-import { AboutService } from 'src/app/_services/about.service';
-import { LoaderService } from 'src/app/_services/loader.service';
+import { DefaultPanel } from '../../_models/default.model';
+import { AboutService } from '../../_services/about.service';
+import { LoaderService } from '../../_services/loader.service';
 
 @Component({
   selector: 'app-report',

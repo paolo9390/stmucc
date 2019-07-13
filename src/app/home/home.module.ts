@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppService } from '../_services/app.service';
 import { ProjectService } from '../_services/project.service';
 import { LoaderService } from '../_services/loader.service';
+import { MatCardModule, MatIconModule, MatButtonModule, MatListModule } from '@angular/material';
 
 
 @NgModule({
@@ -16,8 +16,11 @@ import { LoaderService } from '../_services/loader.service';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
+    MatListModule
   ],
   providers: [AppService, ProjectService, LoaderService],
   exports: [

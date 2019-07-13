@@ -5,12 +5,12 @@ import { WhatComponent } from './what/what.component';
 import { WhoComponent } from './who/who.component';
 import { WhyComponent } from './why/why.component';
 import { TitleModule } from '../_shared/title/title.module';
-import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AboutService } from '../_services/about.service';
 import { ReportComponent } from './report/report.component';
 import { LoaderService } from '../_services/loader.service';
+import { MatCardModule, MatIconModule, MatButtonModule } from '@angular/material';
 
 
 @NgModule({
@@ -25,8 +25,10 @@ import { LoaderService } from '../_services/loader.service';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule,
     FlexLayoutModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
     TitleModule
   ],
   providers: [AboutService, LoaderService],

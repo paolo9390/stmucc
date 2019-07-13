@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SupportService } from 'src/app/_services/support.service';
-import { ParagraphsPanel } from 'src/app/_models/default.model';
-import { LoaderService } from 'src/app/_services/loader.service';
+import { SupportService } from '../../_services/support.service';
+import { ParagraphsPanel } from '../../_models/default.model';
+import { LoaderService } from '../../_services/loader.service';
 
 @Component({
   selector: 'app-promise',

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { SingularDialogComponent } from '../../_shared/singular-dialog/singular-dialog.component';
-import { ProjectService } from 'src/app/_services/project.service';
-import { Project } from 'src/app/_models/project.model';
-import { LoaderService } from 'src/app/_services/loader.service';
+import { ProjectService } from '../../_services/project.service';
+import { Project } from '../../_models/project.model';
+import { LoaderService } from '../../_services/loader.service';
 
 @Component({
   selector: 'app-project-list',
