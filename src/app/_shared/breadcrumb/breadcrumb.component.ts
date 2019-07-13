@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { BreadcrumbService} from './breadcrumb.service';
+import { BreadcrumbService } from './breadcrumb.service';
 
 @Component({
   selector: 'breadcrumb',

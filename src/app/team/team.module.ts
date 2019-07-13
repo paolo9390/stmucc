@@ -5,11 +5,11 @@ import { TrusteesComponent } from './trustees/trustees.component';
 import { StaffComponent } from './staff/staff.component';
 import { TeamDialogComponent } from './team-dialog/team-dialog.component';
 import { TitleModule } from '../_shared/title/title.module';
-import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TeamService } from '../_services/team.service';
 import { LoaderService } from '../_services/loader.service';
+import { MatCardModule, MatIconModule, MatButtonModule, MatDialogModule, MatChipsModule } from '@angular/material';
 
 
 @NgModule({
@@ -22,8 +22,12 @@ import { LoaderService } from '../_services/loader.service';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule,
     FlexLayoutModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatChipsModule,
     TitleModule
   ],
   entryComponents: [TeamDialogComponent],

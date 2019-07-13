@@ -4,7 +4,7 @@ import { TeamMember } from '../../_models/team.model';
 import { Observable, Subscription } from 'rxjs';
 import { MatDialog } from '@angular/material';
 import { TeamDialogComponent } from '../team-dialog/team-dialog.component';
-import { LoaderService } from 'src/app/_services/loader.service';
+import { LoaderService } from '../../_services/loader.service';
 
 @Component({
   selector: 'app-trustees',

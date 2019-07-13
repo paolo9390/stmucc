@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TitleModule } from '../../_shared/title/title.module';
-import { MaterialModule } from '../../material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SingularDialogComponent } from './singular-dialog.component';
+import { MatDialogModule, MatButtonModule, MatIconModule } from '@angular/material';
 
 
 @NgModule({
@@ -12,8 +12,10 @@ import { SingularDialogComponent } from './singular-dialog.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule,
     FlexLayoutModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatIconModule,
     TitleModule
   ],
   entryComponents: [SingularDialogComponent],

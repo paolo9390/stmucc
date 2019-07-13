@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TitleTextPanel } from 'src/app/_models/default.model';
-import { SupportService } from 'src/app/_services/support.service';
-import { LoaderService } from 'src/app/_services/loader.service';
+import { TitleTextPanel } from '../../_models/default.model';
+import { SupportService } from '../../_services/support.service';
+import { LoaderService } from '../../_services/loader.service';
 
 @Component({
   selector: 'app-corporate',

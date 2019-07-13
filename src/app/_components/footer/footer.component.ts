@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Footer } from 'src/app/_models/footer.model';
-import { AppService } from 'src/app/_services/app.service';
+import { Footer } from '../../_models/footer.model';
+import { AppService } from '../../_services/app.service';
 
 @Component({
   selector: 'app-footer',

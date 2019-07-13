@@ -4,11 +4,11 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project.component';
 import { SingularDialogModule } from '../_shared/singular-dialog/singular-dialog.module';
 import { TitleModule } from '../_shared/title/title.module';
-import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectService } from '../_services/project.service';
 import { LoaderService } from '../_services/loader.service';
+import { MatCardModule } from '@angular/material';
 
 
 @NgModule({
@@ -19,8 +19,8 @@ import { LoaderService } from '../_services/loader.service';
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule,
     FlexLayoutModule,
+    MatCardModule,
     SingularDialogModule,
     TitleModule
   ],
