@@ -20,21 +20,21 @@ export class HeaderComponent implements OnInit {
     private iconRegistry: MatIconRegistry) { }
 
   ngOnInit() {
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'twitter',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'facebook',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'instagram',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'linkedin',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'youtube',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube.svg'));
+    this.iconRegistry.addSvgIcon('twitter',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter.svg')
+    );
+    this.iconRegistry.addSvgIcon('facebook',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook.svg')
+    );
+    this.iconRegistry.addSvgIcon('instagram',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram.svg')
+    );
+    this.iconRegistry.addSvgIcon('linkedin',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin.svg')
+    );
+    this.iconRegistry.addSvgIcon('youtube',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube.svg')
+    );
   }
 
 }

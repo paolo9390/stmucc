@@ -17,20 +17,21 @@ export class ConnectComponent implements OnInit {
     private iconRegistry: MatIconRegistry) { }
 
   ngOnInit() {
-    this.iconRegistry.addSvgIconInNamespace('img', 'twitter-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter-color.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'facebook-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook-color.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'instagram-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram-color.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'linkedin-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin-color.svg'));
-
-    this.iconRegistry.addSvgIconInNamespace('img', 'youtube-color',
-    this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube-color.svg'));
+    this.iconRegistry.addSvgIcon('twitter-color',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter-color.svg')
+    );
+    this.iconRegistry.addSvgIcon('facebook-color',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook-color.svg')
+    );
+    this.iconRegistry.addSvgIcon('instagram-color',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram-color.svg')
+    );
+    this.iconRegistry.addSvgIcon('linkedin-color',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin-color.svg')
+    );
+    this.iconRegistry.addSvgIcon('youtube-color',
+      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube-color.svg')
+    );
   }
 
 }
