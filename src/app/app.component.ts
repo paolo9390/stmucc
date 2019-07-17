@@ -4,6 +4,7 @@ import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { LoaderState, LoaderService } from './_services/loader.service';
 
 @Component({
   selector: 'app-root',
@@ -13,14 +14,22 @@ import { filter } from 'rxjs/operators';
 export class AppComponent implements OnInit, OnDestroy {
   
   routerSubscription: Subscription;
+  loadingSubscription: Subscription;
+  loading: boolean;
 
   constructor (
     private breadcrumbService: BreadcrumbService,
+    private loaderService: LoaderService,
     public router: Router
     ){
   }
 
   ngOnInit() {
+
+    this.loadingSubscription = this.loaderService.loaderState
+    .subscribe((state: LoaderState) => {
+        this.loading = state.show;
+    });
 
     this.routerSubscription = this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)).subscribe(

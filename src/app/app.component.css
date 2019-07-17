@@ -30,3 +30,8 @@
 .material-icons.icon-darkgrey {
     color: #333;
 }
+
+.loading {
+    filter: opacity(30%);
+    pointer-events: none;
+}

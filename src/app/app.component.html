@@ -6,7 +6,7 @@
     <app-header></app-header>
 
     <section [style.background-color]="getStyle()">
-      <div class="content-outlet">
+      <div class="content-outlet" [class.loading]="loading">
         <div [style.display]="hideBreadcrumb()" class="breadcrumb">
           <breadcrumb></breadcrumb>
         </div>
