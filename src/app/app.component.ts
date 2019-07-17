@@ -41,6 +41,9 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.routerSubscription.unsubscribe();
+    if (this.loadingSubscription){
+      this.loadingSubscription.unsubscribe();
+    }
   }
 
   addBreadcrumbFriendlyNames(){
