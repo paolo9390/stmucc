@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
+import { isPlatformServer } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -15,26 +16,35 @@ export class HeaderComponent implements OnInit {
     slogan: "Give health, give life, give hope"
   };
   
-  constructor(
-    private sanitizer: DomSanitizer,
-    private iconRegistry: MatIconRegistry) { }
+  constructor(private _matIconRegistry: MatIconRegistry,
+    private _domSanitizer: DomSanitizer,
+    @Inject(PLATFORM_ID) private platformId: string) { 
+
+      const domain = (isPlatformServer(this.platformId)) ? 'http://localhost:4000' : '';
+      const twitter = 'assets/svg/social/twitter.svg';
+      const facebook = 'assets/svg/social/facebook.svg';
+      const instagram = 'assets/svg/social/instagram.svg';
+      const linkedin = 'assets/svg/social/linkedin.svg';
+      const youtube = 'assets/svg/social/youtube.svg';
+  
+      this._matIconRegistry.addSvgIcon('twitter',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${twitter}`)
+      );
+      this._matIconRegistry.addSvgIcon('facebook',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${facebook}`)
+      );
+      this._matIconRegistry.addSvgIcon('instagram',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${instagram}`)
+      );
+      this._matIconRegistry.addSvgIcon('linkedin',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${linkedin}`)
+      );
+      this._matIconRegistry.addSvgIcon('youtube',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${youtube}`)
+      );
+    }
 
   ngOnInit() {
-    this.iconRegistry.addSvgIcon('twitter',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter.svg')
-    );
-    this.iconRegistry.addSvgIcon('facebook',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook.svg')
-    );
-    this.iconRegistry.addSvgIcon('instagram',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram.svg')
-    );
-    this.iconRegistry.addSvgIcon('linkedin',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin.svg')
-    );
-    this.iconRegistry.addSvgIcon('youtube',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube.svg')
-    );
   }
 
 }

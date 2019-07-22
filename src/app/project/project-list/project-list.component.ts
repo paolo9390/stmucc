@@ -4,6 +4,7 @@ import { SingularDialogComponent } from '../../_shared/singular-dialog/singular-
 import { ProjectService } from '../../_services/project.service';
 import { Project } from '../../_models/project.model';
 import { LoaderService } from '../../_services/loader.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-list',
@@ -18,13 +19,22 @@ export class ProjectListComponent implements OnInit {
 
   constructor(public dialog: MatDialog, 
     private projectService: ProjectService,
-    private loader: LoaderService) { }
+    private loader: LoaderService,
+    private meta: Meta) { }
 
   ngOnInit() {
     this.projectService.getProjectsLocally().subscribe(projects => {
       this.projects = projects;
       this.loader.hide();
     });
+
+    this.addMetaTags();
+  }
+
+  addMetaTags(): void {
+    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Projects' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/projects' });
+    this.meta.addTag({ property: 'og:description', content: 'Our focus is primarily on healthcare projects and we run a wide range of initiatives, both overseas and in the UK.' });
   }
 
   cleanParams(parameter): string {

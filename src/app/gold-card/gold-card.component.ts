@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material';
 import { TermsDialogComponent } from './terms-dialog/terms-dialog.component';
 import { SignUpDialogComponent } from './signup-dialog/signup-dialog.component';
 import { LoaderService } from '../_services/loader.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-gold-card',
@@ -24,12 +25,13 @@ export class GoldCardComponent implements OnInit {
   constructor(private paypalService: PaypalService, 
     private goldcardService: GoldCardService, 
     private loader: LoaderService,
+    private meta: Meta,
     public dialog: MatDialog) {
 
     this.img = '/assets/img/shop/perks.png';
     this.heading = "Save Money Save Lives";
     this.headline = "Sign up today and receive a wide range of exclusive offers and perks for as little as £10 a month which will pay for life saving prescription medication for a patient in the Middle East.";
-    this.subheadline = "When you join St Mark Gold Card, you will have access to exclusive perks through our Partner Perkbox and more:";
+    this.subheadline = "When you join St Mark Gold Card, you will have access to exclusive perks through our partner Perkbox and more:";
     
     this.perklist = [
       {
@@ -55,7 +57,15 @@ export class GoldCardComponent implements OnInit {
     this.goldcardService.getTsCsLocally().subscribe(terms => {
       this.terms = terms;
       this.loader.hide();
-    })
+    });
+
+    this.addMetaTags();
+  }
+
+  addMetaTags(): void {
+    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Gold Card' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/support/gold-card' });
+    this.meta.addTag({ property: 'og:description', content: this.headline });
   }
 
   pay(){

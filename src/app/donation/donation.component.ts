@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DonationService } from '../_services/donation.service';
 import { RegularDonation, DonationPanel } from '../_models/donation.model';
 import { LoaderService } from '../_services/loader.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-donation',
@@ -29,7 +30,9 @@ export class DonationComponent implements OnInit {
   donationformPdf: string = '/assets/pdf/donation-form.pdf';
 
 
-  constructor(private donationService: DonationService, private loader: LoaderService) {
+  constructor(private donationService: DonationService,
+    private loader: LoaderService,
+    private meta: Meta) {
   }
 
   ngOnInit() {
@@ -43,6 +46,14 @@ export class DonationComponent implements OnInit {
       this.selectedAmount = regularDonations[0];
       this.loader.hide();
     });
+
+    this.addMetaTags();
+  }
+
+  addMetaTags(): void {
+    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Donate' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/support/donate' });
+    this.meta.addTag({ property: 'og:description', content: 'Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many life-saving/life-changing initiatives.' });
   }
 
   onAmountSelect(donation){

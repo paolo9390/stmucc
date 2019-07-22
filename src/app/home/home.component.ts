@@ -5,6 +5,7 @@ import { Observable, Subscription } from 'rxjs';
 import { ProjectService } from '../_services/project.service';
 import { Project } from '../_models/project.model';
 import { LoaderService } from '../_services/loader.service';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -25,7 +26,8 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(private AppService: AppService, 
     private projectService: ProjectService, 
-    private loader: LoaderService) {}
+    private loader: LoaderService,
+    private meta: Meta) {}
 
   ngOnInit() {
     this.AppService.getHomePanelsLocally().subscribe(panels => {
@@ -43,12 +45,20 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.loader.hide();
       }
     });
+
+    this.addMetaTags();
   }
 
   ngOnDestroy() {
     if (this.panelsSubscription){
       this.panelsSubscription.unsubscribe();
     }
+  }
+
+  addMetaTags(): void {
+    this.meta.addTag({ property: 'og:title', content: 'StMUCC - St Mark Universal Copts Care' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org' });
+    this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Copts Care is a UK based charity, founded by members of the Anglo-Coptic community in 2013, with the objective of providing effective healthcare support to deprived communities in the Middle East; where access to healthcare is extremely difficult.' });
   }
 
 }

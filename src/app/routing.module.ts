@@ -28,8 +28,7 @@ import { PromiseComponent } from './support/promise/promise.component';
 import { ThankyouComponent } from './_shared/thankyou/thankyou.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'projects', component: ProjectListComponent },
   { path: 'projects/:projectId', component: ProjectComponent},
   { path: 'partners', component: PartnerComponent },
@@ -71,7 +70,7 @@ export const routes: Routes = [
       { path: 'experiences', component: TestimonialComponent }
     ]
   },
-  { path: '**', component: ThankyouComponent }
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 
 ];
 

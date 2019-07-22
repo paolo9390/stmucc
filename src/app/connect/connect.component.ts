@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
+import { isPlatformServer } from '@angular/common';
 
 @Component({
   selector: 'app-connect',
@@ -12,26 +13,35 @@ export class ConnectComponent implements OnInit {
   title: string = "Get in Touch";
   connect: string = '/assets/img/connect.jpg';
 
-  constructor(
-    private sanitizer: DomSanitizer,
-    private iconRegistry: MatIconRegistry) { }
+  constructor(private _matIconRegistry: MatIconRegistry,
+    private _domSanitizer: DomSanitizer,
+    @Inject(PLATFORM_ID) private platformId: string) { 
+
+      const domain = (isPlatformServer(this.platformId)) ? 'http://localhost:4000' : '';
+      const twitter = 'assets/svg/social/twitter-color.svg';
+      const facebook = 'assets/svg/social/facebook-color.svg';
+      const instagram = 'assets/svg/social/instagram-color.svg';
+      const linkedin = 'assets/svg/social/linkedin-color.svg';
+      const youtube = 'assets/svg/social/youtube-color.svg';
+  
+      this._matIconRegistry.addSvgIcon('twitter-color',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${twitter}`)
+      );
+      this._matIconRegistry.addSvgIcon('facebook-color',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${facebook}`)
+      );
+      this._matIconRegistry.addSvgIcon('instagram-color',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${instagram}`)
+      );
+      this._matIconRegistry.addSvgIcon('linkedin-color',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${linkedin}`)
+      );
+      this._matIconRegistry.addSvgIcon('youtube-color',
+        this._domSanitizer.bypassSecurityTrustResourceUrl(`${domain}/${youtube}`)
+      );
+    }
 
   ngOnInit() {
-    this.iconRegistry.addSvgIcon('twitter-color',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/twitter-color.svg')
-    );
-    this.iconRegistry.addSvgIcon('facebook-color',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/facebook-color.svg')
-    );
-    this.iconRegistry.addSvgIcon('instagram-color',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/instagram-color.svg')
-    );
-    this.iconRegistry.addSvgIcon('linkedin-color',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/linkedin-color.svg')
-    );
-    this.iconRegistry.addSvgIcon('youtube-color',
-      this.sanitizer.bypassSecurityTrustResourceUrl('../assets/svg/social/youtube-color.svg')
-    );
   }
 
 }
