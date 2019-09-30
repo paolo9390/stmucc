@@ -1,0 +1,64 @@
+<div class="mat-typography">
+
+  <app-title [title]="title | uppercase"></app-title>
+
+  <section fxLayoutAlign="space-around center" fxLayout.gt-sm="row" fxLayout.lt-sm="column" layout-wrap>
+    <div fxFlex="48%" fxFlex.lt-sm="100%">
+      <mat-card-content class="content">
+        <p>Join us for what promises to be a truly terrific evening of sparkles, exciting live entertainment and
+          delicious dining hosted in St Mark’s youth centre, Werneth Grange. </p>
+        <p>All proceeds will go towards St Mark Universal Copts Care projects, which transforms the lives of those in
+          need every day.</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <mat-list>
+          <mat-list-item class="content" *ngFor="let spec of specs">
+            <mat-icon mat-list-icon>{{spec.icon}}</mat-icon>
+            <span>{{spec.description}}</span>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-actions>
+    </div>
+
+    <div fxFlex="42%" fxFlex.lt-sm="100%" fxLayout="column">
+
+      <div>
+        <img class="support-img" mat-card-image [src]="christmasparty">
+      </div>
+
+      <mat-accordion class="support-headers-align">
+        <mat-expansion-panel [expanded]="true" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Buy your ticket now
+            </mat-panel-title>
+            <mat-panel-description>
+              £{{selected}}
+              <mat-icon>card_giftcard</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <div fxLayout="column" fxLayoutAlign="space-around stretch">
+            <mat-form-field appearance="outline">
+              <mat-label>Number of tickets</mat-label>
+              <mat-select matInput [(value)]="selected" placeholder="Select number of tickets">
+                <mat-option *ngFor="let ticket of tickets" [value]="ticket.amount">
+                  {{ticket.value}}
+                  <small>(£{{ticket.amount}})</small>
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <button class="mat-display-1" (click)="onSubmit()" [disabled]="!selected" mat-raised-button color="warn">
+              <span>Buy Now</span>
+            </button>
+          </div>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+
+
+  </section>
+
+</div>

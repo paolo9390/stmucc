@@ -7,6 +7,9 @@ import { filter } from 'rxjs/operators';
 import { BreadcrumbService } from './_shared/breadcrumb/breadcrumb.service';
 import { LoaderState, LoaderService } from './_services/loader.service';
 
+import { MatDialog } from '@angular/material';
+import { EventDialogComponent } from './event/event-dialog/event-dialog.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,6 +24,7 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor (
     private breadcrumbService: BreadcrumbService,
     private loaderService: LoaderService,
+    private dialog: MatDialog,
     public router: Router,
     @Inject(PLATFORM_ID) private platform: Object
     ){
@@ -42,6 +46,8 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
     this.addBreadcrumbFriendlyNames();
+
+    this.showEvent();
   }
 
   ngOnDestroy() {
@@ -53,7 +59,7 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
-  addBreadcrumbFriendlyNames(){
+  addBreadcrumbFriendlyNames() {
     this.breadcrumbService.hideRoute('**');
     this.breadcrumbService.addFriendlyNameForRoute('/about/what-we-do', 'What We Do');
     this.breadcrumbService.addFriendlyNameForRoute('/about/why-we-do-it', 'Why We Do It');
@@ -80,4 +86,15 @@ export class AppComponent implements OnInit, OnDestroy {
       return '';
     }
   }
+
+  showEvent(): void {
+    const dialogRef = this.dialog.open(EventDialogComponent, {
+      width: '600px',
+      panelClass: 'no-padding-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
+  
 }

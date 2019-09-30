@@ -1,0 +1,22 @@
+<div class="mat-typography" fxLayout="row">
+
+    <div class="stuff-secondary-primary"  fxLayout="row" fxLayoutAlign="center">
+        <h1 class="title">Join our St Mark Annual Christmas Ball</h1>
+    </div>
+
+    <div fxLayout="column">
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+            <span fxFlex="90%" class="description">Join us for an enchanting evening at our annual Charity Christmas Ball on Saturday 23 November from 7pm.</span>
+            <button fxFlex="10%" (click)="onClick()" mat-button color="accent"><mat-icon>close</mat-icon></button>
+        </div>
+
+
+        <div fxLayout="row">
+            <button class="submit-button" (click)="onClick()" routerLink="/support/events/christmas-party" mat-raised-button color="accent">
+                Get your ticket now
+            </button>
+        </div>
+    </div>
+        
+  
+</div>

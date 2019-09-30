@@ -1,0 +1,37 @@
+.cards > mat-card, .cards > iframe {
+    margin-top: 1em;
+}
+
+.content {
+    font-size: larger;
+}
+
+.support_for__us {
+    cursor: pointer;
+    margin: auto;
+    max-width: 15em;
+}
+
+
+.support-img {
+    width: 100%;
+    margin: auto;
+}
+
+.support-headers-align .mat-expansion-panel-header-title,
+.support-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.support-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}
+
+mat-card-actions > p{
+  margin-top: 0.5em;
+}
