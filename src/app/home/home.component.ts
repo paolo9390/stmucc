@@ -45,6 +45,9 @@ export class HomeComponent implements OnInit, OnDestroy {
         projects.forEach(project => {
           if (project.name === 'The Phoenix Project') {
             this.phoenixProject = project;
+            
+            // remove this after event ended
+            this.showEvent();
           }
         });
         this.loader.hide();
@@ -52,7 +55,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
 
     this.addMetaTags();
-    this.showEvent();
   }
 
   ngOnDestroy() {

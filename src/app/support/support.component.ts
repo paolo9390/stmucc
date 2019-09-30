@@ -27,10 +27,12 @@ export class SupportComponent implements OnInit {
     this.supportService.getSupportPanelsLocally().subscribe(panels => {
       this.panels = panels;
       this.loader.hide();
+
+      // remove this after event ended
+      this.showEvent();
     });
 
     this.addMetaTags();
-    this.showEvent();
   }
 
   addMetaTags(): void {
