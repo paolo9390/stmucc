@@ -24,7 +24,7 @@ export class EventComponent implements OnInit {
       icon: 'school'
     },
     {
-      description: '7 p.m.',
+      description: 'Saturday 23 November @ 7 p.m.',
       icon: 'access_time'
     },
     {
