@@ -16,20 +16,20 @@ export class EventComponent implements OnInit {
       icon: 'local_atm'
     },
     {
-      description: 'All ages are welcome from 12 and above.',
-      icon: 'tag_faces'
-    },
-    {
       description: 'Dress code: formal.',
       icon: 'school'
     },
     {
-      description: 'Saturday 23 November @ 7 p.m.',
-      icon: 'access_time'
+      description: 'All ages are welcome from 12 and above.',
+      icon: 'tag_faces'
     },
     {
       description: 'Free parking available on site',
       icon: 'local_parking'
+    },
+    {
+      description: 'Saturday 23 November @ 7 p.m.',
+      icon: 'access_time'
     },
     {
       description: 'Werneth Grange, Grange Ave, Oldham OL8 4EL',
