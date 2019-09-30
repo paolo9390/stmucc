@@ -6,7 +6,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppService } from '../_services/app.service';
 import { ProjectService } from '../_services/project.service';
 import { LoaderService } from '../_services/loader.service';
-import { MatCardModule, MatIconModule, MatButtonModule, MatListModule } from '@angular/material';
+import { MatCardModule, MatIconModule, MatButtonModule, MatListModule, MatDialogModule } from '@angular/material';
+import { EventModule } from '../event/event.module';
 
 
 @NgModule({
@@ -20,7 +21,9 @@ import { MatCardModule, MatIconModule, MatButtonModule, MatListModule } from '@a
     MatCardModule,
     MatIconModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule,
+    EventModule
   ],
   providers: [AppService, ProjectService, LoaderService],
   exports: [

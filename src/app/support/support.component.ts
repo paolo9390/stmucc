@@ -39,7 +39,6 @@ export class SupportComponent implements OnInit {
     this.meta.addTag({ property: 'og:description', content: 'We appreciate whatever individuals or businesses are able to do in support of our vital work, and we’re always looking for new initiatives and opportunities.' });
   }
 
-
   showEvent(): void {
     const dialogRef = this.dialog.open(EventDialogComponent, {
       width: '600px',

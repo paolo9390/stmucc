@@ -6,6 +6,9 @@ import { ProjectService } from '../_services/project.service';
 import { Project } from '../_models/project.model';
 import { LoaderService } from '../_services/loader.service';
 import { Meta } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material';
+import { EventDialogComponent } from '../event/event-dialog/event-dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -27,6 +30,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private AppService: AppService, 
     private projectService: ProjectService, 
     private loader: LoaderService,
+    public router: Router,
+    private dialog: MatDialog,
     private meta: Meta) {}
 
   ngOnInit() {
@@ -47,6 +52,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
 
     this.addMetaTags();
+    this.showEvent();
   }
 
   ngOnDestroy() {
@@ -59,6 +65,17 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.meta.addTag({ property: 'og:title', content: 'StMUCC - St Mark Universal Copts Care' });
     this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org' });
     this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Copts Care is a UK based charity, founded by members of the Anglo-Coptic community in 2013, with the objective of providing effective healthcare support to deprived communities in the Middle East; where access to healthcare is extremely difficult.' });
+  }
+
+  showEvent(): void {
+    const dialogRef = this.dialog.open(EventDialogComponent, {
+      width: '600px',
+      panelClass: 'no-padding-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) this.router.navigateByUrl('/support/events/christmas-party');
+    });
   }
 
 }
