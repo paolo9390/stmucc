@@ -94,6 +94,7 @@ export class AppComponent implements OnInit, OnDestroy {
     });
 
     dialogRef.afterClosed().subscribe(result => {
+      if (result) this.router.navigateByUrl('/support/events/christmas-party');
     });
   }
   
