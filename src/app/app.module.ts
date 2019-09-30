@@ -23,7 +23,6 @@ import { ProjectModule } from './project/project.module';
 import { PaypalService } from './_services/paypal.service';
 import { TitleModule } from './_shared/title/title.module';
 import { SingularModule } from './_shared/singular/singular.module';
-import { EventModule } from './event/event.module';
 
 
 @NgModule({
@@ -53,8 +52,7 @@ import { EventModule } from './event/event.module';
     HttpClientModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule,
-    EventModule
+    ReactiveFormsModule
   ],
   providers: [PaypalService],
   bootstrap: [AppComponent]

@@ -11,7 +11,8 @@ import { LegacyComponent } from './legacy/legacy.component';
 import { CollectionBoxComponent } from './collectionbox/collectionbox.component';
 import { PromiseComponent } from './promise/promise.component';
 import { LoaderService } from '../_services/loader.service';
-import { MatCardModule, MatIconModule, MatDividerModule, MatButtonModule } from '@angular/material';
+import { MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatDialogModule } from '@angular/material';
+import { EventModule } from '../event/event.module';
 
 
 @NgModule({
@@ -30,8 +31,11 @@ import { MatCardModule, MatIconModule, MatDividerModule, MatButtonModule } from 
     MatCardModule,
     MatIconModule,
     MatDividerModule,
+    MatDialogModule,
     MatButtonModule,
-    TitleModule
+    TitleModule,
+    EventModule,
+    RouterModule
   ],
   providers: [SupportService, LoaderService],
   exports: [
