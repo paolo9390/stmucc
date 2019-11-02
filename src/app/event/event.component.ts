@@ -20,7 +20,7 @@ export class EventComponent implements OnInit {
       icon: 'school'
     },
     {
-      description: 'All ages are welcome from 12 and above.',
+      description: 'All ages are welcome.',
       icon: 'tag_faces'
     },
     {
