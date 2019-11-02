@@ -30,9 +30,9 @@ export class AboutComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - About Us' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/about' });
-    this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Copts Care exists to do the right thing for those in need, overseas and in the UK, transforming lives around the world.' });
+    this.meta.addTag({ property: 'og:title', content: 'St Mark Universal Care - About Us' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org/about' });
+    this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Care exists to do the right thing for those in need, overseas and in the UK, transforming lives around the world.' });
   }
 
 }

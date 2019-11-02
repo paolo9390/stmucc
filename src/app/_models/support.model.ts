@@ -5,3 +5,9 @@ export interface SupportPanel {
     button: String;
     text: String;
 }
+
+export interface SupporterPanel {
+    name: String;
+    img: String;
+    url: String;
+}

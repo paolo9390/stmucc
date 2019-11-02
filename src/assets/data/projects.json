@@ -34,11 +34,23 @@
       "img": "/assets/img/projects/sehaty-logo.png"
     },
     {
+      "name": "Werneth Grange",
+      "description": [
+        { "img": "/assets/img/projects/convent.jpg",
+          "paragraph": "Our new centre in Oldham is a home for the St Mark Youth Centre alongside spaces and facilities for the wider community. Officially opened on Saturday 25th May 2019, the centre is undergoing renovations to provide facilities for conferences and events, with en-suite accommodation available."
+        },
+        { "img": "",
+          "paragraph": "Built in 1871 for Mr Joseph Lees, a local cotton magnate, this beautiful listed building became a convent in 1907 until it became our home in Oldham in December 2018."
+        }
+      ],
+      "img": "/assets/img/projects/werneth-grange-logo.png"
+    },
+    {
       "name": "Medicine Distribution Programme",
       "description": [
         { 
           "img": "/assets/img/projects/medicines.jpg",
-          "paragraph": "Deprived areas of Upper Egypt and Cairo now benefit from the expansion of the St Mark Universal Copts Care programme, which distributes prescriptions to chronically ill patients living below the poverty line. Each month over 1,500 prescriptions are dispensed to patients."
+          "paragraph": "Deprived areas of Upper Egypt and Cairo now benefit from the expansion of the St Mark Universal Care programme, which distributes prescriptions to chronically ill patients living below the poverty line. Each month over 1,500 prescriptions are dispensed to patients."
         },
         { 
           "img": "",
@@ -51,7 +63,7 @@
       "name": "Medical and Nursing Skills Training",
       "description": [
         { "img": "/assets/img/projects/medical-training.jpg",
-          "paragraph": "St Mark Universal Copts Care is supporting the training of medical staff for new healthcare facilities in Egypt. Under the programme, a group of volunteer doctors in the UK supports skills training, which has seen 60 junior doctors attend training given by consultants across eight areas of specialism."
+          "paragraph": "St Mark Universal Care is supporting the training of medical staff for new healthcare facilities in Egypt. Under the programme, a group of volunteer doctors in the UK supports skills training, which has seen 60 junior doctors attend training given by consultants across eight areas of specialism."
         }
       ],
       "img": "/assets/img/projects/medical-training.jpg"
@@ -60,7 +72,7 @@
       "name": "International Health Partners",
       "description": [
         { "img": "/assets/img/partners/ihp.jpg",
-          "paragraph": "Collaboration with IHP, Europe’s largest facilitator of product donations from healthcare companies to aid agencies, has enabled St Mark Universal Copts Care to access surplus medicine in Europe, in a safe and regulated manner, and get it to those people who need it most."
+          "paragraph": "Collaboration with IHP, Europe’s largest facilitator of product donations from healthcare companies to aid agencies, has enabled St Mark Universal Care to access surplus medicine in Europe, in a safe and regulated manner, and get it to those people who need it most."
         },
         { "img": "",
           "paragraph": "Our first shipment to Cairo’s largest public hospital, Om El Masriyeen, was dispensed by the hospital in 2017 for the treatment of people who simply would not have been able to access medicine if it were not for our efforts and those who support us. Additional shipments have since been received by Cairo’s Children’s Cancer Hospital."
@@ -99,7 +111,7 @@
           "paragraph": "Project Happiness was a successful collaboration project with Cheshire community group, No Rain, No Rainbows, providing workshops, coaching and support for people affected by stress, loneliness, depression, anxiety, addiction or lack of self-worth."
         },
         { "img": "",
-          "paragraph": "St Mark Universal Copts Care supported the group to enable it to roll-out more workshops for school children, youth groups, and groups such as vulnerable women and children with autism."
+          "paragraph": "St Mark Universal Care supported the group to enable it to roll-out more workshops for school children, youth groups, and groups such as vulnerable women and children with autism."
         },
         { "img": "",
           "paragraph": "Designed to be fun and engaging, the workshops helped to improve mental health conditions in those people living with a range of psychological issues."
@@ -145,17 +157,5 @@
         }
       ],
       "img": "/assets/img/projects/partnerships.jpg"
-    },
-    {
-      "name": "Werneth Grange",
-      "description": [
-        { "img": "/assets/img/projects/convent.jpg",
-          "paragraph": "Our new centre in Oldham is a home for the St Mark Youth Centre alongside spaces and facilities for the wider community. Officially opened on Saturday 25th May 2019, the centre is undergoing renovations to provide facilities for conferences and events, with en-suite accommodation available."
-        },
-        { "img": "",
-          "paragraph": "Built in 1871 for Mr Joseph Lees, a local cotton magnate, this beautiful listed building became a convent in 1907 until it became our home in Oldham in December 2018."
-        }
-      ],
-      "img": "/assets/img/projects/convent.jpg"
     }
   ]

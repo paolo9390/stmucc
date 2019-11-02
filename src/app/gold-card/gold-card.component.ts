@@ -63,8 +63,8 @@ export class GoldCardComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Gold Card' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/support/gold-card' });
+    this.meta.addTag({ property: 'og:title', content: 'StMUC - Gold Card' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org/support/gold-card' });
     this.meta.addTag({ property: 'og:description', content: this.headline });
   }
 

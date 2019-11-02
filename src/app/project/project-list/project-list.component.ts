@@ -32,8 +32,8 @@ export class ProjectListComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Projects' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/projects' });
+    this.meta.addTag({ property: 'og:title', content: 'StMUC - Projects' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org/projects' });
     this.meta.addTag({ property: 'og:description', content: 'Our focus is primarily on healthcare projects and we run a wide range of initiatives, both overseas and in the UK.' });
   }
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TitleTextPanel } from '../../_models/default.model';
 import { SupportService } from '../../_services/support.service';
 import { LoaderService } from '../../_services/loader.service';
+import { SupporterPanel } from '../../_models/support.model';
 
 @Component({
   selector: 'app-corporate',
@@ -16,10 +17,11 @@ export class CorporateComponent implements OnInit {
   campaign: string = '/assets/img/support/campaign.jpg';
 
   panels: TitleTextPanel[];
+  supporters: SupporterPanel[];
 
   ideas = [
     {
-      description: 'Make St Mark Universal Copts Care your charity of the year and hold fundraising events',
+      description: 'Make St Mark Universal Care your charity of the year and hold fundraising events',
     },
     {
       description: 'Sponsor one of our events',
@@ -43,6 +45,10 @@ export class CorporateComponent implements OnInit {
   ngOnInit() {
     this.supportService.getCorporatePanelsLocally().subscribe(panels => {
       this.panels = panels;
+      this.loader.hide();
+    });
+    this.supportService.getSupporters().subscribe(supporters => {
+      this.supporters = supporters;
       this.loader.hide();
     });
   }

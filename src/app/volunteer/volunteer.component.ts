@@ -28,8 +28,8 @@ export class VolunteerComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Volunteer' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/volunteer' });
+    this.meta.addTag({ property: 'og:title', content: 'StMUC - Volunteer' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org/volunteer' });
     this.meta.addTag({ property: 'og:description', content: 'If becoming a volunteer is something for you, then read on to learn more about the many opportunities available.  Remember, any voluntary work you undertake will have a real and positive impact on the lives of many people.' });
   }
 

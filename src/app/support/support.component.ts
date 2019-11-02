@@ -36,8 +36,8 @@ export class SupportComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Support Us' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/support' });
+    this.meta.addTag({ property: 'og:title', content: 'StMUC - Support Us' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org/support' });
     this.meta.addTag({ property: 'og:description', content: 'We appreciate whatever individuals or businesses are able to do in support of our vital work, and we’re always looking for new initiatives and opportunities.' });
   }
 

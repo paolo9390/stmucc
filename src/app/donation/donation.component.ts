@@ -51,9 +51,9 @@ export class DonationComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - Donate' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org/support/donate' });
-    this.meta.addTag({ property: 'og:description', content: 'Donate to St Mark Universal Copts Care with a one-off donation or by becoming an ongoing supporter of our many life-saving/life-changing initiatives.' });
+    this.meta.addTag({ property: 'og:title', content: 'StMUC - Donate' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org/support/donate' });
+    this.meta.addTag({ property: 'og:description', content: 'Donate to St Mark Universal Care with a one-off donation or by becoming an ongoing supporter of our many life-saving/life-changing initiatives.' });
   }
 
   onAmountSelect(donation){
@@ -80,7 +80,7 @@ export class DonationComponent implements OnInit {
   }
 
   sendMail(){
-    window.location.href = 'mailto:ashley.williams@stmarkuniversalcoptscare.org?Subject=Become%20a%20regular%20supporter';
+    window.location.href = 'mailto:ashley.williams@stmarkuniversalcare.org?Subject=Become%20a%20regular%20supporter';
   }
 
 

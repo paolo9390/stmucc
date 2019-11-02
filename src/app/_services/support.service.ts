@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as globals from './globals.service';
-import { SupportPanel } from '../_models/support.model';
+import { SupportPanel, SupporterPanel } from '../_models/support.model';
 import { Observable } from 'rxjs';
 import { TitleTextPanel, ParagraphsPanel } from '../_models/default.model';
 import { LoaderService } from './loader.service';
@@ -31,6 +31,11 @@ export class SupportService {
 
   getFundraisingPromisePanelsLocally(): Observable<ParagraphsPanel[]> {
     var panels = this.http.get<ParagraphsPanel[]>(`${globals.LOCAL_URL}/fundraisingpromise.panels.json`);
+    return panels;
+  }
+
+  getSupporters(): Observable<SupporterPanel[]> {
+    var panels = this.http.get<SupporterPanel[]>(`${globals.LOCAL_URL}/supporters.panels.json`);
     return panels;
   }
 }

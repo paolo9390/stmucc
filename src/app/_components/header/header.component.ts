@@ -10,7 +10,7 @@ import { isPlatformServer } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
 
-  title = 'stmucc';
+  title = 'St Mark Universal Care';
   logo: string = '/assets/img/stmucc-brand-logo.png';
   banner = {
     slogan: "Give health, give life, give hope"

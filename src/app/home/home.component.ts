@@ -64,9 +64,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   addMetaTags(): void {
-    this.meta.addTag({ property: 'og:title', content: 'StMUCC - St Mark Universal Copts Care' });
-    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcoptscare.org' });
-    this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Copts Care is a UK based charity, founded by members of the Anglo-Coptic community in 2013, with the objective of providing effective healthcare support to deprived communities in the Middle East; where access to healthcare is extremely difficult.' });
+    this.meta.addTag({ property: 'og:title', content: 'StMUC - St Mark Universal Care' });
+    this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org' });
+    this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Care is a UK based charity, founded by members of the Anglo-Coptic community in 2013, with the objective of providing effective healthcare support to deprived communities in the Middle East; where access to healthcare is extremely difficult.' });
   }
 
   showEvent(): void {
