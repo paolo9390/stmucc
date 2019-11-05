@@ -43,9 +43,9 @@
               <section fxLayout="column" fxLayoutAlign="center center">
                 <span>Adults</span>
                 <div fxLayout="row">
-                  <button mat-icon-button color="warn" [disabled]="adulttickets === 0" (click)="removeTicket('adult')"><mat-icon>remove</mat-icon></button>
+                  <button mat-icon-button color="primary" [disabled]="adulttickets === 0" (click)="removeTicket('adult')"><mat-icon>remove</mat-icon></button>
                   <span>{{adulttickets}}</span>
-                  <button mat-icon-button color="warn" (click)="addTicket('adult')"><mat-icon>add</mat-icon></button>
+                  <button mat-icon-button color="primary" (click)="addTicket('adult')"><mat-icon>add</mat-icon></button>
                 </div>
               </section>
 
@@ -61,9 +61,9 @@
               <section fxLayout="column" fxLayoutAlign="center center">
                 <span>Juniors</span>
                 <div fxLayout="row">
-                  <button mat-icon-button color="warn" [disabled]="juniortickets === 0" (click)="removeTicket('junior')"><mat-icon>remove</mat-icon></button>
+                  <button mat-icon-button color="accent" [disabled]="juniortickets === 0" (click)="removeTicket('junior')"><mat-icon>remove</mat-icon></button>
                   <span>{{juniortickets}}</span>
-                  <button mat-icon-button color="warn" (click)="addTicket('junior')"><mat-icon>add</mat-icon></button>
+                  <button mat-icon-button color="accent" (click)="addTicket('junior')"><mat-icon>add</mat-icon></button>
                 </div>
               </section>
             </div>
