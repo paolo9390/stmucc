@@ -6,6 +6,7 @@ import { EventDialogComponent } from './event-dialog/event-dialog.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TitleModule } from '../_shared/title/title.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [EventComponent, EventDialogComponent],
@@ -23,6 +24,8 @@ import { RouterModule } from '@angular/router';
     MatCardModule,
     TitleModule,
     MatListModule,
+    MatInputModule,
+    FormsModule,
     RouterModule
   ],
   exports: [

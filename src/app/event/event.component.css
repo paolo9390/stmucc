@@ -35,3 +35,7 @@ mat-form-field {
 mat-card-actions > p{
   margin-top: 0.5em;
 }
+
+.tickets-div {
+  margin: 1em;
+}

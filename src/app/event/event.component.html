@@ -33,23 +33,47 @@
               Buy your ticket now
             </mat-panel-title>
             <mat-panel-description>
-              £{{selected}}
+              £{{adultselected+studentselected+juniorselected}}
               <mat-icon>card_giftcard</mat-icon>
             </mat-panel-description>
           </mat-expansion-panel-header>
 
           <div fxLayout="column" fxLayoutAlign="space-around stretch">
-            <mat-form-field appearance="outline">
-              <mat-label>Number of tickets</mat-label>
-              <mat-select matInput [(value)]="selected" placeholder="Select number of tickets">
-                <mat-option *ngFor="let ticket of tickets" [value]="ticket.amount">
-                  {{ticket.value}}
-                  <small>(£{{ticket.amount}})</small>
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
+            <div class="tickets-div" fxLayout="row" fxLayoutAlign="space-around center">
+              <section fxLayout="column" fxLayoutAlign="center center">
+                <span>Adults</span>
+                <div fxLayout="row">
+                  <button mat-icon-button color="warn" [disabled]="adulttickets === 0" (click)="removeTicket('adult')"><mat-icon>remove</mat-icon></button>
+                  <span>{{adulttickets}}</span>
+                  <button mat-icon-button color="warn" (click)="addTicket('adult')"><mat-icon>add</mat-icon></button>
+                </div>
+              </section>
+
+              <section fxLayout="column" fxLayoutAlign="center center">
+                <span>Students</span>
+                <div fxLayout="row">
+                  <button mat-icon-button color="warn" [disabled]="studenttickets === 0" (click)="removeTicket('student')"><mat-icon>remove</mat-icon></button>
+                  <span>{{studenttickets}}</span>
+                  <button mat-icon-button color="warn" (click)="addTicket('student')"><mat-icon>add</mat-icon></button>
+                </div>
+              </section>
+
+              <section fxLayout="column" fxLayoutAlign="center center">
+                <span>Juniors</span>
+                <div fxLayout="row">
+                  <button mat-icon-button color="warn" [disabled]="juniortickets === 0" (click)="removeTicket('junior')"><mat-icon>remove</mat-icon></button>
+                  <span>{{juniortickets}}</span>
+                  <button mat-icon-button color="warn" (click)="addTicket('junior')"><mat-icon>add</mat-icon></button>
+                </div>
+              </section>
+            </div>
+
+            <div class="tickets-div content" fxLayoutAlign="space-around center">
+              <strong>Tickets: {{adulttickets+studenttickets+juniortickets}}</strong>
+              <strong>Total: £{{adultselected+studentselected+juniorselected}}</strong>
+            </div>
   
-            <button class="mat-display-1" (click)="onSubmit()" [disabled]="!selected" mat-raised-button color="warn">
+            <button class="mat-display-1" (click)="onSubmit()" [disabled]="!adultselected && !studentselected && !juniorselected" mat-raised-button color="warn">
               <span>Buy Now</span>
             </button>
           </div>

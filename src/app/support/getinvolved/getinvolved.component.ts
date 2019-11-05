@@ -25,6 +25,6 @@ export class GetInvolvedComponent implements OnInit {
   }
 
   fundraiseByMoneyGiving() {
-    window.location.href = 'https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?uniqueVmgCharityUrl=stmarkuniversalcoptscare';
+    window.location.href = 'https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1009827';
   }
 }
