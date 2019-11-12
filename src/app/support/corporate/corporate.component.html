@@ -50,24 +50,4 @@
     </mat-card>
   </section>
 
-  <section class="other-ways-section">
-    <div fxLayout="column" fxLayoutAlign="space-around stretch" layout-wrap>
-      <mat-divider></mat-divider>
-      <span fxFlex="100%" class="second-title fill-primary">Our Supporters</span>
-    </div>
-  </section>
-
-  <section layout-wrap class="cards" fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
-    <mat-card *ngFor="let supporter of supporters" fxFlex="30%" fxFlex.lt-md="45%" fxFlex.lt-sm="100%">
-      <mat-card-title class="fill-primary">
-        <p>{{supporter.name}}</p>
-      </mat-card-title>
-      <img mat-card-image [src]="supporter?.img">
-      
-      <mat-card-actions fxLayoutAlign="end">
-        <a mat-flat-button color="accent" href="{{supporter?.url}}" target="_blank">Visit {{supporter?.name}}</a>
-      </mat-card-actions>
-    </mat-card>
-  </section>
-
 </div>

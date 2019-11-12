@@ -27,6 +27,7 @@ import { CollectionBoxComponent } from './support/collectionbox/collectionbox.co
 import { PromiseComponent } from './support/promise/promise.component';
 import { ThankyouComponent } from './_shared/thankyou/thankyou.component';
 import { EventComponent } from './event/event.component';
+import { SupporterComponent } from './support/supporter/supporter.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -44,6 +45,7 @@ export const routes: Routes = [
       { path: 'gold-card', component: GoldCardComponent },
       { path: 'collection-box', component: CollectionBoxComponent },
       { path: 'fundraising-promise', component: PromiseComponent },
+      { path: 'supporters', component: SupporterComponent },
       { path: 'thank-you', component: ThankyouComponent },
       { path: 'events/christmas-party', component: EventComponent }
     ]

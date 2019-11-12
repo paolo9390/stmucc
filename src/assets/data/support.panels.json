@@ -40,5 +40,12 @@
     "url": "collection-box",
     "button": "Host a collection box",
     "text": "If you have a place you would like to host a box, we can supply the box and come to empty it either on regular visits, or when you let us know it is getting full.  Our boxes are fully branded and show the work of the charity."
+  },
+  {
+    "title": "Our Supporters",
+    "img": "",
+    "url": "supporters",
+    "button": "View More",
+    "text": "St Mark Universal Copt Care is supported by, and works with, carefully chosen supporters who share our objectives and mission. We support each other with time, money and information to change lives all around the world."
   }
 ]

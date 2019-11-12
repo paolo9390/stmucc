@@ -13,6 +13,7 @@ import { PromiseComponent } from './promise/promise.component';
 import { LoaderService } from '../_services/loader.service';
 import { MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatDialogModule } from '@angular/material';
 import { EventModule } from '../event/event.module';
+import { SupporterComponent } from './supporter/supporter.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { EventModule } from '../event/event.module';
     GetInvolvedComponent,
     LegacyComponent,
     CollectionBoxComponent,
-    PromiseComponent
+    PromiseComponent,
+    SupporterComponent
   ],
   imports: [
     CommonModule,

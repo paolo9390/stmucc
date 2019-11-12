@@ -1,7 +1,22 @@
 [
-    {
-      "name": "Experience Days",
-      "img": "/assets/img/supporters/experience-days-logo.png",
-      "url": "https://www.experiencedays.co.uk"
-    }
+  {
+    "name": "St. George Healthcare Group",
+    "img": "/assets/img/supporters/sghg.jpg",
+    "url": "https://www.stgeorgehealthcaregroup.org.uk"
+  },
+  {
+    "name": "St. James’s Place Charitable Foundation",
+    "img": "/assets/img/supporters/sjp-foundation.png",
+    "url": "https://www.sjpfoundation.co.uk"
+  },
+  {
+    "name": "Kinex Days",
+    "img": "/assets/img/supporters/kinex.png",
+    "url": "https://kinex.co.uk"
+  },
+  {
+    "name": "Experience Days",
+    "img": "/assets/img/supporters/experience-days-logo.png",
+    "url": "https://www.experiencedays.co.uk"
+  }
 ]
