@@ -8,7 +8,6 @@ import { LoaderService } from '../_services/loader.service';
 import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material';
-import { EventDialogComponent } from '../event/event-dialog/event-dialog.component';
 
 @Component({
   selector: 'app-home',
@@ -45,9 +44,6 @@ export class HomeComponent implements OnInit, OnDestroy {
         projects.forEach(project => {
           if (project.name === 'The Phoenix Project') {
             this.phoenixProject = project;
-            
-            // remove this after event ended
-            this.showEvent();
           }
         });
         this.loader.hide();
@@ -67,17 +63,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.meta.addTag({ property: 'og:title', content: 'StMUC - St Mark Universal Care' });
     this.meta.addTag({ property: 'og:url', content: 'https://stmarkuniversalcare.org' });
     this.meta.addTag({ property: 'og:description', content: 'St Mark Universal Care is a UK based charity, founded by members of the Anglo-Coptic community in 2013, with the objective of providing effective healthcare support to deprived communities in the Middle East; where access to healthcare is extremely difficult.' });
-  }
-
-  showEvent(): void {
-    const dialogRef = this.dialog.open(EventDialogComponent, {
-      width: '600px',
-      panelClass: 'no-padding-dialog'
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      if (result) this.router.navigateByUrl('/support/events/christmas-party');
-    });
   }
 
 }
