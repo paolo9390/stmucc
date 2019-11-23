@@ -12,7 +12,6 @@ import { CollectionBoxComponent } from './collectionbox/collectionbox.component'
 import { PromiseComponent } from './promise/promise.component';
 import { LoaderService } from '../_services/loader.service';
 import { MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatDialogModule } from '@angular/material';
-import { EventModule } from '../event/event.module';
 import { SupporterComponent } from './supporter/supporter.component';
 
 
@@ -36,7 +35,6 @@ import { SupporterComponent } from './supporter/supporter.component';
     MatDialogModule,
     MatButtonModule,
     TitleModule,
-    EventModule,
     RouterModule
   ],
   providers: [SupportService, LoaderService],
