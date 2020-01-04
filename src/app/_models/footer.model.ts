@@ -1,5 +1,5 @@
 export interface Footer {
-    name: String;
-    link: String;
+    name: string;
+    link: string;
     sublist: any[];
 }

@@ -1,7 +1,7 @@
 export interface AboutPanel {
-    title: String;
-    img: String;
-    url: String;
-    button: String;
-    text: String;
+    title: string;
+    img: string;
+    url: string;
+    button: string;
+    text: string;
 }

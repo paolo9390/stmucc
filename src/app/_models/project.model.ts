@@ -1,5 +1,5 @@
 export interface Project {
-    name: String;
+    name: string;
     description: [];
-    img: String;
+    img: string;
 }

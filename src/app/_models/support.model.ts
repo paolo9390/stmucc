@@ -1,13 +1,13 @@
 export interface SupportPanel {
-    title: String;
-    img: String;
-    url: String;
-    button: String;
-    text: String;
+    title: string;
+    img: string;
+    url: string;
+    button: string;
+    text: string;
 }
 
 export interface SupporterPanel {
-    name: String;
-    img: String;
-    url: String;
+    name: string;
+    img: string;
+    url: string;
 }

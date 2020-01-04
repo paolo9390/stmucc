@@ -1,9 +1,9 @@
 export interface TeamMember {
-    _id: Number;
-    name: String;
-    alias: String;
-    biography?: String;
-    description: String;
-    img: String;
-    email: String;
+    _id: number;
+    name: string;
+    alias: string;
+    biography?: string;
+    description: string;
+    img: string;
+    email: string;
 }

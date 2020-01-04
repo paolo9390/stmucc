@@ -1,10 +1,10 @@
 export interface DonationPanel {
-    title: String;
-    text: String;
+    title: string;
+    text: string;
 }
 
 export interface RegularDonation {
     value: number;
-    amount: String;
-    description: String;
+    amount: string;
+    description: string;
 }

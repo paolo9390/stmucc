@@ -1,5 +1,5 @@
 export interface Partner {
-    name: String;
-    description: String;
-    logo: String;
+    name: string;
+    description: string;
+    logo: string;
 }

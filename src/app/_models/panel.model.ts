@@ -1,11 +1,11 @@
 export interface Panel {
-    _id: Number;
-    title: String;
-    subtitle: String;
-    text: String;
-    img: String;
+    _id: number;
+    title: string;
+    subtitle: string;
+    text: string;
+    img: string;
     items: any;
-    button: String;
-    url: String;
+    button: string;
+    url: string;
     standard: boolean;
 }

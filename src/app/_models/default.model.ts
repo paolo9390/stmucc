@@ -1,16 +1,16 @@
 export interface TitleTextPanel {
-    title: String;
-    text: String;
+    title: string;
+    text: string;
 }
 
 export interface DefaultPanel {
-    title: String;
-    text: String;
-    img: String;
+    title: string;
+    text: string;
+    img: string;
 }
 
 export interface ParagraphsPanel {
-    title: String;
+    title: string;
     text: [];
-    img: String;
+    img: string;
 }
