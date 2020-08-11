@@ -1,19 +1,13 @@
-[ {
-    "name": "Medhat Boutros",
-    "alias": "Charity Manager",
-    "description": "Medhat joined St Mark in June 2015 and is based at the Oldham centre. Responsible for the operational management and finance, dealing with the charity’s work in the UK and overseas. During his visits to audit the projects, he always experiences first-hand the positive impact the charity delivers. Originating from the Middle East, he is aware how essential and life-saving, the provided services are for the beneficiaries.",
-    "img": "/assets/img/team/medhatboutros.jpg",
-    "email": "medhat.boutros@stmarkuniversalcare.org"
-},{
-    "name": "Ashley J. Williams",
-    "alias": "Fundraising and Development Manager",
-    "description": "Ashley joined St Mark in May 2019 and is responsible for fundraising, communications and development at the Charity. He is based at the new centre in Oldham. If you would like to become involved with the work of the Charity, Ashley would be glad to talk to you about the opportunities we have for volunteering, sponsorship and events.",
-    "img": "/assets/img/team/ashwilliams.jpg",
-    "email": "ashley.williams@stmarkuniversalcare.org"
+[{
+  "name": "Ashley J. Williams",
+  "alias": "Fundraising and Development Manager",
+  "description": "Ashley joined St Mark in May 2019 and is responsible for fundraising, communications and development at the Charity. He is based at the new centre in Oldham. If you would like to become involved with the work of the Charity, Ashley would be glad to talk to you about the opportunities we have for volunteering, sponsorship and events.",
+  "img": "/assets/img/team/ashwilliams.jpg",
+  "email": "ashley.williams@stmarkuniversalcare.org"
 }, {
-    "name": "Michael Fouad",
-    "alias": "Youth Mission Leader",
-    "description": "Michael is a medical student at Imperial College London. He joined St Mark as a volunteer when it was founded and he has been leading our mission trips to Egypt for the past 5 years.",
-    "img": "/assets/img/team/michaelfouad.jpg",
-    "email": "michael.fouad@stmarkuniversalcare.org"
+  "name": "Michael Fouad",
+  "alias": "Youth Mission Leader",
+  "description": "Michael is a medical student at Imperial College London. He joined St Mark as a volunteer when it was founded and he has been leading our mission trips to Egypt for the past 5 years.",
+  "img": "/assets/img/team/michaelfouad.jpg",
+  "email": "michael.fouad@stmarkuniversalcare.org"
 }]
