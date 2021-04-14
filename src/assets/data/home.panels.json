@@ -3,7 +3,7 @@
     "_id": 1,
     "title": "My Health Programme",
     "subtitle": "",
-    "text": "Our project to address the gaps in healthcare provision with seven new state-of-the-art facilities is well underway.",
+    "text": "Our project to address the gaps in healthcare provision with seven new state-of-the-art facilities is well underway",
     "img": "/assets/img/projects/kimi.jpg",
     "button": "Find out more",
     "url": "/projects/my-health--sehaty--programme",
@@ -59,12 +59,12 @@
   {
     "items": [],
     "_id": 4,
-    "title": "Phoenix Project",
+    "title": "Lent Appeal",
     "subtitle": "",
-    "img": "/assets/img/phoenix.jpg",
-    "text": "We are refurbishing independent living aids for people with chronic health conditions",
-    "button": "Read more",
-    "url": "/projects/the-phoenix-project",
+    "img": "/assets/img/lent-appeal.jpg",
+    "text": "In these times of Covid-19, ensuring the medical needs of the most poor are met is vital. Your donations are urgently needed",
+    "button": "Donate now",
+    "url": "/support/donate",
     "standard": true
   }, {
     "items": [],
@@ -83,7 +83,7 @@
     "subtitle": "",
     "img": "/assets/img/summermission.jpg",
     "text": "Apply now to come on our Christmas Mission to Egypt, giving orphans a memorable Christmas time",
-    "button": "Get on a trip",
+    "button": "Find out more",
     "url": "/volunteer/overseas",
     "standard": true
   }
