@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectService } from '../_services/project.service';
 import { LoaderService } from '../_services/loader.service';
-import { MatCardModule } from '@angular/material';
+import { MatButtonModule, MatCardModule } from '@angular/material';
 
 
 @NgModule({
@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material';
     RouterModule,
     FlexLayoutModule,
     MatCardModule,
+    MatButtonModule,
     SingularDialogModule,
     TitleModule
   ],

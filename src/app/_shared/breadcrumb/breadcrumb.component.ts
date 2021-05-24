@@ -63,11 +63,15 @@ export class BreadcrumbComponent implements OnInit, OnChanges {
   }
 
   friendlyName(url: string): string {
-      return !url ? '' : this.breadcrumbService.getFriendlyNameForRoute(url);
+      return !url ? '' : this.trim(this.breadcrumbService.getFriendlyNameForRoute(url));
   }
 
   ngOnDestroy(): void {
       this._routerSubscription.unsubscribe();
+  }
+
+  trim(val: string): string {
+      return val.replace(/\-/g, ' ');
   }
 
 }

@@ -5,9 +5,24 @@
     "url": "https://www.stgeorgehealthcaregroup.org.uk"
   },
   {
+    "name": "SUEZ Communities Trust",
+    "img": "/assets/img/supporters/suez.png",
+    "url": "https://www.suezcommunitiestrust.org.uk"
+  },
+  {
+    "name": "Postcode Local Trust",
+    "img": "/assets/img/supporters/postcode-local-trust.png",
+    "url": "https://www.postcodelocaltrust.org.uk"
+  },
+  {
     "name": "St. James’s Place Charitable Foundation",
     "img": "/assets/img/supporters/sjp-foundation.png",
     "url": "https://www.sjpfoundation.co.uk"
+  },
+  {
+    "name": "Tesco Community Grants",
+    "img": "/assets/img/supporters/tesco-bags-of-help.jpg",
+    "url": "https://tescobagsofhelp.org.uk"
   },
   {
     "name": "Kinex Days",
@@ -15,8 +30,8 @@
     "url": "https://kinex.co.uk"
   },
   {
-    "name": "SUEZ Communities Trust",
-    "img": "/assets/img/supporters/suez.png",
-    "url": "https://www.suezcommunitiestrust.org.uk/"
+    "name": "Ford Britain Trust",
+    "img": "/assets/img/supporters/ford-britain-trust.png",
+    "url": "https://www.ford.co.uk/experience-ford/about-ford/ford-britain-trust"
   }
 ]

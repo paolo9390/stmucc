@@ -11,6 +11,9 @@
             {{description?.paragraph}}
           </p>
 
+          <p fxLayoutAlign="end" *ngIf="project?.url">
+            <a mat-raised-button color="accent" target="_blank" [href]="project?.url">Visit website</a>
+          </p>
         </mat-card-content>
       </div>
     </div>
